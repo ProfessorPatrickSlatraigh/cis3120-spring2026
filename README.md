@@ -2,7 +2,7 @@
 
 **Course repository, Spring 2026**
 Baruch College, Zicklin School of Business
-Instructor: Patrick Slattery (Patrick.Slattery@Baruch.CUNY.edu)
+Instructor: Patrick Slattery, Baruch College, CUNY
 
 ---
 
@@ -119,4 +119,4 @@ See `LICENSE`.
 
 ## Contact
 
-Questions on the project, the API, or the pipeline should be brought to office hours or directed to Patrick Slattery (Patrick.Slattery@Baruch.CUNY.edu). The instructor responds within one business day.
+Questions on the project, the API, or the pipeline should be brought to office hours or directed to Patrick Slattery, Baruch College, CUNY. 
