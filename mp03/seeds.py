@@ -33,7 +33,9 @@ FINANCIAL_SERVICES_TICKERS = [
     # Retail Coverage
     "COF",
     # Undercounted
-    "MS"
+    "MS",
+    #Smaller banks
+    "FMCB", "UNTY", "NBTB", "AMTB", "AROW", "NKSH", "CBKM", "ACNB"
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
