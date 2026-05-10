@@ -31,7 +31,7 @@ FINANCIAL_SERVICES_TICKERS = [
     # Payments
     "V", "MA", "AXP",
     # Retail Coverage
-    "COF"
+    "COF",
     # Undercounted
     "MS"
 ]
