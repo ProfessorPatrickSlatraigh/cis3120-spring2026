@@ -30,6 +30,10 @@ FINANCIAL_SERVICES_TICKERS = [
     "MET", "PRU",
     # Payments
     "V", "MA", "AXP",
+    # Retail Coverage
+    "COF"
+    # Undercounted
+    "MS"
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
@@ -43,6 +47,8 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations center"',
     '"data center"',
     '"new location"',
+    '"securities desk"',
+    '"advisory center"'
 ]
 
 # ──────────────────────────────────────────────────────────────────────────
