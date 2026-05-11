@@ -74,3 +74,8 @@ htmlcov/
 *.scratch.ipynb
 *_scratch.py
 scratch/
+
+# Local agent/workflow guidance
+AGENTS.md
+current-stage.md
+RULES.MD
