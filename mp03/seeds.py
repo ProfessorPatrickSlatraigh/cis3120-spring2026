@@ -32,8 +32,10 @@ FINANCIAL_SERVICES_TICKERS = [
     "V", "MA", "AXP",
     # Consumer finance
     "COF","DFS",
+    # Wealth management
+    "SCHW", "EVR",
     # Capital markets banks
-    "GS", "MS", "SCHW", "EVR",
+    "GS", "MS",
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
