@@ -38,6 +38,7 @@ FINANCIAL_SERVICES_PHRASES = [
     '"branch closure"',
     '"branch closing"',
     '"branch consolidation"',
+    '"headquarters relocation"'
     '"regional office"',
     '"office closure"',
     '"operations center"',
