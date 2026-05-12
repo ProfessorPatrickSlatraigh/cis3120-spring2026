@@ -63,11 +63,11 @@ FINANCIAL_SERVICES_PHRASES = [
 
 TRAVEL_HOSPITALITY_TICKERS = [
     # Hotels
-    "MAR", "HLT", "H", "CHH", "WH",
+    "MAR", "HLT", "H", "CHH", "WH", "IHG",
     # Cruise
     "CCL", "RCL", "NCLH",
     # Airlines
-    "DAL", "UAL", "AAL", "LUV",
+    "DAL", "UAL", "AAL", "LUV", "JBLU",
     # Online travel
     "BKNG", "EXPE",
 ]
@@ -83,4 +83,6 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+    '"new service"'
+    '"new destination"'
 ]
