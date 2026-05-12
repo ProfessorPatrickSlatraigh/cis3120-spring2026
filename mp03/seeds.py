@@ -43,6 +43,7 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations center"',
     '"data center"',
     '"new location"',
+    
 ]
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -58,6 +59,14 @@ TRAVEL_HOSPITALITY_TICKERS = [
     "DAL", "UAL", "AAL", "LUV",
     # Online travel
     "BKNG", "EXPE",
+    # Casinos / Resorts
+    "MGM", "WYNN", "LVS",
+
+    # Alternative lodging
+    "ABNB",
+
+    # Travel tech
+    "TCOM",
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
@@ -71,4 +80,28 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+     # Added phrases
+    '"new resort"',
+    '"hotel expansion"',
+    '"destination opening"',
+    '"new service route"',
+    '"airport lounge"',
+    '"new flights"',
+    '"tourism expansion"',
+    '"hospitality expansion"',
+    
+    '"Marriott" "opening"',
+    '"Hilton" "opening"',
+    '"Hyatt" "opening"',
+    '"Wyndham" "opening"',
+    '"Delta" "new route"',
+    '"United Airlines" "new route"',
+    '"American Airlines" "new route"',
+    '"Southwest" "new route"',
+    '"Carnival" "new port"',
+    '"Royal Caribbean" "new itinerary"',
+    '"MGM" "new resort"',
+    '"Wynn" "new resort"',
+
+    
 ]
