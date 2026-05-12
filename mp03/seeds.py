@@ -30,15 +30,28 @@ FINANCIAL_SERVICES_TICKERS = [
     "MET", "PRU",
     # Payments
     "V", "MA", "AXP",
+    # Consumer finance
+    "COF","DFS",
+    # Wealth management
+    "SCHW", "EVR",
+    # Capital markets banks
+    "GS", "MS",
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
     '"new branch"',
+    '"new office"',
     '"branch opening"',
     '"branch closure"',
     '"branch closing"',
     '"branch consolidation"',
     '"regional office"',
+    '"office opening"',
+    '"new headquarters"',
+    '"headquarters relocation"',
+    '"office expansion"',
+    '"branch relocation"',
+    '"office relocation"',
     '"office closure"',
     '"operations center"',
     '"data center"',
