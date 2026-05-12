@@ -25,7 +25,7 @@ FINANCIAL_SERVICES_TICKERS = [
     # Regional banks
     "PNC", "USB", "TFC",
     # Asset management
-    "BLK", "BX",
+    "BLK", "BX", "GS"
     # Insurance
     "MET", "PRU",
     # Payments
