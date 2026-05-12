@@ -15,6 +15,9 @@ from mp03.seeds import (
     TRAVEL_HOSPITALITY_PHRASES,
 )
 
+" Makes the seeded ticker and phrase lists available across the project."
+" Defines which variables are exported when this module is imported elsewhere."
+
 __all__ = [
     "FINANCIAL_SERVICES_TICKERS",
     "FINANCIAL_SERVICES_PHRASES",
