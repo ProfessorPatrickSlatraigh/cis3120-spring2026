@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_776df24a13813ada12295be0d745930a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_776df24a13813ada12295be0d745930a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_776df24a13813ada12295be0d745930a = L.map(
+                "map_776df24a13813ada12295be0d745930a",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0d0a24902490d1ef9a6f9249824138d3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0d0a24902490d1ef9a6f9249824138d3.addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var marker_c5068ebff33eae7c65cf18df128cb5be = L.marker(
+                [44.0234387, -92.4630182],
+                {
+}
+            ).addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var icon_7f144694f48cab7d0ff35c6852d5b13d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_358aff05283daf169ffd8ea7de705716 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e1f6413ce9d80068f72f6ce4e29e6be6 = $(`<div id="html_e1f6413ce9d80068f72f6ce4e29e6be6" style="width: 100.0%; height: 100.0%;">     <b>Apple Hospitality REIT, Inc.  (APLE)  (CIK 0001418121)</b><br>     <b>Ticker:</b> APLE<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-05-04<br>     <b>Event type:</b> closing<br>     <b>Summary:</b> Apple Hospitality completed sale of Hampton Inn &amp; Suites Rochester-North hotel in April 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1418121/000119312526204022/aple-ex99_1.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_358aff05283daf169ffd8ea7de705716.setContent(html_e1f6413ce9d80068f72f6ce4e29e6be6);
+            
+        
+
+        marker_c5068ebff33eae7c65cf18df128cb5be.bindPopup(popup_358aff05283daf169ffd8ea7de705716)
+        ;
+
+        
+    
+    
+                marker_c5068ebff33eae7c65cf18df128cb5be.setIcon(icon_7f144694f48cab7d0ff35c6852d5b13d);
+            
+    
+            var marker_fdb7ef6d2e7f0c21ae6ea26750c572a9 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var icon_f341cf2919093ebd7cba56990066e8b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e9637c14768d663aac6f0d4bcd07790 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d64d9de5818c3f9218eab491f934aa31 = $(`<div id="html_d64d9de5818c3f9218eab491f934aa31" style="width: 100.0%; height: 100.0%;">     <b>DiamondRock Hospitality Co  (DRH)  (CIK 0001298946)</b><br>     <b>Ticker:</b> DRH<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-05-04<br>     <b>Event type:</b> closing<br>     <b>Summary:</b> DiamondRock Hospitality announced sale of Courtyard by Marriott New York Manhattan/Fifth Avenue hotel property.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1298946/000129894626000030/exhibit9915126.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_5e9637c14768d663aac6f0d4bcd07790.setContent(html_d64d9de5818c3f9218eab491f934aa31);
+            
+        
+
+        marker_fdb7ef6d2e7f0c21ae6ea26750c572a9.bindPopup(popup_5e9637c14768d663aac6f0d4bcd07790)
+        ;
+
+        
+    
+    
+                marker_fdb7ef6d2e7f0c21ae6ea26750c572a9.setIcon(icon_f341cf2919093ebd7cba56990066e8b4);
+            
+    
+            var marker_6bc8e542b46ee7dba3b25060e6f9ecb4 = L.marker(
+                [34.0536909, -118.242766],
+                {
+}
+            ).addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var icon_de6706642dfa01acf7b65473d918bc07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04048e79afcc7668b0f5d460399fb903 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b0516800265b035846e40a9c5be3f6bc = $(`<div id="html_b0516800265b035846e40a9c5be3f6bc" style="width: 100.0%; height: 100.0%;">     <b>Pebblebrook Hotel Trust  (PEB, PEB-PE, PEB-PF, PEB-PG, PEB-PH)  (CIK 0001474098)</b><br>     <b>Ticker:</b> PEB<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-04-28<br>     <b>Event type:</b> relocation<br>     <b>Summary:</b> Mondrian Los Angeles rebranded as The Valorian Los Angeles, Curio Collection by Hilton on April 1, 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1474098/000147409826000040/a8kq1-2026erex991.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_04048e79afcc7668b0f5d460399fb903.setContent(html_b0516800265b035846e40a9c5be3f6bc);
+            
+        
+
+        marker_6bc8e542b46ee7dba3b25060e6f9ecb4.bindPopup(popup_04048e79afcc7668b0f5d460399fb903)
+        ;
+
+        
+    
+    
+                marker_6bc8e542b46ee7dba3b25060e6f9ecb4.setIcon(icon_de6706642dfa01acf7b65473d918bc07);
+            
+    
+            var marker_ecaf0fe1bd316ad7c2bab6f3c384afe6 = L.marker(
+                [32.7355816, -97.1071186],
+                {
+}
+            ).addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var icon_3af6a52bd766cdb8cc4b04bb0768b5d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e4c78b3380485d93864ae55e25b801f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ff0375975dd4bc0272f1bd689aaa8942 = $(`<div id="html_ff0375975dd4bc0272f1bd689aaa8942" style="width: 100.0%; height: 100.0%;">     <b>Summit Hotel Properties, Inc.  (INN, INN-PE, INN-PF)  (CIK 0001497645)</b><br>     <b>Ticker:</b> INN<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-04-30<br>     <b>Event type:</b> closing<br>     <b>Summary:</b> Agreement to sell Courtyard and Residence Inn hotels in Dallas (Arlington South), Texas.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1497645/000149764526000042/exhibit99103312026.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_3e4c78b3380485d93864ae55e25b801f.setContent(html_ff0375975dd4bc0272f1bd689aaa8942);
+            
+        
+
+        marker_ecaf0fe1bd316ad7c2bab6f3c384afe6.bindPopup(popup_3e4c78b3380485d93864ae55e25b801f)
+        ;
+
+        
+    
+    
+                marker_ecaf0fe1bd316ad7c2bab6f3c384afe6.setIcon(icon_3af6a52bd766cdb8cc4b04bb0768b5d4);
+            
+    
+            var marker_c8af97cfbc74bdfc5abf9f8657184df9 = L.marker(
+                [40.6526006, -73.9497211],
+                {
+}
+            ).addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var icon_f5c6e5450293ab3b45eba8b9a4e3fc11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b12f1b0c3889a4ce9a04fa20b54d965 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0418789610ec4c1c90e42f151146e204 = $(`<div id="html_0418789610ec4c1c90e42f151146e204" style="width: 100.0%; height: 100.0%;">     <b>Hyatt Hotels Corp  (H)  (CIK 0001468174)</b><br>     <b>Ticker:</b> H<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-04-30<br>     <b>Event type:</b> opening<br>     <b>Summary:</b> Hyatt opened The Livingston, its first branded hotel in Brooklyn, New York during Q1 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1468174/000146817426000013/q12026earningsrelease.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_0b12f1b0c3889a4ce9a04fa20b54d965.setContent(html_0418789610ec4c1c90e42f151146e204);
+            
+        
+
+        marker_c8af97cfbc74bdfc5abf9f8657184df9.bindPopup(popup_0b12f1b0c3889a4ce9a04fa20b54d965)
+        ;
+
+        
+    
+    
+                marker_c8af97cfbc74bdfc5abf9f8657184df9.setIcon(icon_f5c6e5450293ab3b45eba8b9a4e3fc11);
+            
+    
+            var marker_46f2c1fbe8f6177b30965dba550d2bf4 = L.marker(
+                [41.345055, -81.528452],
+                {
+}
+            ).addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var icon_88125d3b9cd4021003eceecf6766b593 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d42329da7555dcf7470f4c1f7729ba6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9b7ef814ee083a2a8335089095d5c273 = $(`<div id="html_9b7ef814ee083a2a8335089095d5c273" style="width: 100.0%; height: 100.0%;">     <b>MGM Resorts International  (MGM)  (CIK 0000789570)</b><br>     <b>Ticker:</b> MGM<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-04-29<br>     <b>Event type:</b> closing<br>     <b>Summary:</b> MGM Resorts closed the sale of MGM Northfield Park operations for $546 million in April 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/789570/000078957026000034/mgmex991q12026earningrelea.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_0d42329da7555dcf7470f4c1f7729ba6.setContent(html_9b7ef814ee083a2a8335089095d5c273);
+            
+        
+
+        marker_46f2c1fbe8f6177b30965dba550d2bf4.bindPopup(popup_0d42329da7555dcf7470f4c1f7729ba6)
+        ;
+
+        
+    
+    
+                marker_46f2c1fbe8f6177b30965dba550d2bf4.setIcon(icon_88125d3b9cd4021003eceecf6766b593);
+            
+    
+            var marker_d76d434f3af11639215bd51b6b4e4b64 = L.marker(
+                [39.6342752, -106.522243],
+                {
+}
+            ).addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+            var icon_da36ccc08bdfc912197f47c28930e9c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ced35ddd144d96d4158a4e4c3869de09 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_60c756c6e6a27f51f261a53e4a60cf7e = $(`<div id="html_60c756c6e6a27f51f261a53e4a60cf7e" style="width: 100.0%; height: 100.0%;">     <b>Braemar Hotels &amp; Resorts Inc.  (BHR, BHR-PB, BHR-PD)  (CIK 0001574085)</b><br>     <b>Ticker:</b> BHR<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-04-30<br>     <b>Event type:</b> closing<br>     <b>Summary:</b> Braemar Hotels agreed to sell Park Hyatt Beaver Creek Resort &amp; Spa in Avon, Colorado for $176 million.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1574085/000157408526000068/bhr-20260427.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_ced35ddd144d96d4158a4e4c3869de09.setContent(html_60c756c6e6a27f51f261a53e4a60cf7e);
+            
+        
+
+        marker_d76d434f3af11639215bd51b6b4e4b64.bindPopup(popup_ced35ddd144d96d4158a4e4c3869de09)
+        ;
+
+        
+    
+    
+                marker_d76d434f3af11639215bd51b6b4e4b64.setIcon(icon_da36ccc08bdfc912197f47c28930e9c3);
+            
+    
+            tile_layer_0d0a24902490d1ef9a6f9249824138d3.addTo(map_776df24a13813ada12295be0d745930a);
+        
+    
+                marker_c5068ebff33eae7c65cf18df128cb5be.setIcon(icon_7f144694f48cab7d0ff35c6852d5b13d);
+            
+    
+                marker_fdb7ef6d2e7f0c21ae6ea26750c572a9.setIcon(icon_f341cf2919093ebd7cba56990066e8b4);
+            
+    
+                marker_6bc8e542b46ee7dba3b25060e6f9ecb4.setIcon(icon_de6706642dfa01acf7b65473d918bc07);
+            
+    
+                marker_ecaf0fe1bd316ad7c2bab6f3c384afe6.setIcon(icon_3af6a52bd766cdb8cc4b04bb0768b5d4);
+            
+    
+                marker_c8af97cfbc74bdfc5abf9f8657184df9.setIcon(icon_f5c6e5450293ab3b45eba8b9a4e3fc11);
+            
+    
+                marker_46f2c1fbe8f6177b30965dba550d2bf4.setIcon(icon_88125d3b9cd4021003eceecf6766b593);
+            
+    
+                marker_d76d434f3af11639215bd51b6b4e4b64.setIcon(icon_da36ccc08bdfc912197f47c28930e9c3);
+            
+</script>
+</html>
