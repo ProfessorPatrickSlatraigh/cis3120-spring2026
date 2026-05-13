@@ -58,7 +58,7 @@ TRAVEL_HOSPITALITY_TICKERS = [
     # Airlines
     "DAL", "UAL", "AAL", "LUV",
     # Online travel
-    "BKNG", "EXPE",
+    "BKNG", "EXPE", "SABR"
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
