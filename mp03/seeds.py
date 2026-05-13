@@ -49,7 +49,7 @@ FINANCIAL_SERVICES_PHRASES = [
 # ──────────────────────────────────────────────────────────────────────────
 #  Travel and Hospitality (default seed: 14 companies across sub-segments)
 # ──────────────────────────────────────────────────────────────────────────
-
+# These lists were expanded to better capture hospitality growth and travel demand patterns
 TRAVEL_HOSPITALITY_TICKERS = [
     # Hotels
     "MAR", "HLT", "H", "CHH", "WH",
