@@ -25,7 +25,7 @@ FINANCIAL_SERVICES_TICKERS = [
     # Regional banks
     "PNC", "USB", "TFC",
     # Asset management
-    "BLK", "BX",
+    "BLK", "BX", "GS"
     # Insurance
     "MET", "PRU",
     # Payments
@@ -38,6 +38,7 @@ FINANCIAL_SERVICES_PHRASES = [
     '"branch closure"',
     '"branch closing"',
     '"branch consolidation"',
+    '"headquarters relocation"'
     '"regional office"',
     '"office closure"',
     '"operations center"',
@@ -48,7 +49,7 @@ FINANCIAL_SERVICES_PHRASES = [
 # ──────────────────────────────────────────────────────────────────────────
 #  Travel and Hospitality (default seed: 14 companies across sub-segments)
 # ──────────────────────────────────────────────────────────────────────────
-
+# These lists were expanded to better capture hospitality growth and travel demand patterns
 TRAVEL_HOSPITALITY_TICKERS = [
     # Hotels
     "MAR", "HLT", "H", "CHH", "WH",
@@ -57,7 +58,7 @@ TRAVEL_HOSPITALITY_TICKERS = [
     # Airlines
     "DAL", "UAL", "AAL", "LUV",
     # Online travel
-    "BKNG", "EXPE",
+    "BKNG", "EXPE", "SABR"
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
@@ -71,4 +72,5 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+    '"resort expansion"',
 ]
