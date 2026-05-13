@@ -70,7 +70,7 @@ TRAVEL_HOSPITALITY_TICKERS = [
     # Airlines
     "DAL", "UAL", "AAL", "LUV",
     # Online travel
-    "BKNG", "EXPE",
+    "BKNG", "EXPE", "ABNB", "UBER",
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
@@ -81,7 +81,12 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"property opening"',
     '"brand conversion"',
     '"new route"',
+    '"route expansion"'
+    '"new service"',
+    '"flight route"',
     '"new gateway"',
     '"new terminal"',
-    '"grand opening"',
+    '"grand opening"'
+    '"destination opening"',
+    '"intinerary expanded"'
 ]
