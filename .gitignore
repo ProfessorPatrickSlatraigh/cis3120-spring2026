@@ -18,6 +18,8 @@ __pycache__/
 # ─────────────────────────────────────────────────────────────────────────────
 .env
 *.env
+.env.local
+.env.localm
 .envrc
 secrets.json
 *.key
@@ -77,5 +79,8 @@ scratch/
 
 # Local agent/workflow guidance
 AGENTS.md
+agents.md
 current-stage.md
 RULES.MD
+team_members.md
+todos/
