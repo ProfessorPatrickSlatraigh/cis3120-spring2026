@@ -16,7 +16,7 @@ Reference: docs/MP03_Assignment.docx, Section 3.
 """
 
 # ──────────────────────────────────────────────────────────────────────────
-#  Financial Services (default seed: 14 companies across sub-segments)
+# Financial Services (Modified to include Investment Banking & Wealth Mgmt)
 # ──────────────────────────────────────────────────────────────────────────
 
 FINANCIAL_SERVICES_TICKERS = [
@@ -30,6 +30,8 @@ FINANCIAL_SERVICES_TICKERS = [
     "MET", "PRU",
     # Payments
     "V", "MA", "AXP",
+    # Added: Investment Banking & Capital Markets
+    "GS", "MS", "RJF"
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
@@ -43,10 +45,14 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations center"',
     '"data center"',
     '"new location"',
+    # Added: Corporate & Capital Markets infrastructure
+    '"trading floor"',
+    '"wealth management office"',
+    '"private banking center"'
 ]
 
 # ──────────────────────────────────────────────────────────────────────────
-#  Travel and Hospitality (default seed: 14 companies across sub-segments)
+# Travel and Hospitality (Modified to include expanded Aviation/Leisure)
 # ──────────────────────────────────────────────────────────────────────────
 
 TRAVEL_HOSPITALITY_TICKERS = [
@@ -58,6 +64,8 @@ TRAVEL_HOSPITALITY_TICKERS = [
     "DAL", "UAL", "AAL", "LUV",
     # Online travel
     "BKNG", "EXPE",
+    # Added: Vacation Ownership & Additional Aviation
+    "VAC", "ALK"
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
@@ -71,4 +79,8 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+    # Added: Specific infrastructure & service expansions
+    '"hangar opening"',
+    '"maintenance base"',
+    '"flight path launch"'
 ]

@@ -1,0 +1,3893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1b6a0d8a8be6f41af371a6690ceff458 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1b6a0d8a8be6f41af371a6690ceff458" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1b6a0d8a8be6f41af371a6690ceff458 = L.map(
+                "map_1b6a0d8a8be6f41af371a6690ceff458",
+                {
+                    center: [36.43519945316456, -92.71452744177215],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0e827a47db07fa0ff568d77c00bb4162 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0e827a47db07fa0ff568d77c00bb4162.addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var marker_36074a9cb02a95344c63b4983b19ce10 = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_e6f4c0c8ee5f80d5c87992ba0bd1b258 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac9e42b7b01e7ca1b3454926e1ab6f8f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_86a5382df7eb4e16c903b2de2bf65d40 = $(`<div id="html_86a5382df7eb4e16c903b2de2bf65d40" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-14</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">New branch facilities in Roanoke and Lynchburg opened for market expansion.</p>         <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526154248/nksh-ex99_1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_ac9e42b7b01e7ca1b3454926e1ab6f8f.setContent(html_86a5382df7eb4e16c903b2de2bf65d40);
+            
+        
+
+        marker_36074a9cb02a95344c63b4983b19ce10.bindPopup(popup_ac9e42b7b01e7ca1b3454926e1ab6f8f)
+        ;
+
+        
+    
+    
+            marker_36074a9cb02a95344c63b4983b19ce10.bindTooltip(
+                `<div>
+                     NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36074a9cb02a95344c63b4983b19ce10.setIcon(icon_e6f4c0c8ee5f80d5c87992ba0bd1b258);
+            
+    
+            var marker_f6b32b97c9230a9d8edf0998f0833a08 = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_7d511a49f2cde61c47691c309e11562e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2d356868321b5cb8f7972415b01f837 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_cd17aafa349c79f0038585fc4f298858 = $(`<div id="html_cd17aafa349c79f0038585fc4f298858" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-22</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Unity Bank opened new branch in Madison, NJ during 2025.</p>         <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042726000031/unty-20260422xex99d1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_b2d356868321b5cb8f7972415b01f837.setContent(html_cd17aafa349c79f0038585fc4f298858);
+            
+        
+
+        marker_f6b32b97c9230a9d8edf0998f0833a08.bindPopup(popup_b2d356868321b5cb8f7972415b01f837)
+        ;
+
+        
+    
+    
+            marker_f6b32b97c9230a9d8edf0998f0833a08.bindTooltip(
+                `<div>
+                     UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6b32b97c9230a9d8edf0998f0833a08.setIcon(icon_7d511a49f2cde61c47691c309e11562e);
+            
+    
+            var marker_0bb10a641f606488b20f1b81ccfe5b42 = L.marker(
+                [37.9020731, -122.0618702],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_f57df9919061cdc91ebba09247e4308b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef7ee488376d2e16450169d4ecbab7fe = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_43088fdea11740f86cf9cb09c3891874 = $(`<div id="html_43088fdea11740f86cf9cb09c3891874" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">FARMERS & MERCHANTS BANCORP  (FMCB)  (CIK 0001085913)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-23</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Opening downtown Walnut Creek branch at 1823 N. Main St. in Q3-2026.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1085913/000114036126016185/ef20071199_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_ef7ee488376d2e16450169d4ecbab7fe.setContent(html_43088fdea11740f86cf9cb09c3891874);
+            
+        
+
+        marker_0bb10a641f606488b20f1b81ccfe5b42.bindPopup(popup_ef7ee488376d2e16450169d4ecbab7fe)
+        ;
+
+        
+    
+    
+            marker_0bb10a641f606488b20f1b81ccfe5b42.bindTooltip(
+                `<div>
+                     FARMERS & MERCHANTS BANCORP  (FMCB)  (CIK 0001085913) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bb10a641f606488b20f1b81ccfe5b42.setIcon(icon_f57df9919061cdc91ebba09247e4308b);
+            
+    
+            var marker_8f2d0650aa6fac7106bd5bdcf3cea7b9 = L.marker(
+                [43.1009031, -75.2326641],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_62117cf5e0c194e9e76b73a6a9c8cf30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84e25983df3a1ffb486631517ff3150c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_03995edb13ec8719a2787c4f3a603b8c = $(`<div id="html_03995edb13ec8719a2787c4f3a603b8c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">ARROW FINANCIAL CORP  (AROW)  (CIK 0000717538)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-30</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Arrow Financial acquiring Adirondack Bancorp adding 19 branch locations and $950 million in assets.</p>         <a href="https://www.sec.gov/Archives/edgar/data/717538/000071753826000050/ex99-earningsq12026.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_84e25983df3a1ffb486631517ff3150c.setContent(html_03995edb13ec8719a2787c4f3a603b8c);
+            
+        
+
+        marker_8f2d0650aa6fac7106bd5bdcf3cea7b9.bindPopup(popup_84e25983df3a1ffb486631517ff3150c)
+        ;
+
+        
+    
+    
+            marker_8f2d0650aa6fac7106bd5bdcf3cea7b9.bindTooltip(
+                `<div>
+                     ARROW FINANCIAL CORP  (AROW)  (CIK 0000717538) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f2d0650aa6fac7106bd5bdcf3cea7b9.setIcon(icon_62117cf5e0c194e9e76b73a6a9c8cf30);
+            
+    
+            var marker_305c8de4c3035bfb3fee0a2d1b0ed68e = L.marker(
+                [42.8149244, -78.463243],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_87f5bdac5b3366777763e159548bcb0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_283eb5c37815c77738eebcb51a45a324 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8e07be055212b40187459bb8f8ec473f = $(`<div id="html_8e07be055212b40187459bb8f8ec473f" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">NBT BANCORP INC  (NBTB)  (CIK 0000790359)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-23</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Evans Bancorp acquisition added 18 banking locations and 200 employees in Western New York.</p>         <a href="https://www.sec.gov/Archives/edgar/data/790359/000114036126016398/ef20071127_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_283eb5c37815c77738eebcb51a45a324.setContent(html_8e07be055212b40187459bb8f8ec473f);
+            
+        
+
+        marker_305c8de4c3035bfb3fee0a2d1b0ed68e.bindPopup(popup_283eb5c37815c77738eebcb51a45a324)
+        ;
+
+        
+    
+    
+            marker_305c8de4c3035bfb3fee0a2d1b0ed68e.bindTooltip(
+                `<div>
+                     NBT BANCORP INC  (NBTB)  (CIK 0000790359) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_305c8de4c3035bfb3fee0a2d1b0ed68e.setIcon(icon_87f5bdac5b3366777763e159548bcb0a);
+            
+    
+            var marker_339698bf62e6af18c715ea07fbdd51ac = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_6e9e4b269b69a52b4951cf2980c6f2c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d54469a5f517dd2e3bc519f3f1aceb4d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_beecdc9ca8c88c0993738f60def0d8a1 = $(`<div id="html_beecdc9ca8c88c0993738f60def0d8a1" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Metropolitan Bank Holding Corp.  (MCB)  (CIK 0001476034)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-21</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Metropolitan Bank opened Miami branch on March 3, 2026.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1476034/000110465926046066/mcb-20260421xex99d2.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_d54469a5f517dd2e3bc519f3f1aceb4d.setContent(html_beecdc9ca8c88c0993738f60def0d8a1);
+            
+        
+
+        marker_339698bf62e6af18c715ea07fbdd51ac.bindPopup(popup_d54469a5f517dd2e3bc519f3f1aceb4d)
+        ;
+
+        
+    
+    
+            marker_339698bf62e6af18c715ea07fbdd51ac.bindTooltip(
+                `<div>
+                     Metropolitan Bank Holding Corp.  (MCB)  (CIK 0001476034) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_339698bf62e6af18c715ea07fbdd51ac.setIcon(icon_6e9e4b269b69a52b4951cf2980c6f2c1);
+            
+    
+            var marker_deaf9a6722f7c1f3cb4ca47fe97b8fb8 = L.marker(
+                [40.9168692, -72.6624189],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_fe47714e4d2528fdb1569eabc9d912ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22c75587d2098e62a376497a27277e80 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a2f6abc669246d0ae54c47daf43cb56f = $(`<div id="html_a2f6abc669246d0ae54c47daf43cb56f" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-27</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Full-service branch opening in downtown Riverhead with regulatory authorization received for 2026.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1828588/000110465926049414/hnvr-20260427xex99d1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_22c75587d2098e62a376497a27277e80.setContent(html_a2f6abc669246d0ae54c47daf43cb56f);
+            
+        
+
+        marker_deaf9a6722f7c1f3cb4ca47fe97b8fb8.bindPopup(popup_22c75587d2098e62a376497a27277e80)
+        ;
+
+        
+    
+    
+            marker_deaf9a6722f7c1f3cb4ca47fe97b8fb8.bindTooltip(
+                `<div>
+                     Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_deaf9a6722f7c1f3cb4ca47fe97b8fb8.setIcon(icon_fe47714e4d2528fdb1569eabc9d912ee);
+            
+    
+            var marker_e96e6de10c005d2d5d59051fbd7e9a77 = L.marker(
+                [39.506926, -77.6522171],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_1e79c0001ba070fdac9fb9b9051fe275 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34a7952e2766a2a7432edcc3b88222b9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_32f0515a105befcc1815f78a71d265e3 = $(`<div id="html_32f0515a105befcc1815f78a71d265e3" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">FIRST UNITED CORP/MD/  (FUNC)  (CIK 0000763907)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-07</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">First United opened Boonsboro branch to strengthen East market presence.</p>         <a href="https://www.sec.gov/Archives/edgar/data/763907/000110465926056785/tm2613814d1_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_34a7952e2766a2a7432edcc3b88222b9.setContent(html_32f0515a105befcc1815f78a71d265e3);
+            
+        
+
+        marker_e96e6de10c005d2d5d59051fbd7e9a77.bindPopup(popup_34a7952e2766a2a7432edcc3b88222b9)
+        ;
+
+        
+    
+    
+            marker_e96e6de10c005d2d5d59051fbd7e9a77.bindTooltip(
+                `<div>
+                     FIRST UNITED CORP/MD/  (FUNC)  (CIK 0000763907) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e96e6de10c005d2d5d59051fbd7e9a77.setIcon(icon_1e79c0001ba070fdac9fb9b9051fe275);
+            
+    
+            var marker_df27c2b4abfe76c28522e6ab3c7ab022 = L.marker(
+                [32.7979615, -117.1509655],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_3c1c56f916e8f7e6e7769d289f7cce6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95e0952a800d1e4596a76c06073a8e22 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d6920e10a01ea080173cfa07b4910477 = $(`<div id="html_d6920e10a01ea080173cfa07b4910477" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">UNITED RENTALS, INC.  (URI)  (CIK 0001067701)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-22</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: red; font-weight: bold;">Closing</span></p>         <p style="font-size: 0.9em; color: #555;">Branch consolidations and cost reduction measures announced; specific locations not disclosed.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1067701/000106770126000018/uri-3312026xex991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_95e0952a800d1e4596a76c06073a8e22.setContent(html_d6920e10a01ea080173cfa07b4910477);
+            
+        
+
+        marker_df27c2b4abfe76c28522e6ab3c7ab022.bindPopup(popup_95e0952a800d1e4596a76c06073a8e22)
+        ;
+
+        
+    
+    
+            marker_df27c2b4abfe76c28522e6ab3c7ab022.bindTooltip(
+                `<div>
+                     UNITED RENTALS, INC.  (URI)  (CIK 0001067701) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df27c2b4abfe76c28522e6ab3c7ab022.setIcon(icon_3c1c56f916e8f7e6e7769d289f7cce6b);
+            
+    
+            var marker_1a11d42a51166c81b48456edd7407dcb = L.marker(
+                [48.118146, -123.430741],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_e092a780fedb663d033d613ceb9aa701 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41094b65acda880480bc3f236defbea6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0f702fcfdc150f01a39d3ce1f0a70625 = $(`<div id="html_0f702fcfdc150f01a39d3ce1f0a70625" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">First Northwest Bancorp  (FNWB)  (CIK 0001556727)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: red; font-weight: bold;">Closing</span></p>         <p style="font-size: 0.9em; color: #555;">First Northwest Bancorp closed a branch in fourth quarter 2025, incurring closure costs.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1556727/000143774926013774/ex_943000.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_41094b65acda880480bc3f236defbea6.setContent(html_0f702fcfdc150f01a39d3ce1f0a70625);
+            
+        
+
+        marker_1a11d42a51166c81b48456edd7407dcb.bindPopup(popup_41094b65acda880480bc3f236defbea6)
+        ;
+
+        
+    
+    
+            marker_1a11d42a51166c81b48456edd7407dcb.bindTooltip(
+                `<div>
+                     First Northwest Bancorp  (FNWB)  (CIK 0001556727) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a11d42a51166c81b48456edd7407dcb.setIcon(icon_e092a780fedb663d033d613ceb9aa701);
+            
+    
+            var marker_1698fe5a20f948a6c6f96dcd85b1336d = L.marker(
+                [35.3898958, -80.7102222],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_ecd96fe5a8e6980300605ce812dedcf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46d8ea3a01d7e501f593b8654772fa41 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_df3261e76f6b3d8ff2c658883c278d30 = $(`<div id="html_df3261e76f6b3d8ff2c658883c278d30" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Atlantic Union Bankshares Corp  (AUB, AUB-PA)  (CIK 0000883948)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-05</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Atlantic Union Bankshares announces strategic expansion into North Carolina market.</p>         <a href="https://www.sec.gov/Archives/edgar/data/883948/000088394826000043/aub-20260505xex99d1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_46d8ea3a01d7e501f593b8654772fa41.setContent(html_df3261e76f6b3d8ff2c658883c278d30);
+            
+        
+
+        marker_1698fe5a20f948a6c6f96dcd85b1336d.bindPopup(popup_46d8ea3a01d7e501f593b8654772fa41)
+        ;
+
+        
+    
+    
+            marker_1698fe5a20f948a6c6f96dcd85b1336d.bindTooltip(
+                `<div>
+                     Atlantic Union Bankshares Corp  (AUB, AUB-PA)  (CIK 0000883948) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1698fe5a20f948a6c6f96dcd85b1336d.setIcon(icon_ecd96fe5a8e6980300605ce812dedcf9);
+            
+    
+            var marker_a0fb4a8e92f140dab8424819a1a0bce5 = L.marker(
+                [35.3898958, -80.7102222],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_d4170713631d156952aec11d2a0e30d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb35baaed200db12ae8e3be179648b46 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0e8b6a89e3fda169d58effbb7da78df2 = $(`<div id="html_0e8b6a89e3fda169d58effbb7da78df2" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Atlantic Union Bankshares Corp  (AUB, AUB-PA)  (CIK 0000883948)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-01</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Atlantic Union Bankshares announces strategic expansion into North Carolina market.</p>         <a href="https://www.sec.gov/Archives/edgar/data/883948/000088394826000038/aub-20260501xex99d1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_fb35baaed200db12ae8e3be179648b46.setContent(html_0e8b6a89e3fda169d58effbb7da78df2);
+            
+        
+
+        marker_a0fb4a8e92f140dab8424819a1a0bce5.bindPopup(popup_fb35baaed200db12ae8e3be179648b46)
+        ;
+
+        
+    
+    
+            marker_a0fb4a8e92f140dab8424819a1a0bce5.bindTooltip(
+                `<div>
+                     Atlantic Union Bankshares Corp  (AUB, AUB-PA)  (CIK 0000883948) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a0fb4a8e92f140dab8424819a1a0bce5.setIcon(icon_d4170713631d156952aec11d2a0e30d6);
+            
+    
+            var marker_3732e134099697dd8db52a03c3ccd579 = L.marker(
+                [44.9772995, -93.2654692],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_54db67eb87763529eca5d88eb4be7757 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27e9889ef3c759c6e0a7979dec4da99f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4339270d97582afb3d967d9ad229b903 = $(`<div id="html_4339270d97582afb3d967d9ad229b903" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Sleep Number Corp  (SNBR)  (CIK 0000827187)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-12</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: red; font-weight: bold;">Closing</span></p>         <p style="font-size: 0.9em; color: #555;">Sleep Number closing stores as part of cost structure reset and turnaround strategy.</p>         <a href="https://www.sec.gov/Archives/edgar/data/827187/000082718726000039/a2026-q1ex991earnings.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_27e9889ef3c759c6e0a7979dec4da99f.setContent(html_4339270d97582afb3d967d9ad229b903);
+            
+        
+
+        marker_3732e134099697dd8db52a03c3ccd579.bindPopup(popup_27e9889ef3c759c6e0a7979dec4da99f)
+        ;
+
+        
+    
+    
+            marker_3732e134099697dd8db52a03c3ccd579.bindTooltip(
+                `<div>
+                     Sleep Number Corp  (SNBR)  (CIK 0000827187) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3732e134099697dd8db52a03c3ccd579.setIcon(icon_54db67eb87763529eca5d88eb4be7757);
+            
+    
+            var marker_377ccf323b1989116759c02085b94106 = L.marker(
+                [21.304547, -157.855676],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_f6c7af3e9171c0065570505a93c09497 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e4ed4e3c3ff942e9119618c295c372a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_189c43fc9b3d83d6477641b094f94886 = $(`<div id="html_189c43fc9b3d83d6477641b094f94886" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">SURF AIR MOBILITY INC.  (SRFM)  (CIK 0001936224)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Mokulele Airlines announced investment in Hawaii operations including new aircraft, expanded routes, and infrastructure upgrades.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1936224/000119312526216802/srfm-ex99_1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_4e4ed4e3c3ff942e9119618c295c372a.setContent(html_189c43fc9b3d83d6477641b094f94886);
+            
+        
+
+        marker_377ccf323b1989116759c02085b94106.bindPopup(popup_4e4ed4e3c3ff942e9119618c295c372a)
+        ;
+
+        
+    
+    
+            marker_377ccf323b1989116759c02085b94106.bindTooltip(
+                `<div>
+                     SURF AIR MOBILITY INC.  (SRFM)  (CIK 0001936224) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_377ccf323b1989116759c02085b94106.setIcon(icon_f6c7af3e9171c0065570505a93c09497);
+            
+    
+            var marker_3741331de14477b09c3dba850901dc7a = L.marker(
+                [33.7458511, -117.826166],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_69bbf18f57a28e5b0f62e051fb5af291 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b308ae09f9117d33c3c53c456fbf2c0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f1bbdbb6d03cf181574b5588c061ae3e = $(`<div id="html_f1bbdbb6d03cf181574b5588c061ae3e" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">CalEthos, Inc.  (GEDC)  (CIK 0001174891)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">CalEthos subsidiary TerraVolt plans AI data center campus development in Tustin with natural gas infrastructure.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1174891/000149315226022148/ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_5b308ae09f9117d33c3c53c456fbf2c0.setContent(html_f1bbdbb6d03cf181574b5588c061ae3e);
+            
+        
+
+        marker_3741331de14477b09c3dba850901dc7a.bindPopup(popup_5b308ae09f9117d33c3c53c456fbf2c0)
+        ;
+
+        
+    
+    
+            marker_3741331de14477b09c3dba850901dc7a.bindTooltip(
+                `<div>
+                     CalEthos, Inc.  (GEDC)  (CIK 0001174891) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3741331de14477b09c3dba850901dc7a.setIcon(icon_69bbf18f57a28e5b0f62e051fb5af291);
+            
+    
+            var marker_6c3bde73922d35ae7e435f7ad27fbdad = L.marker(
+                [30.6549433, -97.0058245],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_643be81d734b2d6745b19ecea7f9d353 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9feb314e0247286189b8cb49a5cc1cc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0de1391be2e12c0b5f6c957a6039ea8e = $(`<div id="html_0de1391be2e12c0b5f6c957a6039ea8e" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Riot Platforms, Inc.  (RIOT)  (CIK 0001167419)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-30</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Riot Platforms developing data center expansion at Rockdale site with lease arrangements.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1167419/000110465926052943/riot-20260430xex99d2.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_e9feb314e0247286189b8cb49a5cc1cc.setContent(html_0de1391be2e12c0b5f6c957a6039ea8e);
+            
+        
+
+        marker_6c3bde73922d35ae7e435f7ad27fbdad.bindPopup(popup_e9feb314e0247286189b8cb49a5cc1cc)
+        ;
+
+        
+    
+    
+            marker_6c3bde73922d35ae7e435f7ad27fbdad.bindTooltip(
+                `<div>
+                     Riot Platforms, Inc.  (RIOT)  (CIK 0001167419) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c3bde73922d35ae7e435f7ad27fbdad.setIcon(icon_643be81d734b2d6745b19ecea7f9d353);
+            
+    
+            var marker_737e69cead0180cc0f10d2df78cb9f29 = L.marker(
+                [42.33136, -83.0520837],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_9b2e685e4e44f81ee3e8ee6fe05a51e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0827d375b50709dbbc21ed21f965ffa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1cdd5ca58fef28a5d1876b1e37a8d0e4 = $(`<div id="html_1cdd5ca58fef28a5d1876b1e37a8d0e4" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">DTE ENERGY CO  (DTB, DTE, DTG, DTK, DTW)  (CIK 0000936340)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-30</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">DTE Energy expanding data center operations with 1.4 GW Oracle facility and 1 GW Google facility approved.</p>         <a href="https://www.sec.gov/Archives/edgar/data/936340/000093634026000079/q126presentationfinal8k.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_d0827d375b50709dbbc21ed21f965ffa.setContent(html_1cdd5ca58fef28a5d1876b1e37a8d0e4);
+            
+        
+
+        marker_737e69cead0180cc0f10d2df78cb9f29.bindPopup(popup_d0827d375b50709dbbc21ed21f965ffa)
+        ;
+
+        
+    
+    
+            marker_737e69cead0180cc0f10d2df78cb9f29.bindTooltip(
+                `<div>
+                     DTE ENERGY CO  (DTB, DTE, DTG, DTK, DTW)  (CIK 0000936340) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_737e69cead0180cc0f10d2df78cb9f29.setIcon(icon_9b2e685e4e44f81ee3e8ee6fe05a51e8);
+            
+    
+            var marker_a8d658cde89e0053dea8e2dbe90f406b = L.marker(
+                [34.1984435, -79.7671658],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_fa782082dac3095652d92a425cbd0565 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0903bab3c0721fd463cfb721b7574bb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_322fe81c2fae80ed1ad8563bfcf82ead = $(`<div id="html_322fe81c2fae80ed1ad8563bfcf82ead" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">BlockchAIn Digital Infrastructure, Inc.  (AIB)  (CIK 0002070542)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-15</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">BlockchAIn planning 100 MW AI data center expansion in Florence County, South Carolina for Q2 2028.</p>         <a href="https://www.sec.gov/Archives/edgar/data/2070542/000121390026043816/ea028637901ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_a0903bab3c0721fd463cfb721b7574bb.setContent(html_322fe81c2fae80ed1ad8563bfcf82ead);
+            
+        
+
+        marker_a8d658cde89e0053dea8e2dbe90f406b.bindPopup(popup_a0903bab3c0721fd463cfb721b7574bb)
+        ;
+
+        
+    
+    
+            marker_a8d658cde89e0053dea8e2dbe90f406b.bindTooltip(
+                `<div>
+                     BlockchAIn Digital Infrastructure, Inc.  (AIB)  (CIK 0002070542) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8d658cde89e0053dea8e2dbe90f406b.setIcon(icon_fa782082dac3095652d92a425cbd0565);
+            
+    
+            var marker_f99953664de7e64c895b6b887fcafc4d = L.marker(
+                [40.8121966, -76.8352838],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_966e0647af5aa6decaa1d34dc2729762 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e3089e65fc775a99309e7086ecd0609 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bfa55cbbe0bb8190127f2ea47b4c5415 = $(`<div id="html_bfa55cbbe0bb8190127f2ea47b4c5415" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Hut 8 Corp.  (HUT)  (CIK 0001964789)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-06</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Hut 8 recommissioned Drumheller facility, deploying 42 MW of ASIC colocation capacity.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/hut-20260506xex99d1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_1e3089e65fc775a99309e7086ecd0609.setContent(html_bfa55cbbe0bb8190127f2ea47b4c5415);
+            
+        
+
+        marker_f99953664de7e64c895b6b887fcafc4d.bindPopup(popup_1e3089e65fc775a99309e7086ecd0609)
+        ;
+
+        
+    
+    
+            marker_f99953664de7e64c895b6b887fcafc4d.bindTooltip(
+                `<div>
+                     Hut 8 Corp.  (HUT)  (CIK 0001964789) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f99953664de7e64c895b6b887fcafc4d.setIcon(icon_966e0647af5aa6decaa1d34dc2729762);
+            
+    
+            var marker_79d5d6812f7a6ec4ca7a0d2b7f5bd27d = L.marker(
+                [29.8219122, -95.5447799],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_824e3ebcb4a3cebb19f270ed506e2268 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff84de2c35522807ac3284647164004f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_867c8b492545e6720be2265cb79b9599 = $(`<div id="html_867c8b492545e6720be2265cb79b9599" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Target Hospitality Corp.  (TH)  (CIK 0001712189)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Target Hospitality awarded $550M contract for 4,000-bed data center campus expansion in North Texas.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1712189/000110465926058236/th-20260511xex99d1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_ff84de2c35522807ac3284647164004f.setContent(html_867c8b492545e6720be2265cb79b9599);
+            
+        
+
+        marker_79d5d6812f7a6ec4ca7a0d2b7f5bd27d.bindPopup(popup_ff84de2c35522807ac3284647164004f)
+        ;
+
+        
+    
+    
+            marker_79d5d6812f7a6ec4ca7a0d2b7f5bd27d.bindTooltip(
+                `<div>
+                     Target Hospitality Corp.  (TH)  (CIK 0001712189) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79d5d6812f7a6ec4ca7a0d2b7f5bd27d.setIcon(icon_824e3ebcb4a3cebb19f270ed506e2268);
+            
+    
+            var marker_ebe53abcde020c52bd5eb9d265c00777 = L.marker(
+                [31.3386242, -94.7288558],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_c5381bc6a1ef09b7536dc81f5f5ac297 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d39d4e4cb520f7aad9e853a996c6c089 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a96808f357c95590007ee410893357b3 = $(`<div id="html_a96808f357c95590007ee410893357b3" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">1606 CORP.  (CBDW)  (CIK 0001877461)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-04</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">1606 Corp. acquiring 132-acre Texas power-generation property for data center and power infrastructure development.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1877461/000147793226002719/cbdw_ex991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_d39d4e4cb520f7aad9e853a996c6c089.setContent(html_a96808f357c95590007ee410893357b3);
+            
+        
+
+        marker_ebe53abcde020c52bd5eb9d265c00777.bindPopup(popup_d39d4e4cb520f7aad9e853a996c6c089)
+        ;
+
+        
+    
+    
+            marker_ebe53abcde020c52bd5eb9d265c00777.bindTooltip(
+                `<div>
+                     1606 CORP.  (CBDW)  (CIK 0001877461) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ebe53abcde020c52bd5eb9d265c00777.setIcon(icon_c5381bc6a1ef09b7536dc81f5f5ac297);
+            
+    
+            var marker_8ab933f4f03d709506e2487160c532c8 = L.marker(
+                [30.7807244, -91.3763353],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_f88015d2c5d8f014884324e14379b668 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c96cacb7fdc836fed92f06c7a79c133 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_804afd28fbe53943d3bf8a59dd4d784b = $(`<div id="html_804afd28fbe53943d3bf8a59dd4d784b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Hut 8 Corp.  (HUT)  (CIK 0001964789)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-01</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Hut 8 financing 245MW data center development at River Bend campus.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1964789/000110465926053247/tm2613163d1_8k.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_3c96cacb7fdc836fed92f06c7a79c133.setContent(html_804afd28fbe53943d3bf8a59dd4d784b);
+            
+        
+
+        marker_8ab933f4f03d709506e2487160c532c8.bindPopup(popup_3c96cacb7fdc836fed92f06c7a79c133)
+        ;
+
+        
+    
+    
+            marker_8ab933f4f03d709506e2487160c532c8.bindTooltip(
+                `<div>
+                     Hut 8 Corp.  (HUT)  (CIK 0001964789) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ab933f4f03d709506e2487160c532c8.setIcon(icon_f88015d2c5d8f014884324e14379b668);
+            
+    
+            var marker_28b7ae8c1a1da41d277636428642b62d = L.marker(
+                [42.2593205, -113.3591973],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_e46c33c83d8d7ca421a19320800a2411 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afd88d465f8a7c7d4f09cbf24c8e0ac9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d01745c237e8f24d6e13fcc08ee7d5f7 = $(`<div id="html_d01745c237e8f24d6e13fcc08ee7d5f7" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">CalEthos, Inc.  (GEDC)  (CIK 0001174891)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">CalEthos planning 524-acre data center campus development with phased construction.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1174891/000149315226019595/ex10-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_afd88d465f8a7c7d4f09cbf24c8e0ac9.setContent(html_d01745c237e8f24d6e13fcc08ee7d5f7);
+            
+        
+
+        marker_28b7ae8c1a1da41d277636428642b62d.bindPopup(popup_afd88d465f8a7c7d4f09cbf24c8e0ac9)
+        ;
+
+        
+    
+    
+            marker_28b7ae8c1a1da41d277636428642b62d.bindTooltip(
+                `<div>
+                     CalEthos, Inc.  (GEDC)  (CIK 0001174891) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28b7ae8c1a1da41d277636428642b62d.setIcon(icon_e46c33c83d8d7ca421a19320800a2411);
+            
+    
+            var marker_3dfb7fd7e5482c823d368242abd8781c = L.marker(
+                [33.1781718, -86.6072054],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_f53a081c05668c243edb1adecd51077a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_627f98f300a004959ecf5065d906a405 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2c640e2dd850f6b291c834c8b1930248 = $(`<div id="html_2c640e2dd850f6b291c834c8b1930248" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Digi Power X Inc.  (DGXX)  (CIK 0001854368)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-08</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Digi Power X signs $1.1B agreement to develop 40 MW AI data center campus in two phases.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1854368/000121390026053566/ea028958501ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_627f98f300a004959ecf5065d906a405.setContent(html_2c640e2dd850f6b291c834c8b1930248);
+            
+        
+
+        marker_3dfb7fd7e5482c823d368242abd8781c.bindPopup(popup_627f98f300a004959ecf5065d906a405)
+        ;
+
+        
+    
+    
+            marker_3dfb7fd7e5482c823d368242abd8781c.bindTooltip(
+                `<div>
+                     Digi Power X Inc.  (DGXX)  (CIK 0001854368) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3dfb7fd7e5482c823d368242abd8781c.setIcon(icon_f53a081c05668c243edb1adecd51077a);
+            
+    
+            var marker_5b032c6b446b9adb6a1281b5c35d3119 = L.marker(
+                [30.7807244, -91.3763353],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_d0244c81038565f7c43a49b1601d1205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17378c59b11b2b1195ba585ae9c5855f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_472e5c0ac00746e911931e8326827773 = $(`<div id="html_472e5c0ac00746e911931e8326827773" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Hut 8 Corp.  (HUT)  (CIK 0001964789)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-27</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Hut 8 announces 245MW data center development at River Bend campus.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1964789/000110465926049090/tm2612485d1_8k.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_17378c59b11b2b1195ba585ae9c5855f.setContent(html_472e5c0ac00746e911931e8326827773);
+            
+        
+
+        marker_5b032c6b446b9adb6a1281b5c35d3119.bindPopup(popup_17378c59b11b2b1195ba585ae9c5855f)
+        ;
+
+        
+    
+    
+            marker_5b032c6b446b9adb6a1281b5c35d3119.bindTooltip(
+                `<div>
+                     Hut 8 Corp.  (HUT)  (CIK 0001964789) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b032c6b446b9adb6a1281b5c35d3119.setIcon(icon_d0244c81038565f7c43a49b1601d1205);
+            
+    
+            var marker_158e65d8e73e3ea5d48d4e5bf4079f1d = L.marker(
+                [32.7219973, -84.0130926],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_d4de73a03f6a90a3330e0bf160983af2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21f3e49e9f82d3f2eefde6d61280b8ce = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_10323c95246d9b67b2698bcc359ba356 = $(`<div id="html_10323c95246d9b67b2698bcc359ba356" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">T-REX Acquisition Corp.  (TRXA)  (CIK 0001437750)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-23</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">T-REX acquires 3-megawatt operating data center in Roberta, Georgia.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1437750/000147793226002467/trex_ex991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_21f3e49e9f82d3f2eefde6d61280b8ce.setContent(html_10323c95246d9b67b2698bcc359ba356);
+            
+        
+
+        marker_158e65d8e73e3ea5d48d4e5bf4079f1d.bindPopup(popup_21f3e49e9f82d3f2eefde6d61280b8ce)
+        ;
+
+        
+    
+    
+            marker_158e65d8e73e3ea5d48d4e5bf4079f1d.bindTooltip(
+                `<div>
+                     T-REX Acquisition Corp.  (TRXA)  (CIK 0001437750) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_158e65d8e73e3ea5d48d4e5bf4079f1d.setIcon(icon_d4de73a03f6a90a3330e0bf160983af2);
+            
+    
+            var marker_790625e332a4a8990370faeb19049401 = L.marker(
+                [41.5868654, -93.6249494],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_08474dc89e6ef40a805b177eb1607e90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32bc2141740d79a23a62798a97e597a2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c6fc515b6f2acb2246d67808ba75c48c = $(`<div id="html_c6fc515b6f2acb2246d67808ba75c48c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">FLEX LTD.  (FLEX)  (CIK 0000866374)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-04</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Flex completes EP² acquisition, adding Midwest manufacturing presence and engineering capabilities.</p>         <a href="https://www.sec.gov/Archives/edgar/data/866374/000110465926054529/tm2612613d1_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_32bc2141740d79a23a62798a97e597a2.setContent(html_c6fc515b6f2acb2246d67808ba75c48c);
+            
+        
+
+        marker_790625e332a4a8990370faeb19049401.bindPopup(popup_32bc2141740d79a23a62798a97e597a2)
+        ;
+
+        
+    
+    
+            marker_790625e332a4a8990370faeb19049401.bindTooltip(
+                `<div>
+                     FLEX LTD.  (FLEX)  (CIK 0000866374) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_790625e332a4a8990370faeb19049401.setIcon(icon_08474dc89e6ef40a805b177eb1607e90);
+            
+    
+            var marker_436c6c36087377475dea714798fd7fa5 = L.marker(
+                [31.6174004, -94.1193622],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_8e65e38c2339de06721373861f4fed8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d798325df54054f80098043a80cdca7c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b404ee8b73cf29b141d26f9b2f914d3d = $(`<div id="html_b404ee8b73cf29b141d26f9b2f914d3d" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">AVAX ONE TECHNOLOGY LTD.  (AVX)  (CIK 0001826397)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-24</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">AVAX One expanding into AI/HPC data center infrastructure with 10 MW facility development in Alberta.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1826397/000149315226018940/ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_d798325df54054f80098043a80cdca7c.setContent(html_b404ee8b73cf29b141d26f9b2f914d3d);
+            
+        
+
+        marker_436c6c36087377475dea714798fd7fa5.bindPopup(popup_d798325df54054f80098043a80cdca7c)
+        ;
+
+        
+    
+    
+            marker_436c6c36087377475dea714798fd7fa5.bindTooltip(
+                `<div>
+                     AVAX ONE TECHNOLOGY LTD.  (AVX)  (CIK 0001826397) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_436c6c36087377475dea714798fd7fa5.setIcon(icon_8e65e38c2339de06721373861f4fed8f);
+            
+    
+            var marker_8a9ca4be45275d46a9a710b2b3fae552 = L.marker(
+                [43.0746978, -89.3841692],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_35172fd45a19d9c52501c1af14db4646 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03fa7ce77f19818b145ec44fd4ba6555 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b4dd0d99529e926dc1e31a5091f5ae4a = $(`<div id="html_b4dd0d99529e926dc1e31a5091f5ae4a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">POWER SOLUTIONS INTERNATIONAL, INC.  (PSIX)  (CIK 0001137091)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Capacity ramp-up activities continuing at Wisconsin operations to support data center applications.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1137091/000162828026033474/psiearningsrelease-march31.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_03fa7ce77f19818b145ec44fd4ba6555.setContent(html_b4dd0d99529e926dc1e31a5091f5ae4a);
+            
+        
+
+        marker_8a9ca4be45275d46a9a710b2b3fae552.bindPopup(popup_03fa7ce77f19818b145ec44fd4ba6555)
+        ;
+
+        
+    
+    
+            marker_8a9ca4be45275d46a9a710b2b3fae552.bindTooltip(
+                `<div>
+                     POWER SOLUTIONS INTERNATIONAL, INC.  (PSIX)  (CIK 0001137091) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a9ca4be45275d46a9a710b2b3fae552.setIcon(icon_35172fd45a19d9c52501c1af14db4646);
+            
+    
+            var marker_112684b5eb165301a9017a5c2957ee2f = L.marker(
+                [41.139981, -104.820246],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_b2cecad4ab04833fcfa9c7f771d39280 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4c465c6627c37c020c621a924d78591 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_29ece8d5911bb3f1e5f58a3575df75c1 = $(`<div id="html_29ece8d5911bb3f1e5f58a3575df75c1" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">BLACK HILLS CORP /SD/  (BKH)  (CIK 0001130464)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-06</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Microsoft announced 3,200 acres of additional land investment for future data center expansion.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1130464/000119312526209210/bkh-ex99.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_b4c465c6627c37c020c621a924d78591.setContent(html_29ece8d5911bb3f1e5f58a3575df75c1);
+            
+        
+
+        marker_112684b5eb165301a9017a5c2957ee2f.bindPopup(popup_b4c465c6627c37c020c621a924d78591)
+        ;
+
+        
+    
+    
+            marker_112684b5eb165301a9017a5c2957ee2f.bindTooltip(
+                `<div>
+                     BLACK HILLS CORP /SD/  (BKH)  (CIK 0001130464) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_112684b5eb165301a9017a5c2957ee2f.setIcon(icon_b2cecad4ab04833fcfa9c7f771d39280);
+            
+    
+            var marker_912980c41b41aac8312d93f5ab17659d = L.marker(
+                [40.666149, -89.5800978],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_e9d1679dd91c6a28430250ff66520b3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5104e4d50d0e01f546d30754adc1ece2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_13d8a2c0682f572bb6b4117c0f1a19d6 = $(`<div id="html_13d8a2c0682f572bb6b4117c0f1a19d6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">GENERAC HOLDINGS INC.  (GNRC)  (CIK 0001474735)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: gray; font-weight: bold;">Acquisition</span></p>         <p style="font-size: 0.9em; color: #555;">Generac completed acquisition of Enercon, generator enclosures and switchgear manufacturer, on April 1st.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1474735/000143774926013726/ex_952511.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_5104e4d50d0e01f546d30754adc1ece2.setContent(html_13d8a2c0682f572bb6b4117c0f1a19d6);
+            
+        
+
+        marker_912980c41b41aac8312d93f5ab17659d.bindPopup(popup_5104e4d50d0e01f546d30754adc1ece2)
+        ;
+
+        
+    
+    
+            marker_912980c41b41aac8312d93f5ab17659d.bindTooltip(
+                `<div>
+                     GENERAC HOLDINGS INC.  (GNRC)  (CIK 0001474735) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_912980c41b41aac8312d93f5ab17659d.setIcon(icon_e9d1679dd91c6a28430250ff66520b3b);
+            
+    
+            var marker_39f94aa5814ba3b21efe642e4b9197f7 = L.marker(
+                [33.1781718, -86.6072054],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_abff9d72730bcc7100133d0aa81e0e3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a8cedbda99b0f3edf33a02973c242a3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_27d42f024af0ddfe8dbd47c5794885f5 = $(`<div id="html_27d42f024af0ddfe8dbd47c5794885f5" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Digi Power X Inc.  (DGXX)  (CIK 0001854368)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-08</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Digi Power X expanding AI data center campus to 40MW with two-phase construction through 2027.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1854368/000121390026053566/ea0289585-8k_digi.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_0a8cedbda99b0f3edf33a02973c242a3.setContent(html_27d42f024af0ddfe8dbd47c5794885f5);
+            
+        
+
+        marker_39f94aa5814ba3b21efe642e4b9197f7.bindPopup(popup_0a8cedbda99b0f3edf33a02973c242a3)
+        ;
+
+        
+    
+    
+            marker_39f94aa5814ba3b21efe642e4b9197f7.bindTooltip(
+                `<div>
+                     Digi Power X Inc.  (DGXX)  (CIK 0001854368) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39f94aa5814ba3b21efe642e4b9197f7.setIcon(icon_abff9d72730bcc7100133d0aa81e0e3c);
+            
+    
+            var marker_2300219a1c29bee5319b600c12b43caf = L.marker(
+                [31.8457149, -102.367687],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_9f217ddfe351182ddc970edf0e4ca26f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d68eb887f1071f0a2ad12e75c9049cf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_82cabcd40dd081881857e9af60b12eb2 = $(`<div id="html_82cabcd40dd081881857e9af60b12eb2" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">New ERA Energy & Digital, Inc.  (NUAI, NUAIW)  (CIK 0002028336)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-14</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">New Era securing $115M funding for multi-phase AI data center campus expansion in Ector County, Texas.</p>         <a href="https://www.sec.gov/Archives/edgar/data/2028336/000121390026043542/ea028610401ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_7d68eb887f1071f0a2ad12e75c9049cf.setContent(html_82cabcd40dd081881857e9af60b12eb2);
+            
+        
+
+        marker_2300219a1c29bee5319b600c12b43caf.bindPopup(popup_7d68eb887f1071f0a2ad12e75c9049cf)
+        ;
+
+        
+    
+    
+            marker_2300219a1c29bee5319b600c12b43caf.bindTooltip(
+                `<div>
+                     New ERA Energy & Digital, Inc.  (NUAI, NUAIW)  (CIK 0002028336) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2300219a1c29bee5319b600c12b43caf.setIcon(icon_9f217ddfe351182ddc970edf0e4ca26f);
+            
+    
+            var marker_fbb96666201c7862873e6b989eeb4c14 = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_704d05d72dade9b2619eca7b27dce4eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33b135ce242261b5f375cd7caae48b18 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_72e389f60845c9f08ecde99b2e049391 = $(`<div id="html_72e389f60845c9f08ecde99b2e049391" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">TERAWULF INC.  (WULF)  (CIK 0001083301)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-16</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">TeraWulf to fund data center campus construction in Hawesville, Kentucky with offering proceeds.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1083301/000110465926044387/tm2611661d9_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_33b135ce242261b5f375cd7caae48b18.setContent(html_72e389f60845c9f08ecde99b2e049391);
+            
+        
+
+        marker_fbb96666201c7862873e6b989eeb4c14.bindPopup(popup_33b135ce242261b5f375cd7caae48b18)
+        ;
+
+        
+    
+    
+            marker_fbb96666201c7862873e6b989eeb4c14.bindTooltip(
+                `<div>
+                     TERAWULF INC.  (WULF)  (CIK 0001083301) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbb96666201c7862873e6b989eeb4c14.setIcon(icon_704d05d72dade9b2619eca7b27dce4eb);
+            
+    
+            var marker_9f71f09ebae00ee31427c6bf4c667c06 = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_7bea405b2eac9c860cf4f814451d6932 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d7af24249d6a833fc7a5e9d66ec5898 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_43fdb532512095b155f39a7d0dbb6f1b = $(`<div id="html_43fdb532512095b155f39a7d0dbb6f1b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">TERAWULF INC.  (WULF)  (CIK 0001083301)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-14</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">TeraWulf financing $800M data center construction at Hawesville, Kentucky site.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1083301/000110465926043279/tm2611661d4_ex99-2.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_1d7af24249d6a833fc7a5e9d66ec5898.setContent(html_43fdb532512095b155f39a7d0dbb6f1b);
+            
+        
+
+        marker_9f71f09ebae00ee31427c6bf4c667c06.bindPopup(popup_1d7af24249d6a833fc7a5e9d66ec5898)
+        ;
+
+        
+    
+    
+            marker_9f71f09ebae00ee31427c6bf4c667c06.bindTooltip(
+                `<div>
+                     TERAWULF INC.  (WULF)  (CIK 0001083301) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f71f09ebae00ee31427c6bf4c667c06.setIcon(icon_7bea405b2eac9c860cf4f814451d6932);
+            
+    
+            var marker_248ca3be4fcd1d39f5294dcfa30f08ca = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_1926b6d4021cd535602ff9e9b2ba6f7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4ca07fe759fc1cfbf253dd3b4871f18 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_39eec4b507a3049bc94c914ee794b1b4 = $(`<div id="html_39eec4b507a3049bc94c914ee794b1b4" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">TERAWULF INC.  (WULF)  (CIK 0001083301)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-15</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">TeraWulf funds data center campus construction in Hawesville, Kentucky with $900M offering proceeds.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1083301/000110465926043402/tm2611661d5_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_e4ca07fe759fc1cfbf253dd3b4871f18.setContent(html_39eec4b507a3049bc94c914ee794b1b4);
+            
+        
+
+        marker_248ca3be4fcd1d39f5294dcfa30f08ca.bindPopup(popup_e4ca07fe759fc1cfbf253dd3b4871f18)
+        ;
+
+        
+    
+    
+            marker_248ca3be4fcd1d39f5294dcfa30f08ca.bindTooltip(
+                `<div>
+                     TERAWULF INC.  (WULF)  (CIK 0001083301) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_248ca3be4fcd1d39f5294dcfa30f08ca.setIcon(icon_1926b6d4021cd535602ff9e9b2ba6f7f);
+            
+    
+            var marker_5370533e7bc61ffced6450fc3a9c029e = L.marker(
+                [32.7762719, -96.7968559],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_344d8a2b1f26493b71302b8e9cf5060e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e04d28ab47242b60f150d81e5dfa5896 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_92ff979de7870858bf6f328ac14cf688 = $(`<div id="html_92ff979de7870858bf6f328ac14cf688" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Applied Digital Corp.  (APLD)  (CIK 0001144879)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-23</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Applied Digital announces new hyperscaler tenant at Delta Forge 1 AI Factory campus with operations commencing mid-2027.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1144879/000114487926000036/apld_deltaforgexprxfinal.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_e04d28ab47242b60f150d81e5dfa5896.setContent(html_92ff979de7870858bf6f328ac14cf688);
+            
+        
+
+        marker_5370533e7bc61ffced6450fc3a9c029e.bindPopup(popup_e04d28ab47242b60f150d81e5dfa5896)
+        ;
+
+        
+    
+    
+            marker_5370533e7bc61ffced6450fc3a9c029e.bindTooltip(
+                `<div>
+                     Applied Digital Corp.  (APLD)  (CIK 0001144879) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5370533e7bc61ffced6450fc3a9c029e.setIcon(icon_344d8a2b1f26493b71302b8e9cf5060e);
+            
+    
+            var marker_e922b4e24e730c63728bb5bdd55a2840 = L.marker(
+                [33.1161567, -96.0808922],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_497f03236998066e80547100e639df0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c98b1fc9c17234a65b19e3c060f9026 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1f3411a7c930742358aeba16bd186dbf = $(`<div id="html_1f3411a7c930742358aeba16bd186dbf" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Core Scientific, Inc./tx  (CORZ, CORZR, CORZW, CORZZ)  (CIK 0001839341)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-06</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Core Scientific acquiring Hunt County, TX facility with ~285MW leasable power capacity.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q1fy26earningsdeck.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_7c98b1fc9c17234a65b19e3c060f9026.setContent(html_1f3411a7c930742358aeba16bd186dbf);
+            
+        
+
+        marker_e922b4e24e730c63728bb5bdd55a2840.bindPopup(popup_7c98b1fc9c17234a65b19e3c060f9026)
+        ;
+
+        
+    
+    
+            marker_e922b4e24e730c63728bb5bdd55a2840.bindTooltip(
+                `<div>
+                     Core Scientific, Inc./tx  (CORZ, CORZR, CORZW, CORZZ)  (CIK 0001839341) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e922b4e24e730c63728bb5bdd55a2840.setIcon(icon_497f03236998066e80547100e639df0e);
+            
+    
+            var marker_31522389dde15c94c988414eb3126204 = L.marker(
+                [34.5196569, -100.2067656],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_2e01f0c3746d9da1087bb5d396a6df04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d41234e5c9b829b83753eff1ed907146 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_59a8b779e7edaf551ef9a848e0043439 = $(`<div id="html_59a8b779e7edaf551ef9a848e0043439" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">IREN Ltd  (IREN)  (CIK 0001878848)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-08</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">IREN expanding Childress data center with 1,210MW capacity (Horizons 5-6) by 2027.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_d41234e5c9b829b83753eff1ed907146.setContent(html_59a8b779e7edaf551ef9a848e0043439);
+            
+        
+
+        marker_31522389dde15c94c988414eb3126204.bindPopup(popup_d41234e5c9b829b83753eff1ed907146)
+        ;
+
+        
+    
+    
+            marker_31522389dde15c94c988414eb3126204.bindTooltip(
+                `<div>
+                     IREN Ltd  (IREN)  (CIK 0001878848) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31522389dde15c94c988414eb3126204.setIcon(icon_2e01f0c3746d9da1087bb5d396a6df04);
+            
+    
+            var marker_b68486fb7dea06c3a2aa0019dface511 = L.marker(
+                [30.6108618, -96.3520606],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_dce575bcfac751e7e599f507eb6a8de3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9130e21f6e23f5ee15fe0f19a67dae80 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9ddb2ef77d164fe605b0e1d538192f0b = $(`<div id="html_9ddb2ef77d164fe605b0e1d538192f0b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Galaxy Digital Inc.  (GLXY)  (CIK 0001859392)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-28</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Galaxy received ERCOT approval for 830 additional megawatts at Helios data center campus.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1859392/000185939226000047/glxy-2026331xpressrelease.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_9130e21f6e23f5ee15fe0f19a67dae80.setContent(html_9ddb2ef77d164fe605b0e1d538192f0b);
+            
+        
+
+        marker_b68486fb7dea06c3a2aa0019dface511.bindPopup(popup_9130e21f6e23f5ee15fe0f19a67dae80)
+        ;
+
+        
+    
+    
+            marker_b68486fb7dea06c3a2aa0019dface511.bindTooltip(
+                `<div>
+                     Galaxy Digital Inc.  (GLXY)  (CIK 0001859392) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b68486fb7dea06c3a2aa0019dface511.setIcon(icon_dce575bcfac751e7e599f507eb6a8de3);
+            
+    
+            var marker_872b2666d39f7e4dea7b7281e8596711 = L.marker(
+                [39.6675391, -80.8721268],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_d2d58f1dae456dd62b88acdfce720fe6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7af13c522317b847699531823ab6b29 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_14e2931fbb4437cfeafdb465b32771a9 = $(`<div id="html_14e2931fbb4437cfeafdb465b32771a9" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">MARA Holdings, Inc.  (MARA)  (CIK 0001507605)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">MARA acquiring Long Ridge Energy to expand Hannibal data center campus with 485 MW power plant.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1507605/000150760526000014/q126shareholderletter.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_c7af13c522317b847699531823ab6b29.setContent(html_14e2931fbb4437cfeafdb465b32771a9);
+            
+        
+
+        marker_872b2666d39f7e4dea7b7281e8596711.bindPopup(popup_c7af13c522317b847699531823ab6b29)
+        ;
+
+        
+    
+    
+            marker_872b2666d39f7e4dea7b7281e8596711.bindTooltip(
+                `<div>
+                     MARA Holdings, Inc.  (MARA)  (CIK 0001507605) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_872b2666d39f7e4dea7b7281e8596711.setIcon(icon_d2d58f1dae456dd62b88acdfce720fe6);
+            
+    
+            var marker_18da0bb5fc52b0d519daabbd18cabbe3 = L.marker(
+                [42.128704, -87.8265089],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_352061ac75860f41c0b8ba6718c51dd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4305591ef8118ba534068aa34167a6d2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_42fea630f4b0b40308c7b6d5a358179a = $(`<div id="html_42fea630f4b0b40308c7b6d5a358179a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Boost Run Inc.  (BRUN)  (CIK 0002090646)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Boost Run expanding from six to eleven U.S. data center locations, increasing capacity to 125MW.</p>         <a href="https://www.sec.gov/Archives/edgar/data/2090646/000149315226022136/ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_4305591ef8118ba534068aa34167a6d2.setContent(html_42fea630f4b0b40308c7b6d5a358179a);
+            
+        
+
+        marker_18da0bb5fc52b0d519daabbd18cabbe3.bindPopup(popup_4305591ef8118ba534068aa34167a6d2)
+        ;
+
+        
+    
+    
+            marker_18da0bb5fc52b0d519daabbd18cabbe3.bindTooltip(
+                `<div>
+                     Boost Run Inc.  (BRUN)  (CIK 0002090646) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18da0bb5fc52b0d519daabbd18cabbe3.setIcon(icon_352061ac75860f41c0b8ba6718c51dd5);
+            
+    
+            var marker_d7b36fe01d0aeed1f336e95281d84cda = L.marker(
+                [26.1717097, -98.1628013],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_488f07325e7a23c7c91a46fbb64a22ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae0233c4f24d07a1bb22b270e8c2e62f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f2901c7cccd488f32a45e0479a03247c = $(`<div id="html_f2901c7cccd488f32a45e0479a03247c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Soluna Holdings, Inc  (SLNH, SLNHP)  (CIK 0000064463)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-21</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Soluna expands Project Dorothy 1B data center with 3.3 MW capacity deployment for Blockware.</p>         <a href="https://www.sec.gov/Archives/edgar/data/64463/000149315226018192/ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_ae0233c4f24d07a1bb22b270e8c2e62f.setContent(html_f2901c7cccd488f32a45e0479a03247c);
+            
+        
+
+        marker_d7b36fe01d0aeed1f336e95281d84cda.bindPopup(popup_ae0233c4f24d07a1bb22b270e8c2e62f)
+        ;
+
+        
+    
+    
+            marker_d7b36fe01d0aeed1f336e95281d84cda.bindTooltip(
+                `<div>
+                     Soluna Holdings, Inc  (SLNH, SLNHP)  (CIK 0000064463) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7b36fe01d0aeed1f336e95281d84cda.setIcon(icon_488f07325e7a23c7c91a46fbb64a22ef);
+            
+    
+            var marker_25d41e6827725fdaef0b6ca1237b6240 = L.marker(
+                [35.1460249, -90.0517638],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_fc37a2a7774ff6f958ea457ca26ec42c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2b17cecbd8177744ec5543f78ce74a9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8a1f594e2f45bea212e872674287a3c0 = $(`<div id="html_8a1f594e2f45bea212e872674287a3c0" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">AAON, INC.  (AAON)  (CIK 0000824142)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-07</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">AAON opened new Memphis facility; overhead expenses impacted Q1 2026 segment margin by $9.8 million.</p>         <a href="https://www.sec.gov/Archives/edgar/data/824142/000082414226000034/liveaaonpressreleaseexs.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_a2b17cecbd8177744ec5543f78ce74a9.setContent(html_8a1f594e2f45bea212e872674287a3c0);
+            
+        
+
+        marker_25d41e6827725fdaef0b6ca1237b6240.bindPopup(popup_a2b17cecbd8177744ec5543f78ce74a9)
+        ;
+
+        
+    
+    
+            marker_25d41e6827725fdaef0b6ca1237b6240.bindTooltip(
+                `<div>
+                     AAON, INC.  (AAON)  (CIK 0000824142) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25d41e6827725fdaef0b6ca1237b6240.setIcon(icon_fc37a2a7774ff6f958ea457ca26ec42c);
+            
+    
+            var marker_51c381323a9ca7a8a3bfce2d38b2547e = L.marker(
+                [42.33136, -83.0520837],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_531cca7066396ddbb3b953bb3785eb1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db63c1d1367383b5661eab7bea055f63 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ef38ae1788115ed790a4a1ff7b38ccb3 = $(`<div id="html_ef38ae1788115ed790a4a1ff7b38ccb3" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Hyperscale Data, Inc.  (GPUS, GPUS-PD)  (CIK 0000896493)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Hyperscale Data expanding Michigan data center with 100,000 sq ft robotics operations facility.</p>         <a href="https://www.sec.gov/Archives/edgar/data/896493/000121465926005936/ex99_1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_db63c1d1367383b5661eab7bea055f63.setContent(html_ef38ae1788115ed790a4a1ff7b38ccb3);
+            
+        
+
+        marker_51c381323a9ca7a8a3bfce2d38b2547e.bindPopup(popup_db63c1d1367383b5661eab7bea055f63)
+        ;
+
+        
+    
+    
+            marker_51c381323a9ca7a8a3bfce2d38b2547e.bindTooltip(
+                `<div>
+                     Hyperscale Data, Inc.  (GPUS, GPUS-PD)  (CIK 0000896493) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51c381323a9ca7a8a3bfce2d38b2547e.setIcon(icon_531cca7066396ddbb3b953bb3785eb1c);
+            
+    
+            var marker_e0e592c4d7504cad776c9d8cc288afa0 = L.marker(
+                [30.0735721, -95.1645196],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_5cd028aef1b5cce5141a9f9fbdc951d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c64e9312272e94f8ed218862a01adcd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f8dc585d695b8d900261d53f6b19bc69 = $(`<div id="html_f8dc585d695b8d900261d53f6b19bc69" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Hut 8 Corp.  (HUT)  (CIK 0001964789)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-28</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Hut 8 financing $3.25B data center expansion with 245MW capacity at River Bend campus.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1964789/000110465926049810/tm2612880d1_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_6c64e9312272e94f8ed218862a01adcd.setContent(html_f8dc585d695b8d900261d53f6b19bc69);
+            
+        
+
+        marker_e0e592c4d7504cad776c9d8cc288afa0.bindPopup(popup_6c64e9312272e94f8ed218862a01adcd)
+        ;
+
+        
+    
+    
+            marker_e0e592c4d7504cad776c9d8cc288afa0.bindTooltip(
+                `<div>
+                     Hut 8 Corp.  (HUT)  (CIK 0001964789) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0e592c4d7504cad776c9d8cc288afa0.setIcon(icon_5cd028aef1b5cce5141a9f9fbdc951d3);
+            
+    
+            var marker_827675c9cac2ff071baef65fd0d05b00 = L.marker(
+                [42.2207982, -83.4841464],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_b77f3c4e2a04fd9cab4bd641174efece = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55cb3abd98a2ab083b149b76feccf525 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_85d62137c1aab0f3b219b5c79f44138e = $(`<div id="html_85d62137c1aab0f3b219b5c79f44138e" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">DTE ENERGY CO  (DTB, DTE, DTG, DTK, DTW)  (CIK 0000936340)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-30</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">DTE Energy secured agreement to power Google's new 1 gigawatt data center facility.</p>         <a href="https://www.sec.gov/Archives/edgar/data/936340/000093634026000079/exhibit991-33126.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_55cb3abd98a2ab083b149b76feccf525.setContent(html_85d62137c1aab0f3b219b5c79f44138e);
+            
+        
+
+        marker_827675c9cac2ff071baef65fd0d05b00.bindPopup(popup_55cb3abd98a2ab083b149b76feccf525)
+        ;
+
+        
+    
+    
+            marker_827675c9cac2ff071baef65fd0d05b00.bindTooltip(
+                `<div>
+                     DTE ENERGY CO  (DTB, DTE, DTG, DTK, DTW)  (CIK 0000936340) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_827675c9cac2ff071baef65fd0d05b00.setIcon(icon_b77f3c4e2a04fd9cab4bd641174efece);
+            
+    
+            var marker_f4ba052bbd29d4a2cb276e3d0a8a158f = L.marker(
+                [34.5196569, -100.2067656],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_e349549f4232a5715839658f2147d75d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46481d4df611eec354b617cdbdd04d96 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_20922d0d6857b23eeefd9381043b4040 = $(`<div id="html_20922d0d6857b23eeefd9381043b4040" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">IREN Ltd  (IREN)  (CIK 0001878848)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">IREN expanding AI infrastructure with 730 megawatts under construction in Texas including Childress facility.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_46481d4df611eec354b617cdbdd04d96.setContent(html_20922d0d6857b23eeefd9381043b4040);
+            
+        
+
+        marker_f4ba052bbd29d4a2cb276e3d0a8a158f.bindPopup(popup_46481d4df611eec354b617cdbdd04d96)
+        ;
+
+        
+    
+    
+            marker_f4ba052bbd29d4a2cb276e3d0a8a158f.bindTooltip(
+                `<div>
+                     IREN Ltd  (IREN)  (CIK 0001878848) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4ba052bbd29d4a2cb276e3d0a8a158f.setIcon(icon_e349549f4232a5715839658f2147d75d);
+            
+    
+            var marker_f2e34d4fda3392f33aa52f3133c9d667 = L.marker(
+                [34.4795161, -101.1875029],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_854ebfb54cd94edc1d06f83b363364c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54ff772dee2798ed6095bb2e3f46259a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_601e9236830aed67236c85f4d8abeb2a = $(`<div id="html_601e9236830aed67236c85f4d8abeb2a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Soluna Holdings, Inc  (SLNH, SLNHP)  (CIK 0000064463)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-07</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Soluna expanding Project Dorothy 3 (300+ MW AI/HPC data center) in Briscoe County, Texas.</p>         <a href="https://www.sec.gov/Archives/edgar/data/64463/000149315226021610/ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_54ff772dee2798ed6095bb2e3f46259a.setContent(html_601e9236830aed67236c85f4d8abeb2a);
+            
+        
+
+        marker_f2e34d4fda3392f33aa52f3133c9d667.bindPopup(popup_54ff772dee2798ed6095bb2e3f46259a)
+        ;
+
+        
+    
+    
+            marker_f2e34d4fda3392f33aa52f3133c9d667.bindTooltip(
+                `<div>
+                     Soluna Holdings, Inc  (SLNH, SLNHP)  (CIK 0000064463) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2e34d4fda3392f33aa52f3133c9d667.setIcon(icon_854ebfb54cd94edc1d06f83b363364c0);
+            
+    
+            var marker_623622b1de32e684f22fd1cc015cb712 = L.marker(
+                [38.7744625, -76.0763244],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_6f9175445272137a0788727e2fbc0e07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b264d254c5b0c3d68422b097c62498d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_af04ae4e2d360b8fd9106a4cb511c522 = $(`<div id="html_af04ae4e2d360b8fd9106a4cb511c522" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">TERAWULF INC.  (WULF)  (CIK 0001083301)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-14</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">TeraWulf securing $250M credit facility to fund Kentucky data center equity component development.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1083301/000110465926043279/tm2611661d4_ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_4b264d254c5b0c3d68422b097c62498d.setContent(html_af04ae4e2d360b8fd9106a4cb511c522);
+            
+        
+
+        marker_623622b1de32e684f22fd1cc015cb712.bindPopup(popup_4b264d254c5b0c3d68422b097c62498d)
+        ;
+
+        
+    
+    
+            marker_623622b1de32e684f22fd1cc015cb712.bindTooltip(
+                `<div>
+                     TERAWULF INC.  (WULF)  (CIK 0001083301) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_623622b1de32e684f22fd1cc015cb712.setIcon(icon_6f9175445272137a0788727e2fbc0e07);
+            
+    
+            var marker_8642595ea8543135cb69d1f10e55a412 = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_5a7c8b48e36c24c50f1a11fb389d00c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6da807655da4cf096c28e2183df271b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8fbc789d4513bced968b6b57fc8b5892 = $(`<div id="html_8fbc789d4513bced968b6b57fc8b5892" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Digi Power X Inc.  (DGXX)  (CIK 0001854368)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-20</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Digi Power X operationalizes AI data center facility with first GPU revenue contract deployment.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1854368/000121390026045361/ea028691301ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_e6da807655da4cf096c28e2183df271b.setContent(html_8fbc789d4513bced968b6b57fc8b5892);
+            
+        
+
+        marker_8642595ea8543135cb69d1f10e55a412.bindPopup(popup_e6da807655da4cf096c28e2183df271b)
+        ;
+
+        
+    
+    
+            marker_8642595ea8543135cb69d1f10e55a412.bindTooltip(
+                `<div>
+                     Digi Power X Inc.  (DGXX)  (CIK 0001854368) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8642595ea8543135cb69d1f10e55a412.setIcon(icon_5a7c8b48e36c24c50f1a11fb389d00c5);
+            
+    
+            var marker_5724a5b5fec52e93ddd5b4200379704d = L.marker(
+                [30.6370152, -97.6775634],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_f7cc5cb48f9f67c0ba929b57930570f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af66819343288a744b30026dcc43db87 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8561f42dd53de740330704b90d104a74 = $(`<div id="html_8561f42dd53de740330704b90d104a74" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">TSS, Inc.  (TSSI)  (CIK 0001320760)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-07</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Georgetown AI rack integration facility expanding operations at increasing scale after six months.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1320760/000165495426004536/tssi_ex991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_af66819343288a744b30026dcc43db87.setContent(html_8561f42dd53de740330704b90d104a74);
+            
+        
+
+        marker_5724a5b5fec52e93ddd5b4200379704d.bindPopup(popup_af66819343288a744b30026dcc43db87)
+        ;
+
+        
+    
+    
+            marker_5724a5b5fec52e93ddd5b4200379704d.bindTooltip(
+                `<div>
+                     TSS, Inc.  (TSSI)  (CIK 0001320760) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5724a5b5fec52e93ddd5b4200379704d.setIcon(icon_f7cc5cb48f9f67c0ba929b57930570f3);
+            
+    
+            var marker_644ee17018e2a0e93cccce162063e2b9 = L.marker(
+                [31.6924428, -96.1629601],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_981d755c23075fb39a0d750060d1b461 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cf1e7c48a4b1d576c77aaceb7e821b5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0d9771921f73072a8b0f8d6e5d226df5 = $(`<div id="html_0d9771921f73072a8b0f8d6e5d226df5" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Constellation Energy Corp  (CEG)  (CIK 0001868275)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Cyrus One data center net metering application approved at Freestone Energy Center site.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1868275/000186827526000063/ceg-20260511991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_0cf1e7c48a4b1d576c77aaceb7e821b5.setContent(html_0d9771921f73072a8b0f8d6e5d226df5);
+            
+        
+
+        marker_644ee17018e2a0e93cccce162063e2b9.bindPopup(popup_0cf1e7c48a4b1d576c77aaceb7e821b5)
+        ;
+
+        
+    
+    
+            marker_644ee17018e2a0e93cccce162063e2b9.bindTooltip(
+                `<div>
+                     Constellation Energy Corp  (CEG)  (CIK 0001868275) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_644ee17018e2a0e93cccce162063e2b9.setIcon(icon_981d755c23075fb39a0d750060d1b461);
+            
+    
+            var marker_1df534f6d8bd85b1393bbf11ec8828ac = L.marker(
+                [37.7879363, -122.4075201],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_2ee6689b63c8b30363761b80a8946e32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a52e6b503f10e0a2ca357c285bacbeb8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f9f08add366e8f7515e1623542e4e740 = $(`<div id="html_f9f08add366e8f7515e1623542e4e740" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Atlassian Corp  (TEAM)  (CIK 0001650372)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-30</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: gray; font-weight: bold;">Consolidation</span></p>         <p style="font-size: 0.9em; color: #555;">Atlassian consolidating leases and rebalancing resources, incurring $223.8M restructuring charges.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1650372/000165037226000024/ex991q3fy26.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_a52e6b503f10e0a2ca357c285bacbeb8.setContent(html_f9f08add366e8f7515e1623542e4e740);
+            
+        
+
+        marker_1df534f6d8bd85b1393bbf11ec8828ac.bindPopup(popup_a52e6b503f10e0a2ca357c285bacbeb8)
+        ;
+
+        
+    
+    
+            marker_1df534f6d8bd85b1393bbf11ec8828ac.bindTooltip(
+                `<div>
+                     Atlassian Corp  (TEAM)  (CIK 0001650372) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1df534f6d8bd85b1393bbf11ec8828ac.setIcon(icon_2ee6689b63c8b30363761b80a8946e32);
+            
+    
+            var marker_c5afc6c277d1210666918d9a2368ed5c = L.marker(
+                [32.7979615, -117.1509655],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_39b9631b3b6392668a3f91edce3432bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d14bb026c5cdb01dce12d680399257db = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3fcaa39670fc8bb6edf7a0bb15633f8b = $(`<div id="html_3fcaa39670fc8bb6edf7a0bb15633f8b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Lumen Technologies, Inc.  (LUMN)  (CIK 0000018926)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-05</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Lumen expanding 139 data centers across 28 markets and metro fiber services nationwide.</p>         <a href="https://www.sec.gov/Archives/edgar/data/18926/000001892626000045/lumen1q26quarterlyresult.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_d14bb026c5cdb01dce12d680399257db.setContent(html_3fcaa39670fc8bb6edf7a0bb15633f8b);
+            
+        
+
+        marker_c5afc6c277d1210666918d9a2368ed5c.bindPopup(popup_d14bb026c5cdb01dce12d680399257db)
+        ;
+
+        
+    
+    
+            marker_c5afc6c277d1210666918d9a2368ed5c.bindTooltip(
+                `<div>
+                     Lumen Technologies, Inc.  (LUMN)  (CIK 0000018926) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5afc6c277d1210666918d9a2368ed5c.setIcon(icon_39b9631b3b6392668a3f91edce3432bb);
+            
+    
+            var marker_ad76f32370475cb025352c6484a93c9a = L.marker(
+                [47.1301417, -119.278077],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_fb90bc8c6ca0e821fdb4596b9babdbfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ea3a54b5d21b747471e11efc8c069cd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ebeda3d6abe3508dcf06f0140afe9238 = $(`<div id="html_ebeda3d6abe3508dcf06f0140afe9238" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Keel Infrastructure Corp.  (KEEL)  (CIK 0001812477)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-11</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Keel Infrastructure advancing data center development at Moses Lake with construction start planned for 2026.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1812477/000121390026054167/ea028991401ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_0ea3a54b5d21b747471e11efc8c069cd.setContent(html_ebeda3d6abe3508dcf06f0140afe9238);
+            
+        
+
+        marker_ad76f32370475cb025352c6484a93c9a.bindPopup(popup_0ea3a54b5d21b747471e11efc8c069cd)
+        ;
+
+        
+    
+    
+            marker_ad76f32370475cb025352c6484a93c9a.bindTooltip(
+                `<div>
+                     Keel Infrastructure Corp.  (KEEL)  (CIK 0001812477) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad76f32370475cb025352c6484a93c9a.setIcon(icon_fb90bc8c6ca0e821fdb4596b9babdbfe);
+            
+    
+            var marker_3dab67a83052070d049a42307fca5699 = L.marker(
+                [29.7589382, -95.3676974],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_2cafd8faa0359f83931217ff76ab36d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f44293fc86b82cff49ea374a9d18b51b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f722bc9f1d63927f72443022c4f14e90 = $(`<div id="html_f722bc9f1d63927f72443022c4f14e90" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">IES Holdings, Inc.  (IESC)  (CIK 0001048268)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-01</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">IES Holdings expanding capacity and capabilities across Communications, Infrastructure Solutions, and Commercial & Industrial segments.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1048268/000104826826000087/q22026pressrelease-mar.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_f44293fc86b82cff49ea374a9d18b51b.setContent(html_f722bc9f1d63927f72443022c4f14e90);
+            
+        
+
+        marker_3dab67a83052070d049a42307fca5699.bindPopup(popup_f44293fc86b82cff49ea374a9d18b51b)
+        ;
+
+        
+    
+    
+            marker_3dab67a83052070d049a42307fca5699.bindTooltip(
+                `<div>
+                     IES Holdings, Inc.  (IESC)  (CIK 0001048268) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3dab67a83052070d049a42307fca5699.setIcon(icon_2cafd8faa0359f83931217ff76ab36d4);
+            
+    
+            var marker_d3b4de9a6915b62aab58da2c4e9cb0df = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_f38c583aacee46604458a8511015b0b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62964cf114bd4bc8e91cfc1bf5c9dd6f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e1ca53af7fde4173f02ba222fcdfd223 = $(`<div id="html_e1ca53af7fde4173f02ba222fcdfd223" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Apollo Commercial Real Estate Finance, Inc.  (ARI)  (CIK 0001467760)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: red; font-weight: bold;">Closing</span></p>         <p style="font-size: 0.9em; color: #555;">Chicago hotel loan maturity extended to May 2026 for underlying hotel sale repayment.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1467760/000119312526188383/d300599dex992.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_62964cf114bd4bc8e91cfc1bf5c9dd6f.setContent(html_e1ca53af7fde4173f02ba222fcdfd223);
+            
+        
+
+        marker_d3b4de9a6915b62aab58da2c4e9cb0df.bindPopup(popup_62964cf114bd4bc8e91cfc1bf5c9dd6f)
+        ;
+
+        
+    
+    
+            marker_d3b4de9a6915b62aab58da2c4e9cb0df.bindTooltip(
+                `<div>
+                     Apollo Commercial Real Estate Finance, Inc.  (ARI)  (CIK 0001467760) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3b4de9a6915b62aab58da2c4e9cb0df.setIcon(icon_f38c583aacee46604458a8511015b0b1);
+            
+    
+            var marker_e3e38c0fcdf6344b9030ef1fff0ffb0a = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_4875fd8fa5305e4a6dbbf3e6a3e29e50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6dba4a1bf1adf402a415a32af5b4da50 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_82bd962c413a01aad197eb22b9c2b530 = $(`<div id="html_82bd962c413a01aad197eb22b9c2b530" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">TERAWULF INC.  (WULF)  (CIK 0001083301)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-08</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">TeraWulf acquired Hawesville, Kentucky site with 480 MW grid-connected power capacity for HPC development.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_6dba4a1bf1adf402a415a32af5b4da50.setContent(html_82bd962c413a01aad197eb22b9c2b530);
+            
+        
+
+        marker_e3e38c0fcdf6344b9030ef1fff0ffb0a.bindPopup(popup_6dba4a1bf1adf402a415a32af5b4da50)
+        ;
+
+        
+    
+    
+            marker_e3e38c0fcdf6344b9030ef1fff0ffb0a.bindTooltip(
+                `<div>
+                     TERAWULF INC.  (WULF)  (CIK 0001083301) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3e38c0fcdf6344b9030ef1fff0ffb0a.setIcon(icon_4875fd8fa5305e4a6dbbf3e6a3e29e50);
+            
+    
+            var marker_2dabe9a9fc48fb22156c6f06ef8a30fb = L.marker(
+                [31.8250149, -103.9090099],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_164397c6410acdd74994710dab3cd054 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef7d7c6d0f564596d60e461281badaa2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8f5cd3fdd200c1211fc20bebd85f9ff1 = $(`<div id="html_8f5cd3fdd200c1211fc20bebd85f9ff1" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Texas Pacific Land Corp  (TPL)  (CIK 0001811074)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-06</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Produced water desalination R&D test facility nearing completion, receiving inlet barrels soon.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1811074/000181107426000033/exhibit991q12026earningsre.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_ef7d7c6d0f564596d60e461281badaa2.setContent(html_8f5cd3fdd200c1211fc20bebd85f9ff1);
+            
+        
+
+        marker_2dabe9a9fc48fb22156c6f06ef8a30fb.bindPopup(popup_ef7d7c6d0f564596d60e461281badaa2)
+        ;
+
+        
+    
+    
+            marker_2dabe9a9fc48fb22156c6f06ef8a30fb.bindTooltip(
+                `<div>
+                     Texas Pacific Land Corp  (TPL)  (CIK 0001811074) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2dabe9a9fc48fb22156c6f06ef8a30fb.setIcon(icon_164397c6410acdd74994710dab3cd054);
+            
+    
+            var marker_6961e2fcdf3be9f49466deb8c8bd90a3 = L.marker(
+                [29.3872254, -94.992736],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_aad4a01afd7335aa339de5abd00483e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3174dc0233f07a09342deff75a6b210e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2f2e5cac075eeebe3244a72b1e12a29a = $(`<div id="html_2f2e5cac075eeebe3244a72b1e12a29a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Stabilis Solutions, Inc.  (SLNG)  (CIK 0001043186)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-07</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Stabilis advancing development of proposed Galveston LNG facility for Gulf Coast bunkering operations.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1043186/000143774926015274/ex_933796.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_3174dc0233f07a09342deff75a6b210e.setContent(html_2f2e5cac075eeebe3244a72b1e12a29a);
+            
+        
+
+        marker_6961e2fcdf3be9f49466deb8c8bd90a3.bindPopup(popup_3174dc0233f07a09342deff75a6b210e)
+        ;
+
+        
+    
+    
+            marker_6961e2fcdf3be9f49466deb8c8bd90a3.bindTooltip(
+                `<div>
+                     Stabilis Solutions, Inc.  (SLNG)  (CIK 0001043186) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6961e2fcdf3be9f49466deb8c8bd90a3.setIcon(icon_aad4a01afd7335aa339de5abd00483e2);
+            
+    
+            var marker_f48e539fe5d657e52f7f2ab5471ea10a = L.marker(
+                [39.6675391, -80.8721268],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_731680e0474b6b0ca59ec2348bb9e826 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4fb65aeb911b20aeaeea247d34d3e31 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_be6cc2ef30bd23b697981fea46a670b2 = $(`<div id="html_be6cc2ef30bd23b697981fea46a670b2" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">MARA Holdings, Inc.  (MARA)  (CIK 0001507605)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-30</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">MARA acquiring Long Ridge Energy's 505 MW power plant and 1,600 acres for AI/Critical IT campus expansion.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1507605/000119312526193982/d54802dex991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_c4fb65aeb911b20aeaeea247d34d3e31.setContent(html_be6cc2ef30bd23b697981fea46a670b2);
+            
+        
+
+        marker_f48e539fe5d657e52f7f2ab5471ea10a.bindPopup(popup_c4fb65aeb911b20aeaeea247d34d3e31)
+        ;
+
+        
+    
+    
+            marker_f48e539fe5d657e52f7f2ab5471ea10a.bindTooltip(
+                `<div>
+                     MARA Holdings, Inc.  (MARA)  (CIK 0001507605) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f48e539fe5d657e52f7f2ab5471ea10a.setIcon(icon_731680e0474b6b0ca59ec2348bb9e826);
+            
+    
+            var marker_55b83b971eca7f2bbfe25e8ae2005fe0 = L.marker(
+                [42.33136, -83.0520837],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_6c33c2b8cd5ad166da82f9205a96ffb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_648a1cdfc1c33a714076d43d7818e1c1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_753dcc89d07d390ac91c6d88b9a78df6 = $(`<div id="html_753dcc89d07d390ac91c6d88b9a78df6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Hyperscale Data, Inc.  (GPUS, GPUS-PD)  (CIK 0000896493)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-21</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Omnipresent Robotics identified 100,000 sq ft in Michigan facility for AI robotics and data collection operations.</p>         <a href="https://www.sec.gov/Archives/edgar/data/896493/000121465926004856/ex99_1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_648a1cdfc1c33a714076d43d7818e1c1.setContent(html_753dcc89d07d390ac91c6d88b9a78df6);
+            
+        
+
+        marker_55b83b971eca7f2bbfe25e8ae2005fe0.bindPopup(popup_648a1cdfc1c33a714076d43d7818e1c1)
+        ;
+
+        
+    
+    
+            marker_55b83b971eca7f2bbfe25e8ae2005fe0.bindTooltip(
+                `<div>
+                     Hyperscale Data, Inc.  (GPUS, GPUS-PD)  (CIK 0000896493) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55b83b971eca7f2bbfe25e8ae2005fe0.setIcon(icon_6c33c2b8cd5ad166da82f9205a96ffb6);
+            
+    
+            var marker_9f784e1f7522575468b82c870081b1de = L.marker(
+                [35.996653, -78.9018053],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_40053b0b671a2eb51680192362b56286 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db059708038ec6558b8384857f1393ce = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9dc93d11b8430fb3f6f440cd2662e1f6 = $(`<div id="html_9dc93d11b8430fb3f6f440cd2662e1f6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">WOLFSPEED, INC.  (WOLF)  (CIK 0000895419)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-05</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Durham facilities refocused on materials production to increase earnings potential.</p>         <a href="https://www.sec.gov/Archives/edgar/data/895419/000089541926000024/ex991q3-26.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_db059708038ec6558b8384857f1393ce.setContent(html_9dc93d11b8430fb3f6f440cd2662e1f6);
+            
+        
+
+        marker_9f784e1f7522575468b82c870081b1de.bindPopup(popup_db059708038ec6558b8384857f1393ce)
+        ;
+
+        
+    
+    
+            marker_9f784e1f7522575468b82c870081b1de.bindTooltip(
+                `<div>
+                     WOLFSPEED, INC.  (WOLF)  (CIK 0000895419) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f784e1f7522575468b82c870081b1de.setIcon(icon_40053b0b671a2eb51680192362b56286);
+            
+    
+            var marker_e215041f8a11cc625e79be8ea3a587e2 = L.marker(
+                [39.373597, -119.2267443],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_741249695a50458a16ece4d5bfdb9297 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b4241b2a2b71d39d9077add2656cf9e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e1110a3eabfa9166086b57de83034956 = $(`<div id="html_e1110a3eabfa9166086b57de83034956" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Comstock Inc.  (LODE)  (CIK 0001120970)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-08</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Comstock Metals expanding with second industry-scale production facility in Nevada.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1120970/000143774926015741/ex_958487.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_9b4241b2a2b71d39d9077add2656cf9e.setContent(html_e1110a3eabfa9166086b57de83034956);
+            
+        
+
+        marker_e215041f8a11cc625e79be8ea3a587e2.bindPopup(popup_9b4241b2a2b71d39d9077add2656cf9e)
+        ;
+
+        
+    
+    
+            marker_e215041f8a11cc625e79be8ea3a587e2.bindTooltip(
+                `<div>
+                     Comstock Inc.  (LODE)  (CIK 0001120970) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e215041f8a11cc625e79be8ea3a587e2.setIcon(icon_741249695a50458a16ece4d5bfdb9297);
+            
+    
+            var marker_400e54ee5fe08e734145cae353b41d98 = L.marker(
+                [39.415779, -77.4127562],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_2399fd819c5feca9704c3898f26d2d0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44d03cd90b3bd70c495e8aea80b16a8c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c3bfd89d9c316e0b3d4f5d07c41bece4 = $(`<div id="html_c3bfd89d9c316e0b3d4f5d07c41bece4" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">TOMI Environmental Solutions, Inc.  (TOMZ)  (CIK 0000314227)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-08</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">TOMI Environmental Solutions expands Canadian operations with increased equipment inventory for direct-to-customer sales.</p>         <a href="https://www.sec.gov/Archives/edgar/data/314227/000165495426004629/tomz_ex991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_44d03cd90b3bd70c495e8aea80b16a8c.setContent(html_c3bfd89d9c316e0b3d4f5d07c41bece4);
+            
+        
+
+        marker_400e54ee5fe08e734145cae353b41d98.bindPopup(popup_44d03cd90b3bd70c495e8aea80b16a8c)
+        ;
+
+        
+    
+    
+            marker_400e54ee5fe08e734145cae353b41d98.bindTooltip(
+                `<div>
+                     TOMI Environmental Solutions, Inc.  (TOMZ)  (CIK 0000314227) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_400e54ee5fe08e734145cae353b41d98.setIcon(icon_2399fd819c5feca9704c3898f26d2d0b);
+            
+    
+            var marker_ab0ae64508b380456e9c3b23d31abae1 = L.marker(
+                [42.3588336, -71.0578303],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_1e421c73f592b5c0aa16008de4aacadb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24cd946384d2f21eab0e670dd3ceeba6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4a69057d3081e24a7c4cd05a6af6d70d = $(`<div id="html_4a69057d3081e24a7c4cd05a6af6d70d" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Amrize Ltd  (AMRZ)  (CIK 0002035989)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Amrize headquarters located at Winthrop Center in Boston, Massachusetts.</p>         <a href="https://www.sec.gov/Archives/edgar/data/2035989/000203598926000050/amrizeq12026earningspres.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_24cd946384d2f21eab0e670dd3ceeba6.setContent(html_4a69057d3081e24a7c4cd05a6af6d70d);
+            
+        
+
+        marker_ab0ae64508b380456e9c3b23d31abae1.bindPopup(popup_24cd946384d2f21eab0e670dd3ceeba6)
+        ;
+
+        
+    
+    
+            marker_ab0ae64508b380456e9c3b23d31abae1.bindTooltip(
+                `<div>
+                     Amrize Ltd  (AMRZ)  (CIK 0002035989) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab0ae64508b380456e9c3b23d31abae1.setIcon(icon_1e421c73f592b5c0aa16008de4aacadb);
+            
+    
+            var marker_75e788fa56b21b84010a6ecd3fcc6a15 = L.marker(
+                [32.7219973, -84.0130926],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_9b3fb0e2e13a3cc2119c73acb2abd9a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3e17af3abc321942806eb3ec0dcc538 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a3d5d1025aba6342c1cde08b367fc123 = $(`<div id="html_a3d5d1025aba6342c1cde08b367fc123" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">T-REX Acquisition Corp.  (TRXA)  (CIK 0001437750)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-23</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">T-REX acquires operating 3-megawatt data center facility in Roberta, Georgia.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1437750/000147793226002467/trex_8k.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_e3e17af3abc321942806eb3ec0dcc538.setContent(html_a3d5d1025aba6342c1cde08b367fc123);
+            
+        
+
+        marker_75e788fa56b21b84010a6ecd3fcc6a15.bindPopup(popup_e3e17af3abc321942806eb3ec0dcc538)
+        ;
+
+        
+    
+    
+            marker_75e788fa56b21b84010a6ecd3fcc6a15.bindTooltip(
+                `<div>
+                     T-REX Acquisition Corp.  (TRXA)  (CIK 0001437750) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75e788fa56b21b84010a6ecd3fcc6a15.setIcon(icon_9b3fb0e2e13a3cc2119c73acb2abd9a2);
+            
+    
+            var marker_0833290868d7a9885465d90b25a79f19 = L.marker(
+                [45.243854, -93.5149576],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_9704338ad7d2414b7a3e0e76dc31fe14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_313931ceb192f60aa56720ade5b01d8b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bddbdb4c23189b5acc1ee5534f9e25ff = $(`<div id="html_bddbdb4c23189b5acc1ee5534f9e25ff" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Forgent Power Solutions, Inc.  (FPS)  (CIK 0002080126)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-14</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Forgent expanding manufacturing capacity with new campuses ramping production to support $5 billion revenue target.</p>         <a href="https://www.sec.gov/Archives/edgar/data/2080126/000208012626000017/exhibit991earningsrelease_.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_313931ceb192f60aa56720ade5b01d8b.setContent(html_bddbdb4c23189b5acc1ee5534f9e25ff);
+            
+        
+
+        marker_0833290868d7a9885465d90b25a79f19.bindPopup(popup_313931ceb192f60aa56720ade5b01d8b)
+        ;
+
+        
+    
+    
+            marker_0833290868d7a9885465d90b25a79f19.bindTooltip(
+                `<div>
+                     Forgent Power Solutions, Inc.  (FPS)  (CIK 0002080126) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0833290868d7a9885465d90b25a79f19.setIcon(icon_9704338ad7d2414b7a3e0e76dc31fe14);
+            
+    
+            var marker_4f6356628298dd1e06b3e6bec37890be = L.marker(
+                [29.6519684, -82.3249846],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_851fbeb12f8473bee1fa19765d6f6eb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ed8d5803b35fe740347f6dcced16b1e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3ebfcd3b019799eee5d41f09c87b45e1 = $(`<div id="html_3ebfcd3b019799eee5d41f09c87b45e1" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">NEXTNRG, INC.  (NXXT)  (CIK 0001817004)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-22</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">NextNRG expands EzFill mobile fuel delivery operations to Gainesville, Florida distribution facility.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1817004/000149315226018551/ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_0ed8d5803b35fe740347f6dcced16b1e.setContent(html_3ebfcd3b019799eee5d41f09c87b45e1);
+            
+        
+
+        marker_4f6356628298dd1e06b3e6bec37890be.bindPopup(popup_0ed8d5803b35fe740347f6dcced16b1e)
+        ;
+
+        
+    
+    
+            marker_4f6356628298dd1e06b3e6bec37890be.bindTooltip(
+                `<div>
+                     NEXTNRG, INC.  (NXXT)  (CIK 0001817004) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f6356628298dd1e06b3e6bec37890be.setIcon(icon_851fbeb12f8473bee1fa19765d6f6eb4);
+            
+    
+            var marker_8fdc2fb771a74e22bfc4e0d2ddf5567f = L.marker(
+                [35.9603948, -83.9210261],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_bae17639f1b1244d986ffb728f537fc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ecc207a15b08beb216f9cebcd8bb5d9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3a3b45d563813cc22ce3322b5618c5a6 = $(`<div id="html_3a3b45d563813cc22ce3322b5618c5a6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">PROVECTUS BIOPHARMACEUTICALS, INC.  (PVCT)  (CIK 0000315545)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-21</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: orange; font-weight: bold;">Relocation</span></p>         <p style="font-size: 0.9em; color: #555;">Provectus Biopharmaceuticals relocating headquarters from First Horizon Plaza Tower to Perkins Place in 2026.</p>         <a href="https://www.sec.gov/Archives/edgar/data/315545/000149315226018160/ex99-1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_3ecc207a15b08beb216f9cebcd8bb5d9.setContent(html_3a3b45d563813cc22ce3322b5618c5a6);
+            
+        
+
+        marker_8fdc2fb771a74e22bfc4e0d2ddf5567f.bindPopup(popup_3ecc207a15b08beb216f9cebcd8bb5d9)
+        ;
+
+        
+    
+    
+            marker_8fdc2fb771a74e22bfc4e0d2ddf5567f.bindTooltip(
+                `<div>
+                     PROVECTUS BIOPHARMACEUTICALS, INC.  (PVCT)  (CIK 0000315545) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fdc2fb771a74e22bfc4e0d2ddf5567f.setIcon(icon_bae17639f1b1244d986ffb728f537fc3);
+            
+    
+            var marker_6dc8489695c8f6505b8652c8a88ec80f = L.marker(
+                [42.506484, -71.0728306],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_3b03e94326a6568a0f779f6097b3f221 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7878878092dc5c90e3972946ca0507e9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4b766e3ebe2f7b43a00a8ba87f767690 = $(`<div id="html_4b766e3ebe2f7b43a00a8ba87f767690" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Winchester Bancorp, Inc./MD/  (WSBK)  (CIK 0002047235)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Winchester Bancorp announces expansion of branch network with new location in Wakefield, MA.</p>         <a href="https://www.sec.gov/Archives/edgar/data/2047235/000119312526191386/wsbk-ex99_1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_7878878092dc5c90e3972946ca0507e9.setContent(html_4b766e3ebe2f7b43a00a8ba87f767690);
+            
+        
+
+        marker_6dc8489695c8f6505b8652c8a88ec80f.bindPopup(popup_7878878092dc5c90e3972946ca0507e9)
+        ;
+
+        
+    
+    
+            marker_6dc8489695c8f6505b8652c8a88ec80f.bindTooltip(
+                `<div>
+                     Winchester Bancorp, Inc./MD/  (WSBK)  (CIK 0002047235) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dc8489695c8f6505b8652c8a88ec80f.setIcon(icon_3b03e94326a6568a0f779f6097b3f221);
+            
+    
+            var marker_aa304d37688d7b92b458f9e02c63471d = L.marker(
+                [32.7979615, -117.1509655],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_130a4fa7887433ab8c02e9130720ad67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3974a4e45db551ae12cd6e5646698baa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7dd042090a8eadf714f7767a302d36f6 = $(`<div id="html_7dd042090a8eadf714f7767a302d36f6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Murphy USA Inc.  (MUSA)  (CIK 0001573516)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Financial Services</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Murphy USA on pace to open 45-55 new stores in 2026; six opened in Q1, eighteen under construction.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1573516/000157351626000127/exh991_03312026er.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_3974a4e45db551ae12cd6e5646698baa.setContent(html_7dd042090a8eadf714f7767a302d36f6);
+            
+        
+
+        marker_aa304d37688d7b92b458f9e02c63471d.bindPopup(popup_3974a4e45db551ae12cd6e5646698baa)
+        ;
+
+        
+    
+    
+            marker_aa304d37688d7b92b458f9e02c63471d.bindTooltip(
+                `<div>
+                     Murphy USA Inc.  (MUSA)  (CIK 0001573516) (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa304d37688d7b92b458f9e02c63471d.setIcon(icon_130a4fa7887433ab8c02e9130720ad67);
+            
+    
+            var marker_d1e920e975d921830afb84e68de740ec = L.marker(
+                [30.2711286, -97.7436995],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_d128be96fb809ce3cf60ee3a68cb14e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63b07129e37454a17f9e22aa388f04e3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1ce13dada0d80ba10e91db061a70c456 = $(`<div id="html_1ce13dada0d80ba10e91db061a70c456" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Broadstone Net Lease, Inc.  (BNL)  (CIK 0001424182)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Travel & Hospitality</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-29</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Tesla presort battery recycling facility build-to-suit development commenced near Austin Gigafactory.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1424182/000142418226000034/bnl-20260331xexx991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_63b07129e37454a17f9e22aa388f04e3.setContent(html_1ce13dada0d80ba10e91db061a70c456);
+            
+        
+
+        marker_d1e920e975d921830afb84e68de740ec.bindPopup(popup_63b07129e37454a17f9e22aa388f04e3)
+        ;
+
+        
+    
+    
+            marker_d1e920e975d921830afb84e68de740ec.bindTooltip(
+                `<div>
+                     Broadstone Net Lease, Inc.  (BNL)  (CIK 0001424182) (Travel & Hospitality)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1e920e975d921830afb84e68de740ec.setIcon(icon_d128be96fb809ce3cf60ee3a68cb14e3);
+            
+    
+            var marker_72828e0de7c3af0e1ecf5151375d34ff = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_2c92e8d1abf48e0539b2a516a77c363c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f346cf50da5cab59c8acaa237b720f0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_52800b9a40f377cf4cd285d805ab34b8 = $(`<div id="html_52800b9a40f377cf4cd285d805ab34b8" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Travel & Hospitality</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-23</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Hollywood Columbus new hotel tower opening announced for June 2026.</p>         <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_3f346cf50da5cab59c8acaa237b720f0.setContent(html_52800b9a40f377cf4cd285d805ab34b8);
+            
+        
+
+        marker_72828e0de7c3af0e1ecf5151375d34ff.bindPopup(popup_3f346cf50da5cab59c8acaa237b720f0)
+        ;
+
+        
+    
+    
+            marker_72828e0de7c3af0e1ecf5151375d34ff.bindTooltip(
+                `<div>
+                     PENN Entertainment, Inc.  (PENN)  (CIK 0000921738) (Travel & Hospitality)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72828e0de7c3af0e1ecf5151375d34ff.setIcon(icon_2c92e8d1abf48e0539b2a516a77c363c);
+            
+    
+            var marker_42635866763736f8cfbd7d323ebba92c = L.marker(
+                [40.4848003, -106.831735],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_cb8763b239f0d005324fb341871a9fdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8470546c76890521ca95e46b01eaa801 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_279d54daeffec75b5e44270c3c2c220f = $(`<div id="html_279d54daeffec75b5e44270c3c2c220f" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">CaliberCos Inc.  (CWD)  (CIK 0001627282)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Travel & Hospitality</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-23</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Hyatt Studios hotel development breaking ground Q2 2026, targeted opening Q3/Q4 2027.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1627282/000162728226000025/ex_991xhyattstudiosdevelop.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_8470546c76890521ca95e46b01eaa801.setContent(html_279d54daeffec75b5e44270c3c2c220f);
+            
+        
+
+        marker_42635866763736f8cfbd7d323ebba92c.bindPopup(popup_8470546c76890521ca95e46b01eaa801)
+        ;
+
+        
+    
+    
+            marker_42635866763736f8cfbd7d323ebba92c.bindTooltip(
+                `<div>
+                     CaliberCos Inc.  (CWD)  (CIK 0001627282) (Travel & Hospitality)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42635866763736f8cfbd7d323ebba92c.setIcon(icon_cb8763b239f0d005324fb341871a9fdb);
+            
+    
+            var marker_8bca2998c95d55459e743d8627fd0822 = L.marker(
+                [36.1622767, -86.7742984],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_fa93968aec8d88148b95da8fb74aba01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a69d3ff959d67f3420f1c66bc39376d0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_df8b380de0bf756a02350cb5e35110ef = $(`<div id="html_df8b380de0bf756a02350cb5e35110ef" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">SafeSpace Global Corp  (SSGC)  (CIK 0001584693)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Travel & Hospitality</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-01</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">SafeSpace Global officially opened Tennessee AI Center of Excellence facility for AI safety technology research and development.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1584693/000149315226020882/form8-k.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_a69d3ff959d67f3420f1c66bc39376d0.setContent(html_df8b380de0bf756a02350cb5e35110ef);
+            
+        
+
+        marker_8bca2998c95d55459e743d8627fd0822.bindPopup(popup_a69d3ff959d67f3420f1c66bc39376d0)
+        ;
+
+        
+    
+    
+            marker_8bca2998c95d55459e743d8627fd0822.bindTooltip(
+                `<div>
+                     SafeSpace Global Corp  (SSGC)  (CIK 0001584693) (Travel & Hospitality)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8bca2998c95d55459e743d8627fd0822.setIcon(icon_fa93968aec8d88148b95da8fb74aba01);
+            
+    
+            var marker_6e4f06f2829ec8ccf35d175d2fde0b75 = L.marker(
+                [40.6018585, -77.7280899],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_2c58e57d7c97bc33463e18674552c2ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1010b21edc131f9db04e7dd5ef72b06c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_099ae6a4a288ddaf327f9ac00f541b1c = $(`<div id="html_099ae6a4a288ddaf327f9ac00f541b1c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">JUNIATA VALLEY FINANCIAL CORP  (JUVF)  (CIK 0000714712)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Travel & Hospitality</p>         <p style="margin: 0;"><b>Date:</b> 2026-04-22</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: green; font-weight: bold;">Opening</span></p>         <p style="font-size: 0.9em; color: #555;">Juniata Valley Financial Corp. announces grand opening of Belleville office in Q3 2026.</p>         <a href="https://www.sec.gov/Archives/edgar/data/714712/000110465926046483/juvf-20260422xex99d1.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_1010b21edc131f9db04e7dd5ef72b06c.setContent(html_099ae6a4a288ddaf327f9ac00f541b1c);
+            
+        
+
+        marker_6e4f06f2829ec8ccf35d175d2fde0b75.bindPopup(popup_1010b21edc131f9db04e7dd5ef72b06c)
+        ;
+
+        
+    
+    
+            marker_6e4f06f2829ec8ccf35d175d2fde0b75.bindTooltip(
+                `<div>
+                     JUNIATA VALLEY FINANCIAL CORP  (JUVF)  (CIK 0000714712) (Travel & Hospitality)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e4f06f2829ec8ccf35d175d2fde0b75.setIcon(icon_2c58e57d7c97bc33463e18674552c2ff);
+            
+    
+            var marker_d811e44d352ea17572a0ebe8c77a0e19 = L.marker(
+                [44.311461, -96.79844],
+                {
+}
+            ).addTo(map_1b6a0d8a8be6f41af371a6690ceff458);
+        
+    
+            var icon_1a7988d4d8e252bcdad7c01a8613112c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8942f2da2f22c18389e928d998bd0bbf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ab417c18ad6b68c8e6f067ee758d627e = $(`<div id="html_ab417c18ad6b68c8e6f067ee758d627e" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-family: Arial;">         <h4 style="margin-bottom: 5px;">Solventum Corp  (SOLV)  (CIK 0001964738)</h4>         <p style="margin: 0;"><b>Ticker:</b> None</p>         <p style="margin: 0;"><b>Industry:</b> Travel & Hospitality</p>         <p style="margin: 0;"><b>Date:</b> 2026-05-05</p>         <p style="margin: 5px 0;"><b>Event:</b> <span style="color: blue; font-weight: bold;">Expansion</span></p>         <p style="font-size: 0.9em; color: #555;">Completed manufacturing expansion adding 200,000 sq ft capacity in South Dakota.</p>         <a href="https://www.sec.gov/Archives/edgar/data/1964738/000196473826000022/q12026-8kerexx991.htm" target="_blank">View SEC Filing</a>     </div>     </div>`)[0];
+                popup_8942f2da2f22c18389e928d998bd0bbf.setContent(html_ab417c18ad6b68c8e6f067ee758d627e);
+            
+        
+
+        marker_d811e44d352ea17572a0ebe8c77a0e19.bindPopup(popup_8942f2da2f22c18389e928d998bd0bbf)
+        ;
+
+        
+    
+    
+            marker_d811e44d352ea17572a0ebe8c77a0e19.bindTooltip(
+                `<div>
+                     Solventum Corp  (SOLV)  (CIK 0001964738) (Travel & Hospitality)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d811e44d352ea17572a0ebe8c77a0e19.setIcon(icon_1a7988d4d8e252bcdad7c01a8613112c);
+            
+</script>
+</html>
