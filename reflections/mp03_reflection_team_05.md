@@ -1,5 +1,4 @@
-Sardorbek Shorobov:
-"Reflection for Travel and Hospitality:
+Group 05 Comparitive Reflection:
 
 The map suggests that Financial Services and Travel and Hospitality use physical locations for different business purposes. Financial Services location events are usually tied to efficiency, consolidation, and operational coverage. Banks and related firms often adjust physical capacity through branch changes, office closures, regional office moves, operations centers, or other cost-rationalization decisions. This reflects an industry where digital banking, automation, and centralized back-office work can reduce the need for dense physical networks in some areas.
 
