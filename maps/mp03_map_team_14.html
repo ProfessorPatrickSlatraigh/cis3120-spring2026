@@ -1,0 +1,2993 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_044ea03015cc70a2cd1a37bf51f04858 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_044ea03015cc70a2cd1a37bf51f04858" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_044ea03015cc70a2cd1a37bf51f04858 = L.map(
+                "map_044ea03015cc70a2cd1a37bf51f04858",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d36bf15921792c318637aa92c328dd69 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d36bf15921792c318637aa92c328dd69.addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var marker_6ebfe75431520bb29eef6c0c1256be9c = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_6ef6f5d41ad3012170b01f0e295b9af1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31f1cc44388c135dff666f1794ac2508 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_003fbc7c05cf394d5da20f8717ea1cae = $(`<div id="html_003fbc7c05cf394d5da20f8717ea1cae" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-14<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> New branch facility opened in Roanoke to support expansion in markets with dynamic economies.<br>     <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526154248/nksh-ex99_1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_31f1cc44388c135dff666f1794ac2508.setContent(html_003fbc7c05cf394d5da20f8717ea1cae);
+            
+        
+
+        marker_6ebfe75431520bb29eef6c0c1256be9c.bindPopup(popup_31f1cc44388c135dff666f1794ac2508)
+        ;
+
+        
+    
+    
+            marker_6ebfe75431520bb29eef6c0c1256be9c.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ebfe75431520bb29eef6c0c1256be9c.setIcon(icon_6ef6f5d41ad3012170b01f0e295b9af1);
+            
+    
+            var marker_de0cdd368920446ba95108a26715c872 = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_5bee96c5905381b138abb2913f325140 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45bd7efb2baf0a8cac44695179d667c5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ddd24f573b4683f039c8307cd660c857 = $(`<div id="html_ddd24f573b4683f039c8307cd660c857" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-22<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Unity Bank opened a new full-service branch location in Madison, New Jersey in 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042726000031/unty-20260422xex99d1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_45bd7efb2baf0a8cac44695179d667c5.setContent(html_ddd24f573b4683f039c8307cd660c857);
+            
+        
+
+        marker_de0cdd368920446ba95108a26715c872.bindPopup(popup_45bd7efb2baf0a8cac44695179d667c5)
+        ;
+
+        
+    
+    
+            marker_de0cdd368920446ba95108a26715c872.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de0cdd368920446ba95108a26715c872.setIcon(icon_5bee96c5905381b138abb2913f325140);
+            
+    
+            var marker_e5f312bd70014769b5d8330724664dfe = L.marker(
+                [37.9020731, -122.0618702],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_a83339ce74ab160168bd4e0c4416b5c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c212000902026fbc34cb8fd5a1b0ede8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_43000de86ca17054d285d6fcff1743b1 = $(`<div id="html_43000de86ca17054d285d6fcff1743b1" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-23<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> First Merchants Bank opening new downtown location at 1823 N. Main Street in Q3-2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1085913/000114036126016185/ef20071199_ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_c212000902026fbc34cb8fd5a1b0ede8.setContent(html_43000de86ca17054d285d6fcff1743b1);
+            
+        
+
+        marker_e5f312bd70014769b5d8330724664dfe.bindPopup(popup_c212000902026fbc34cb8fd5a1b0ede8)
+        ;
+
+        
+    
+    
+            marker_e5f312bd70014769b5d8330724664dfe.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e5f312bd70014769b5d8330724664dfe.setIcon(icon_a83339ce74ab160168bd4e0c4416b5c8);
+            
+    
+            var marker_f532c69a0b6ac1f458290443359a7e47 = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_5e85346082bb9a136c0916aeeda1a569 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15736d2939cd7f7da5082840ff041113 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e0329e5f088141d3849625ae32e40fde = $(`<div id="html_e0329e5f088141d3849625ae32e40fde" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-21<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Metropolitan Commercial Bank opened a Miami branch on March 3, 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1476034/000110465926046066/mcb-20260421xex99d2.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_15736d2939cd7f7da5082840ff041113.setContent(html_e0329e5f088141d3849625ae32e40fde);
+            
+        
+
+        marker_f532c69a0b6ac1f458290443359a7e47.bindPopup(popup_15736d2939cd7f7da5082840ff041113)
+        ;
+
+        
+    
+    
+            marker_f532c69a0b6ac1f458290443359a7e47.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f532c69a0b6ac1f458290443359a7e47.setIcon(icon_5e85346082bb9a136c0916aeeda1a569);
+            
+    
+            var marker_3232f3f9bcdacb18bbbe317e538e4187 = L.marker(
+                [40.9168692, -72.6624189],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_b67dd52161d10bf95c375d1bb3c1c113 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae8951c970a8283a8af350fcad9e9272 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e6c6998e3361607360277931984af6d1 = $(`<div id="html_e6c6998e3361607360277931984af6d1" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-27<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Hanover Bancorp received regulatory approval to open a full-service branch in downtown Riverhead, New York.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1828588/000110465926049414/hnvr-20260427xex99d1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_ae8951c970a8283a8af350fcad9e9272.setContent(html_e6c6998e3361607360277931984af6d1);
+            
+        
+
+        marker_3232f3f9bcdacb18bbbe317e538e4187.bindPopup(popup_ae8951c970a8283a8af350fcad9e9272)
+        ;
+
+        
+    
+    
+            marker_3232f3f9bcdacb18bbbe317e538e4187.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3232f3f9bcdacb18bbbe317e538e4187.setIcon(icon_b67dd52161d10bf95c375d1bb3c1c113);
+            
+    
+            var marker_85c6473b7bfa0cf15c34212f6ce8f1b7 = L.marker(
+                [39.506926, -77.6522171],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_c6cb2fda1ff1d6df0b9dbff51dee8e3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09b720ca1caa2fc038f3059263caf4ea = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_debb13ea3471234b3c33be467fe71692 = $(`<div id="html_debb13ea3471234b3c33be467fe71692" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-07<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> First United opened a Boonsboro branch in 2025 to strengthen presence in the East market.<br>     <a href="https://www.sec.gov/Archives/edgar/data/763907/000110465926056785/tm2613814d1_ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_09b720ca1caa2fc038f3059263caf4ea.setContent(html_debb13ea3471234b3c33be467fe71692);
+            
+        
+
+        marker_85c6473b7bfa0cf15c34212f6ce8f1b7.bindPopup(popup_09b720ca1caa2fc038f3059263caf4ea)
+        ;
+
+        
+    
+    
+            marker_85c6473b7bfa0cf15c34212f6ce8f1b7.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85c6473b7bfa0cf15c34212f6ce8f1b7.setIcon(icon_c6cb2fda1ff1d6df0b9dbff51dee8e3a);
+            
+    
+            var marker_9888969c94e72946e8e4528363346553 = L.marker(
+                [21.304547, -157.855676],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_3b89aba732ad7a8b7dc05b96bb889a08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a6da23a83ea7d0b770eb2297b0d8e00 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ff06ee462e910639661a1aa4f317462c = $(`<div id="html_ff06ee462e910639661a1aa4f317462c" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-11<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Mokulele Airlines announced investment in Hawaii operations including new aircraft, expanded routes, and infrastructure upgrades.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1936224/000119312526216802/srfm-ex99_1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_0a6da23a83ea7d0b770eb2297b0d8e00.setContent(html_ff06ee462e910639661a1aa4f317462c);
+            
+        
+
+        marker_9888969c94e72946e8e4528363346553.bindPopup(popup_0a6da23a83ea7d0b770eb2297b0d8e00)
+        ;
+
+        
+    
+    
+            marker_9888969c94e72946e8e4528363346553.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9888969c94e72946e8e4528363346553.setIcon(icon_3b89aba732ad7a8b7dc05b96bb889a08);
+            
+    
+            var marker_e9f906c8723b064b40c71c2c8363c3d0 = L.marker(
+                [33.7458511, -117.826166],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_847a7e1c6695b2218e568c8e62f5d250 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfdc31032480d11d215207b9bc407bbe = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_66d38e0dbbb53b79f85d63ff2a5d2333 = $(`<div id="html_66d38e0dbbb53b79f85d63ff2a5d2333" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-11<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> CalEthos and TerraVolt announced a natural gas supply agreement for a planned AI data center campus in Southeast Idaho.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1174891/000149315226022148/ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_cfdc31032480d11d215207b9bc407bbe.setContent(html_66d38e0dbbb53b79f85d63ff2a5d2333);
+            
+        
+
+        marker_e9f906c8723b064b40c71c2c8363c3d0.bindPopup(popup_cfdc31032480d11d215207b9bc407bbe)
+        ;
+
+        
+    
+    
+            marker_e9f906c8723b064b40c71c2c8363c3d0.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9f906c8723b064b40c71c2c8363c3d0.setIcon(icon_847a7e1c6695b2218e568c8e62f5d250);
+            
+    
+            var marker_d18ba2c95f3cc354e47e7343c2e9506c = L.marker(
+                [30.6549433, -97.0058245],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_b0a76274f556701967adb86b3037a1f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4750ccbe891a9a79f7f67c519987a398 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a68e4c614d6b6efc1a4c6f91739a8861 = $(`<div id="html_a68e4c614d6b6efc1a4c6f91739a8861" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-30<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Riot Platforms announces data center development and lease at the Rockdale Site with projected energization timeline.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1167419/000110465926052943/riot-20260430xex99d2.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_4750ccbe891a9a79f7f67c519987a398.setContent(html_a68e4c614d6b6efc1a4c6f91739a8861);
+            
+        
+
+        marker_d18ba2c95f3cc354e47e7343c2e9506c.bindPopup(popup_4750ccbe891a9a79f7f67c519987a398)
+        ;
+
+        
+    
+    
+            marker_d18ba2c95f3cc354e47e7343c2e9506c.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d18ba2c95f3cc354e47e7343c2e9506c.setIcon(icon_b0a76274f556701967adb86b3037a1f2);
+            
+    
+            var marker_167280a9c7d0a2a269914881ccf9559f = L.marker(
+                [33.986694, -79.6644927],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_b9a27a2b95d3515b6bcf99564c9372ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8034812992fd21e504d6689dbdc4baae = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9dc0d29324759871aff2c5376dcf43d2 = $(`<div id="html_9dc0d29324759871aff2c5376dcf43d2" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-15<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> BlockchAIn Digital Infrastructure announced 100 MW AI data center expansion in Florence County, South Carolina, expected ready Q2 2028.<br>     <a href="https://www.sec.gov/Archives/edgar/data/2070542/000121390026043816/ea028637901ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_8034812992fd21e504d6689dbdc4baae.setContent(html_9dc0d29324759871aff2c5376dcf43d2);
+            
+        
+
+        marker_167280a9c7d0a2a269914881ccf9559f.bindPopup(popup_8034812992fd21e504d6689dbdc4baae)
+        ;
+
+        
+    
+    
+            marker_167280a9c7d0a2a269914881ccf9559f.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_167280a9c7d0a2a269914881ccf9559f.setIcon(icon_b9a27a2b95d3515b6bcf99564c9372ac);
+            
+    
+            var marker_00699d37b391d5eed0e4286311dfe2ca = L.marker(
+                [39.5332417, -120.0496457],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_ed942417ca427f356929a53e8d61d7ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dd2ebcbae604c3beb3915bba7643afa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_64ad125a4986517df9e369caa2f42dbf = $(`<div id="html_64ad125a4986517df9e369caa2f42dbf" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-06<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Hut 8 commercialized Beacon Point AI data center campus with 352 MW lease agreement.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/hut-20260506xex99d1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_9dd2ebcbae604c3beb3915bba7643afa.setContent(html_64ad125a4986517df9e369caa2f42dbf);
+            
+        
+
+        marker_00699d37b391d5eed0e4286311dfe2ca.bindPopup(popup_9dd2ebcbae604c3beb3915bba7643afa)
+        ;
+
+        
+    
+    
+            marker_00699d37b391d5eed0e4286311dfe2ca.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00699d37b391d5eed0e4286311dfe2ca.setIcon(icon_ed942417ca427f356929a53e8d61d7ad);
+            
+    
+            var marker_1e6885ba2fbd9019439ce7a6a6e11bed = L.marker(
+                [29.8193304, -95.5583302],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_443d734b094206460a7025c30aa6843f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccf7ff450d4ec5e8f47cd5d1463910d8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5213502a0c6509eb1b743c53c0b75a83 = $(`<div id="html_5213502a0c6509eb1b743c53c0b75a83" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-11<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Target Hospitality announced $550 million data center campus expansion in North Texas supporting 4,000 beds.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1712189/000110465926058236/th-20260511xex99d1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_ccf7ff450d4ec5e8f47cd5d1463910d8.setContent(html_5213502a0c6509eb1b743c53c0b75a83);
+            
+        
+
+        marker_1e6885ba2fbd9019439ce7a6a6e11bed.bindPopup(popup_ccf7ff450d4ec5e8f47cd5d1463910d8)
+        ;
+
+        
+    
+    
+            marker_1e6885ba2fbd9019439ce7a6a6e11bed.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e6885ba2fbd9019439ce7a6a6e11bed.setIcon(icon_443d734b094206460a7025c30aa6843f);
+            
+    
+            var marker_a4431c6d2aa7f1fd323f63467735398a = L.marker(
+                [31.3386242, -94.7288558],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_a6e7cbdeffacbc9f9108534d20744bab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cde4d286d2cc7df6cca303d4e3926f56 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_db112c4a5bd3925ce5a16b47746ac0c9 = $(`<div id="html_db112c4a5bd3925ce5a16b47746ac0c9" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-04<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> 1606 Corp. acquiring Texas power-generation property on 132 acres with 50,000 sq ft warehouse for data center infrastructure development.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1877461/000147793226002719/cbdw_ex991.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_cde4d286d2cc7df6cca303d4e3926f56.setContent(html_db112c4a5bd3925ce5a16b47746ac0c9);
+            
+        
+
+        marker_a4431c6d2aa7f1fd323f63467735398a.bindPopup(popup_cde4d286d2cc7df6cca303d4e3926f56)
+        ;
+
+        
+    
+    
+            marker_a4431c6d2aa7f1fd323f63467735398a.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4431c6d2aa7f1fd323f63467735398a.setIcon(icon_a6e7cbdeffacbc9f9108534d20744bab);
+            
+    
+            var marker_66622057d2aaa84cddbd6c5d76bbb3ba = L.marker(
+                [30.7807244, -91.3763353],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_d47de03db7088c2f32bec9cbfb48328f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_448c1000fb55c0d77640307400643843 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2f440d2441919b0d747607b2dd228b92 = $(`<div id="html_2f440d2441919b0d747607b2dd228b92" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-01<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Hut 8 financing development and construction of 245 megawatt data center at River Bend campus.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1964789/000110465926053247/tm2613163d1_8k.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_448c1000fb55c0d77640307400643843.setContent(html_2f440d2441919b0d747607b2dd228b92);
+            
+        
+
+        marker_66622057d2aaa84cddbd6c5d76bbb3ba.bindPopup(popup_448c1000fb55c0d77640307400643843)
+        ;
+
+        
+    
+    
+            marker_66622057d2aaa84cddbd6c5d76bbb3ba.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66622057d2aaa84cddbd6c5d76bbb3ba.setIcon(icon_d47de03db7088c2f32bec9cbfb48328f);
+            
+    
+            var marker_9aca48b4e9469eb553ebad32845ef21a = L.marker(
+                [33.1781718, -86.6072054],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_dd909432b4b5992cd450c28fae88ac9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65d8a28707da0a605ef791411d03c143 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_cb40b8053edf367d8fea4414f65d7f19 = $(`<div id="html_cb40b8053edf367d8fea4414f65d7f19" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-08<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Digi Power X will develop a 40 MW AI data center campus in Columbiana, Alabama in two phases.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1854368/000121390026053566/ea028958501ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_65d8a28707da0a605ef791411d03c143.setContent(html_cb40b8053edf367d8fea4414f65d7f19);
+            
+        
+
+        marker_9aca48b4e9469eb553ebad32845ef21a.bindPopup(popup_65d8a28707da0a605ef791411d03c143)
+        ;
+
+        
+    
+    
+            marker_9aca48b4e9469eb553ebad32845ef21a.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9aca48b4e9469eb553ebad32845ef21a.setIcon(icon_dd909432b4b5992cd450c28fae88ac9d);
+            
+    
+            var marker_5b4fd103a16b4b06c7ea99aec4332ed7 = L.marker(
+                [30.7807244, -91.3763353],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_f56dfc80bd1f20430075dd134343d053 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f35cd1f3842c69fefcfe934dcf5db0bf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1134ec8274167c4c210eaa858ab8b9fc = $(`<div id="html_1134ec8274167c4c210eaa858ab8b9fc" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-27<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Hut 8 announces development of 245 megawatt data center at River Bend campus in Louisiana.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1964789/000110465926049090/tm2612485d1_8k.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_f35cd1f3842c69fefcfe934dcf5db0bf.setContent(html_1134ec8274167c4c210eaa858ab8b9fc);
+            
+        
+
+        marker_5b4fd103a16b4b06c7ea99aec4332ed7.bindPopup(popup_f35cd1f3842c69fefcfe934dcf5db0bf)
+        ;
+
+        
+    
+    
+            marker_5b4fd103a16b4b06c7ea99aec4332ed7.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b4fd103a16b4b06c7ea99aec4332ed7.setIcon(icon_f56dfc80bd1f20430075dd134343d053);
+            
+    
+            var marker_ae0bee0ea533e41a41634e58db5ee17f = L.marker(
+                [32.7219973, -84.0130926],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_80d7c9e5320a44a7d1149d4b35ad2e53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cc0292fe3abdbacff93f5b2329eafa6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ef1539b718b6e7eb88f6d51981687727 = $(`<div id="html_ef1539b718b6e7eb88f6d51981687727" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-23<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> T-REX Acquisition Corp. acquires operating 3-megawatt data center with 5.8-acre parcel in Roberta, Georgia.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1437750/000147793226002467/trex_ex991.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_9cc0292fe3abdbacff93f5b2329eafa6.setContent(html_ef1539b718b6e7eb88f6d51981687727);
+            
+        
+
+        marker_ae0bee0ea533e41a41634e58db5ee17f.bindPopup(popup_9cc0292fe3abdbacff93f5b2329eafa6)
+        ;
+
+        
+    
+    
+            marker_ae0bee0ea533e41a41634e58db5ee17f.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae0bee0ea533e41a41634e58db5ee17f.setIcon(icon_80d7c9e5320a44a7d1149d4b35ad2e53);
+            
+    
+            var marker_05b37d24646555f0178ae01bf4856fa6 = L.marker(
+                [31.6174004, -94.1193622],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_390448695b73f45f0b756ff043bc00db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebdec29192a76eba40c5e7ecc78e7ae5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_111d4828cbb77365057d62059933d1f4 = $(`<div id="html_111d4828cbb77365057d62059933d1f4" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-24<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> AVAX One to develop 10 MW Tier 3 AI/HPC data center within 50 miles of Calgary, Alberta.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1826397/000149315226018940/ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_ebdec29192a76eba40c5e7ecc78e7ae5.setContent(html_111d4828cbb77365057d62059933d1f4);
+            
+        
+
+        marker_05b37d24646555f0178ae01bf4856fa6.bindPopup(popup_ebdec29192a76eba40c5e7ecc78e7ae5)
+        ;
+
+        
+    
+    
+            marker_05b37d24646555f0178ae01bf4856fa6.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05b37d24646555f0178ae01bf4856fa6.setIcon(icon_390448695b73f45f0b756ff043bc00db);
+            
+    
+            var marker_fe245a326e44c2153a352ca875079fa5 = L.marker(
+                [44.0806041, -103.228023],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_4bdc394e68eeadf571646fab8b913a36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba9d4e0f7871565da7b50463138234d7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a7c1f7c22b1f741db0e9fc4e6587a514 = $(`<div id="html_a7c1f7c22b1f741db0e9fc4e6587a514" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-06<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Black Hills Corp. continues construction of 99-MW Lange II gas-fired generation project expected to begin serving customers in Q4 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1130464/000119312526209210/bkh-ex99.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_ba9d4e0f7871565da7b50463138234d7.setContent(html_a7c1f7c22b1f741db0e9fc4e6587a514);
+            
+        
+
+        marker_fe245a326e44c2153a352ca875079fa5.bindPopup(popup_ba9d4e0f7871565da7b50463138234d7)
+        ;
+
+        
+    
+    
+            marker_fe245a326e44c2153a352ca875079fa5.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe245a326e44c2153a352ca875079fa5.setIcon(icon_4bdc394e68eeadf571646fab8b913a36);
+            
+    
+            var marker_45600bd7ee952ec15b77290820e4d6cc = L.marker(
+                [33.1781718, -86.6072054],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_2c0c427c8bbe602ee77aedce7855c695 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_286dd7cf1403e81f3c0c5ff98254532f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a71e481fb86ce0d1938e98713aaa81eb = $(`<div id="html_a71e481fb86ce0d1938e98713aaa81eb" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-08<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Company expanding AI data center campus in Columbiana, Alabama with 40 MW deployment across two phases.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1854368/000121390026053566/ea0289585-8k_digi.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_286dd7cf1403e81f3c0c5ff98254532f.setContent(html_a71e481fb86ce0d1938e98713aaa81eb);
+            
+        
+
+        marker_45600bd7ee952ec15b77290820e4d6cc.bindPopup(popup_286dd7cf1403e81f3c0c5ff98254532f)
+        ;
+
+        
+    
+    
+            marker_45600bd7ee952ec15b77290820e4d6cc.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45600bd7ee952ec15b77290820e4d6cc.setIcon(icon_2c0c427c8bbe602ee77aedce7855c695);
+            
+    
+            var marker_fdac7daaf08779e889008bbdd9ef8f78 = L.marker(
+                [31.8457149, -102.367687],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_592aa9bac54b7948151979ee5f4ffaf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_298f18b6f8376c07ac484664d90429b1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_80ac54dbf4250e4bcb94113caaea6e69 = $(`<div id="html_80ac54dbf4250e4bcb94113caaea6e69" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-14<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> New Era Energy & Digital secures $115 million in funding to develop Texas Critical Data Centers multi-phase AI data center campus in Ector County, Texas.<br>     <a href="https://www.sec.gov/Archives/edgar/data/2028336/000121390026043542/ea028610401ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_298f18b6f8376c07ac484664d90429b1.setContent(html_80ac54dbf4250e4bcb94113caaea6e69);
+            
+        
+
+        marker_fdac7daaf08779e889008bbdd9ef8f78.bindPopup(popup_298f18b6f8376c07ac484664d90429b1)
+        ;
+
+        
+    
+    
+            marker_fdac7daaf08779e889008bbdd9ef8f78.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdac7daaf08779e889008bbdd9ef8f78.setIcon(icon_592aa9bac54b7948151979ee5f4ffaf8);
+            
+    
+            var marker_50aabba28acef27433b47ed70e99e282 = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_fb6fb60218a6e3cdcdf3de949de2ee23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f21b964cb9adb33c8d73d898e611323 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a56ceca70a9603ae00d0720836a6b030 = $(`<div id="html_a56ceca70a9603ae00d0720836a6b030" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-16<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> TeraWulf announces funding for planned data center campus construction in Hawesville, Kentucky.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1083301/000110465926044387/tm2611661d9_ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_0f21b964cb9adb33c8d73d898e611323.setContent(html_a56ceca70a9603ae00d0720836a6b030);
+            
+        
+
+        marker_50aabba28acef27433b47ed70e99e282.bindPopup(popup_0f21b964cb9adb33c8d73d898e611323)
+        ;
+
+        
+    
+    
+            marker_50aabba28acef27433b47ed70e99e282.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50aabba28acef27433b47ed70e99e282.setIcon(icon_fb6fb60218a6e3cdcdf3de949de2ee23);
+            
+    
+            var marker_846a4fc0ad9ffcad4b13721283f4c038 = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_9582940517ae3f44751b0541d87aa096 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61736eb205ad4d084fde3ac345fa6e25 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9c8c6f382ebc246b0b17d703cbfc1cd8 = $(`<div id="html_9c8c6f382ebc246b0b17d703cbfc1cd8" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-14<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> TeraWulf announces funding for data center construction expansion at Hawesville, Kentucky site.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1083301/000110465926043279/tm2611661d4_ex99-2.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_61736eb205ad4d084fde3ac345fa6e25.setContent(html_9c8c6f382ebc246b0b17d703cbfc1cd8);
+            
+        
+
+        marker_846a4fc0ad9ffcad4b13721283f4c038.bindPopup(popup_61736eb205ad4d084fde3ac345fa6e25)
+        ;
+
+        
+    
+    
+            marker_846a4fc0ad9ffcad4b13721283f4c038.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_846a4fc0ad9ffcad4b13721283f4c038.setIcon(icon_9582940517ae3f44751b0541d87aa096);
+            
+    
+            var marker_60ea8a89ffc7662712fa5d8921c15bd0 = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_7b1b9dc7dba02e704d2d439ef45f3eea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70bf88c45d870456a490380c7470a4ee = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4890b9ce25fc34e605588c1102935d8b = $(`<div id="html_4890b9ce25fc34e605588c1102935d8b" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-15<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> TeraWulf announced funding for planned data center campus construction in Hawesville, Kentucky.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1083301/000110465926043402/tm2611661d5_ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_70bf88c45d870456a490380c7470a4ee.setContent(html_4890b9ce25fc34e605588c1102935d8b);
+            
+        
+
+        marker_60ea8a89ffc7662712fa5d8921c15bd0.bindPopup(popup_70bf88c45d870456a490380c7470a4ee)
+        ;
+
+        
+    
+    
+            marker_60ea8a89ffc7662712fa5d8921c15bd0.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60ea8a89ffc7662712fa5d8921c15bd0.setIcon(icon_7b1b9dc7dba02e704d2d439ef45f3eea);
+            
+    
+            var marker_adc91416b3c7e092a02239cd0ce0eac9 = L.marker(
+                [34.5196569, -100.2067656],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_2f5fda282d4cb2a2da55a64f191dc3d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3252a02a8f86a4ea122ab29a6181e1e8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9a1a86f878f7807c41e6af168e9f28de = $(`<div id="html_9a1a86f878f7807c41e6af168e9f28de" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-08<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> IREN expanding Childress data center with 60MW of air-cooled capacity for NVIDIA Blackwell GPU deployment, ramping early 2027.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_3252a02a8f86a4ea122ab29a6181e1e8.setContent(html_9a1a86f878f7807c41e6af168e9f28de);
+            
+        
+
+        marker_adc91416b3c7e092a02239cd0ce0eac9.bindPopup(popup_3252a02a8f86a4ea122ab29a6181e1e8)
+        ;
+
+        
+    
+    
+            marker_adc91416b3c7e092a02239cd0ce0eac9.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_adc91416b3c7e092a02239cd0ce0eac9.setIcon(icon_2f5fda282d4cb2a2da55a64f191dc3d7);
+            
+    
+            var marker_633ead3cc4ae425e9eddb29b3381218a = L.marker(
+                [39.7082498, -91.3587413],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_e213f6ca154ba1558dd0d251a7e2a2c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_625351e08115c08a1cd9bedcfdc2fb49 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5f41e4b4a5b0e817121f71d7f0d7b1b4 = $(`<div id="html_5f41e4b4a5b0e817121f71d7f0d7b1b4" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-11<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Announced definitive agreement to acquire Long Ridge Energy & Power, expanding AI data center campus at Hannibal with 1,600 acres and 485 MW power plant.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1507605/000150760526000014/q126shareholderletter.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_625351e08115c08a1cd9bedcfdc2fb49.setContent(html_5f41e4b4a5b0e817121f71d7f0d7b1b4);
+            
+        
+
+        marker_633ead3cc4ae425e9eddb29b3381218a.bindPopup(popup_625351e08115c08a1cd9bedcfdc2fb49)
+        ;
+
+        
+    
+    
+            marker_633ead3cc4ae425e9eddb29b3381218a.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_633ead3cc4ae425e9eddb29b3381218a.setIcon(icon_e213f6ca154ba1558dd0d251a7e2a2c3);
+            
+    
+            var marker_16e2fe50efcae4c8eacb28afe9477da0 = L.marker(
+                [26.1717097, -98.1628013],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_4134be68dce06cd309400ec62e078229 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae7dfcc17db7f41daacce4f90fe815db = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d3e7dad1dd2774559f890c138bf0eff2 = $(`<div id="html_d3e7dad1dd2774559f890c138bf0eff2" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-21<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Soluna expands Project Dorothy 1B data center with 3.3 MW capacity deployment for Blockware customer.<br>     <a href="https://www.sec.gov/Archives/edgar/data/64463/000149315226018192/ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_ae7dfcc17db7f41daacce4f90fe815db.setContent(html_d3e7dad1dd2774559f890c138bf0eff2);
+            
+        
+
+        marker_16e2fe50efcae4c8eacb28afe9477da0.bindPopup(popup_ae7dfcc17db7f41daacce4f90fe815db)
+        ;
+
+        
+    
+    
+            marker_16e2fe50efcae4c8eacb28afe9477da0.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16e2fe50efcae4c8eacb28afe9477da0.setIcon(icon_4134be68dce06cd309400ec62e078229);
+            
+    
+            var marker_193334225b1f0c2e59460e130353c72d = L.marker(
+                [35.1460249, -90.0517638],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_47f2cc5e38d2536a7e51cb51e4508ba9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_884b4bca91e68f29be43a6f0b90d1e0c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f06769b319badf322336d941b3aab442 = $(`<div id="html_f06769b319badf322336d941b3aab442" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-07<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> AAON opened new Memphis facility with overhead expenses impacting segment margin in Q1 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/824142/000082414226000034/liveaaonpressreleaseexs.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_884b4bca91e68f29be43a6f0b90d1e0c.setContent(html_f06769b319badf322336d941b3aab442);
+            
+        
+
+        marker_193334225b1f0c2e59460e130353c72d.bindPopup(popup_884b4bca91e68f29be43a6f0b90d1e0c)
+        ;
+
+        
+    
+    
+            marker_193334225b1f0c2e59460e130353c72d.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_193334225b1f0c2e59460e130353c72d.setIcon(icon_47f2cc5e38d2536a7e51cb51e4508ba9);
+            
+    
+            var marker_a9b8a35b65a8a3b00bfae81c31ff04b5 = L.marker(
+                [42.33136, -83.0520837],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_bfa87c2bef8c900984a1b4d38e211673 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e880b67f36e763c93902360b519077ec = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_680dd172b3f633d5e81bc7dc8bc6b69e = $(`<div id="html_680dd172b3f633d5e81bc7dc8bc6b69e" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-11<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Omnipresent Robotics deploying up to 143 robots and expanding Michigan workforce at existing data center facility.<br>     <a href="https://www.sec.gov/Archives/edgar/data/896493/000121465926005936/ex99_1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_e880b67f36e763c93902360b519077ec.setContent(html_680dd172b3f633d5e81bc7dc8bc6b69e);
+            
+        
+
+        marker_a9b8a35b65a8a3b00bfae81c31ff04b5.bindPopup(popup_e880b67f36e763c93902360b519077ec)
+        ;
+
+        
+    
+    
+            marker_a9b8a35b65a8a3b00bfae81c31ff04b5.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9b8a35b65a8a3b00bfae81c31ff04b5.setIcon(icon_bfa87c2bef8c900984a1b4d38e211673);
+            
+    
+            var marker_e6c3e4edf998fba791ffda8e9bce0a85 = L.marker(
+                [42.2207982, -83.4841464],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_97c6b5cf1252c6bf31f5a1d30aeb4966 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adc8c8cf5c057f327475e1fd53311aeb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_899d3a6141b036dccac835637f32a0ec = $(`<div id="html_899d3a6141b036dccac835637f32a0ec" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-30<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> DTE Energy secured agreement to power Google's new 1 gigawatt data center in Van Buren Township, Michigan.<br>     <a href="https://www.sec.gov/Archives/edgar/data/936340/000093634026000079/exhibit991-33126.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_adc8c8cf5c057f327475e1fd53311aeb.setContent(html_899d3a6141b036dccac835637f32a0ec);
+            
+        
+
+        marker_e6c3e4edf998fba791ffda8e9bce0a85.bindPopup(popup_adc8c8cf5c057f327475e1fd53311aeb)
+        ;
+
+        
+    
+    
+            marker_e6c3e4edf998fba791ffda8e9bce0a85.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6c3e4edf998fba791ffda8e9bce0a85.setIcon(icon_97c6b5cf1252c6bf31f5a1d30aeb4966);
+            
+    
+            var marker_b895bc70b10a3b2b00fbb65169e63949 = L.marker(
+                [32.4709519, -100.405938],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_bcd97cbb1b61a1aa225f3dad6c97bbcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a045ebd5f37ef5796c426732cfe7e6cc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ddf9f97da5400aaa9d306d4db535191d = $(`<div id="html_ddf9f97da5400aaa9d306d4db535191d" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-11<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> IREN energized Sweetwater 1 GPU data center on schedule and is expanding capacity with additional megawatts under construction.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_a045ebd5f37ef5796c426732cfe7e6cc.setContent(html_ddf9f97da5400aaa9d306d4db535191d);
+            
+        
+
+        marker_b895bc70b10a3b2b00fbb65169e63949.bindPopup(popup_a045ebd5f37ef5796c426732cfe7e6cc)
+        ;
+
+        
+    
+    
+            marker_b895bc70b10a3b2b00fbb65169e63949.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b895bc70b10a3b2b00fbb65169e63949.setIcon(icon_bcd97cbb1b61a1aa225f3dad6c97bbcb);
+            
+    
+            var marker_fe82c677c10299ce7bf984d2771a452e = L.marker(
+                [34.4795161, -101.1875029],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_00409619bbb9c30dc9325dec8f63ee67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72d10d285fa8163d0419aefe1ee53ee7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8eaaec60d4075f6b09e8bc722e146870 = $(`<div id="html_8eaaec60d4075f6b09e8bc722e146870" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-07<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Soluna launched 3 MW Bitcoin mining operation at Project Dorothy 1B with partner Sazmining.<br>     <a href="https://www.sec.gov/Archives/edgar/data/64463/000149315226021610/ex99-1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_72d10d285fa8163d0419aefe1ee53ee7.setContent(html_8eaaec60d4075f6b09e8bc722e146870);
+            
+        
+
+        marker_fe82c677c10299ce7bf984d2771a452e.bindPopup(popup_72d10d285fa8163d0419aefe1ee53ee7)
+        ;
+
+        
+    
+    
+            marker_fe82c677c10299ce7bf984d2771a452e.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe82c677c10299ce7bf984d2771a452e.setIcon(icon_00409619bbb9c30dc9325dec8f63ee67);
+            
+    
+            var marker_13b20876566af2bbcba6a249775b3c86 = L.marker(
+                [30.6370152, -97.6775634],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_6dbd49edadf6a17d2d073048a5611cca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9ac6f38424fd7c612fbbbe755ebe54d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_024a0959cc04ac1d158135de0b9900bd = $(`<div id="html_024a0959cc04ac1d158135de0b9900bd" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-07<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> TSS's Georgetown, Texas AI rack integration facility has been operating at increasing scale for six months with growing quarterly EBITDA.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1320760/000165495426004536/tssi_ex991.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_d9ac6f38424fd7c612fbbbe755ebe54d.setContent(html_024a0959cc04ac1d158135de0b9900bd);
+            
+        
+
+        marker_13b20876566af2bbcba6a249775b3c86.bindPopup(popup_d9ac6f38424fd7c612fbbbe755ebe54d)
+        ;
+
+        
+    
+    
+            marker_13b20876566af2bbcba6a249775b3c86.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13b20876566af2bbcba6a249775b3c86.setIcon(icon_6dbd49edadf6a17d2d073048a5611cca);
+            
+    
+            var marker_7564e6f786d39e0b31fb6f28b76d9579 = L.marker(
+                [34.6184471, -82.4779053],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_457f422470e630e94b5d5c2a2f6cddc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ab8af1c47155fa73f42cb0949f2cb11 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_12e2e18294c87894056dee30637228e4 = $(`<div id="html_12e2e18294c87894056dee30637228e4" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-13<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> BMarko Structures expanded its engineering and fabrication facility to approximately 560,000 square feet in Williamston, South Carolina.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1674101/000162828026024824/exhibit991vrt-q120264132026.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_5ab8af1c47155fa73f42cb0949f2cb11.setContent(html_12e2e18294c87894056dee30637228e4);
+            
+        
+
+        marker_7564e6f786d39e0b31fb6f28b76d9579.bindPopup(popup_5ab8af1c47155fa73f42cb0949f2cb11)
+        ;
+
+        
+    
+    
+            marker_7564e6f786d39e0b31fb6f28b76d9579.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7564e6f786d39e0b31fb6f28b76d9579.setIcon(icon_457f422470e630e94b5d5c2a2f6cddc0);
+            
+    
+            var marker_5eba225f10723efe971bbb5b6e03254a = L.marker(
+                [34.9533643, -118.8485992],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_d4e86dbd327bb1c6543b3c40ffb18405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_615cfce41dc127b3733f402dba36c298 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1eb2becb33d4f7582addc9280d366080 = $(`<div id="html_1eb2becb33d4f7582addc9280d366080" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-11<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> 105 MW Pastoria Solar Project commissioned and connected to grid in California.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1868275/000186827526000063/ceg-20260511991.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_615cfce41dc127b3733f402dba36c298.setContent(html_1eb2becb33d4f7582addc9280d366080);
+            
+        
+
+        marker_5eba225f10723efe971bbb5b6e03254a.bindPopup(popup_615cfce41dc127b3733f402dba36c298)
+        ;
+
+        
+    
+    
+            marker_5eba225f10723efe971bbb5b6e03254a.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5eba225f10723efe971bbb5b6e03254a.setIcon(icon_d4e86dbd327bb1c6543b3c40ffb18405);
+            
+    
+            var marker_65a409f31d693d9c5658011b65ff9f09 = L.marker(
+                [37.9000554, -86.754988],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_472e45e8759b2bceea1eb92b9e3a8f93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_409861a31ffaba5619d177a3045facf9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9f81a88973a130e2532c94ecebbaabbd = $(`<div id="html_9f81a88973a130e2532c94ecebbaabbd" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-08<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> TeraWulf acquired Hawesville, Kentucky site with 480 MW grid-connected power for large-scale HPC campus expansion.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_409861a31ffaba5619d177a3045facf9.setContent(html_9f81a88973a130e2532c94ecebbaabbd);
+            
+        
+
+        marker_65a409f31d693d9c5658011b65ff9f09.bindPopup(popup_409861a31ffaba5619d177a3045facf9)
+        ;
+
+        
+    
+    
+            marker_65a409f31d693d9c5658011b65ff9f09.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65a409f31d693d9c5658011b65ff9f09.setIcon(icon_472e45e8759b2bceea1eb92b9e3a8f93);
+            
+    
+            var marker_baf8ad45b1be18fdf868a5d0a630d747 = L.marker(
+                [29.3872254, -94.992736],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_0779a34b5a1cfdd9d6fd24cc9c3c3cba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_580e0674d5473355a3a4bd30232bb3b9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_306e24f2805acad6186338b6fd183019 = $(`<div id="html_306e24f2805acad6186338b6fd183019" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-07<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Stabilis Solutions advancing development of proposed Galveston LNG facility for Gulf Coast bunkering operations.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1043186/000143774926015274/ex_933796.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_580e0674d5473355a3a4bd30232bb3b9.setContent(html_306e24f2805acad6186338b6fd183019);
+            
+        
+
+        marker_baf8ad45b1be18fdf868a5d0a630d747.bindPopup(popup_580e0674d5473355a3a4bd30232bb3b9)
+        ;
+
+        
+    
+    
+            marker_baf8ad45b1be18fdf868a5d0a630d747.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_baf8ad45b1be18fdf868a5d0a630d747.setIcon(icon_0779a34b5a1cfdd9d6fd24cc9c3c3cba);
+            
+    
+            var marker_7dfa244dacd02780022c6681b9d75246 = L.marker(
+                [39.6675391, -80.8721268],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_6c79634b9e7636eadae9552d95a9d13f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e53d7af916efb0c4e71d1fbb26d18930 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_45e8b523abcd62e530a968eb13c30c41 = $(`<div id="html_45e8b523abcd62e530a968eb13c30c41" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-30<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> MARA acquires Long Ridge Energy campus in Hannibal, Ohio, expanding digital infrastructure capacity to over 1 GW.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1507605/000119312526193982/d54802dex991.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_e53d7af916efb0c4e71d1fbb26d18930.setContent(html_45e8b523abcd62e530a968eb13c30c41);
+            
+        
+
+        marker_7dfa244dacd02780022c6681b9d75246.bindPopup(popup_e53d7af916efb0c4e71d1fbb26d18930)
+        ;
+
+        
+    
+    
+            marker_7dfa244dacd02780022c6681b9d75246.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7dfa244dacd02780022c6681b9d75246.setIcon(icon_6c79634b9e7636eadae9552d95a9d13f);
+            
+    
+            var marker_e8636bdfe565fee4ef1f72fff24e1bf0 = L.marker(
+                [35.996653, -78.9018053],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_0da64b1d8de7666626227837115fba0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88c2a21bcf9cb38cb290ab0e9964c3e4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_abcf06d77343079263bc36a626450d89 = $(`<div id="html_abcf06d77343079263bc36a626450d89" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-05<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Durham facilities refocused on materials production, increasing the site's earnings potential.<br>     <a href="https://www.sec.gov/Archives/edgar/data/895419/000089541926000024/ex991q3-26.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_88c2a21bcf9cb38cb290ab0e9964c3e4.setContent(html_abcf06d77343079263bc36a626450d89);
+            
+        
+
+        marker_e8636bdfe565fee4ef1f72fff24e1bf0.bindPopup(popup_88c2a21bcf9cb38cb290ab0e9964c3e4)
+        ;
+
+        
+    
+    
+            marker_e8636bdfe565fee4ef1f72fff24e1bf0.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8636bdfe565fee4ef1f72fff24e1bf0.setIcon(icon_0da64b1d8de7666626227837115fba0c);
+            
+    
+            var marker_7cb4261abd9249d34df40b7dbf3e0419 = L.marker(
+                [39.373597, -119.2267443],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_e45b6eadc6477e174dcaafd617ef8264 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60ed7988a659e144d503b38b9eae5614 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f84e250f0b5d1c6df9b6ba4aa7451926 = $(`<div id="html_f84e250f0b5d1c6df9b6ba4aa7451926" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-08<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Comstock Metals facility in Silver Springs, Nevada commencing operations by end of second quarter 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1120970/000143774926015741/ex_958487.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_60ed7988a659e144d503b38b9eae5614.setContent(html_f84e250f0b5d1c6df9b6ba4aa7451926);
+            
+        
+
+        marker_7cb4261abd9249d34df40b7dbf3e0419.bindPopup(popup_60ed7988a659e144d503b38b9eae5614)
+        ;
+
+        
+    
+    
+            marker_7cb4261abd9249d34df40b7dbf3e0419.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cb4261abd9249d34df40b7dbf3e0419.setIcon(icon_e45b6eadc6477e174dcaafd617ef8264);
+            
+    
+            var marker_4107b0c320d7bb751f7013a903f016d8 = L.marker(
+                [32.7219973, -84.0130926],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_bbbf29c48845e99b2a7659e431f4b461 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a570c978b0bc1b58607177f77d3e3cf4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_962d13d9df0e42fd5f21e36d36e9f7d7 = $(`<div id="html_962d13d9df0e42fd5f21e36d36e9f7d7" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-04-23<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Company acquired operating 3-megawatt data center facility in Roberta, Georgia.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1437750/000147793226002467/trex_8k.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_a570c978b0bc1b58607177f77d3e3cf4.setContent(html_962d13d9df0e42fd5f21e36d36e9f7d7);
+            
+        
+
+        marker_4107b0c320d7bb751f7013a903f016d8.bindPopup(popup_a570c978b0bc1b58607177f77d3e3cf4)
+        ;
+
+        
+    
+    
+            marker_4107b0c320d7bb751f7013a903f016d8.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4107b0c320d7bb751f7013a903f016d8.setIcon(icon_bbbf29c48845e99b2a7659e431f4b461);
+            
+    
+            var marker_4ad9bc2069fdd0d7aec09dcd32e0bca5 = L.marker(
+                [35.6630196, -95.3927706],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_1841703123672bda6c11970416e46de0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c81e3a5501a40d36ee73400992115fdd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_595abf84c78260a370f17b068e9e3756 = $(`<div id="html_595abf84c78260a370f17b068e9e3756" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Financial Services<br>     <i>Filed:</i> 2026-05-06<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Core Scientific expanding Muskogee, Oklahoma campus by 1.5 GW gross power capacity.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1839341/000162828026031246/q12026corescientificinc-ea.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_c81e3a5501a40d36ee73400992115fdd.setContent(html_595abf84c78260a370f17b068e9e3756);
+            
+        
+
+        marker_4ad9bc2069fdd0d7aec09dcd32e0bca5.bindPopup(popup_c81e3a5501a40d36ee73400992115fdd)
+        ;
+
+        
+    
+    
+            marker_4ad9bc2069fdd0d7aec09dcd32e0bca5.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ad9bc2069fdd0d7aec09dcd32e0bca5.setIcon(icon_1841703123672bda6c11970416e46de0);
+            
+    
+            var marker_2c8591c48f0a1a50d3791b3ba29e7e88 = L.marker(
+                [30.2711286, -97.7436995],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_0fe015c307dd3a2354292fa7e53f4d98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c5635087c6f60f1636e9f960ec2306e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3bc2451a9191b6ac3cca4c4eebb08d31 = $(`<div id="html_3bc2451a9191b6ac3cca4c4eebb08d31" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Travel and Hospitality<br>     <i>Filed:</i> 2026-04-29<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Broadstone commenced build-to-suit development for Tesla battery recycling facility near Gigafactory in Austin, Texas.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1424182/000142418226000034/bnl-20260331xexx991.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_0c5635087c6f60f1636e9f960ec2306e.setContent(html_3bc2451a9191b6ac3cca4c4eebb08d31);
+            
+        
+
+        marker_2c8591c48f0a1a50d3791b3ba29e7e88.bindPopup(popup_0c5635087c6f60f1636e9f960ec2306e)
+        ;
+
+        
+    
+    
+            marker_2c8591c48f0a1a50d3791b3ba29e7e88.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c8591c48f0a1a50d3791b3ba29e7e88.setIcon(icon_0fe015c307dd3a2354292fa7e53f4d98);
+            
+    
+            var marker_e44148602807d79942e0fdd060dc14a1 = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_f71b4416ee2ce79e8ff0b98c27b53534 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1aa2de2d78a50ca99be4be1fece6defa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_202cf2fb2325548e3d6c802fdf128240 = $(`<div id="html_202cf2fb2325548e3d6c802fdf128240" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Travel and Hospitality<br>     <i>Filed:</i> 2026-04-23<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Hollywood Columbus new hotel tower opening announced for June 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_1aa2de2d78a50ca99be4be1fece6defa.setContent(html_202cf2fb2325548e3d6c802fdf128240);
+            
+        
+
+        marker_e44148602807d79942e0fdd060dc14a1.bindPopup(popup_1aa2de2d78a50ca99be4be1fece6defa)
+        ;
+
+        
+    
+    
+            marker_e44148602807d79942e0fdd060dc14a1.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e44148602807d79942e0fdd060dc14a1.setIcon(icon_f71b4416ee2ce79e8ff0b98c27b53534);
+            
+    
+            var marker_e7e73b64c339b59325f433edc9787d60 = L.marker(
+                [40.4848003, -106.831735],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_131ac636c1fa7bf4939531eddfcd4f9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9b73f3958414fd6d4f9dd1a6f2a071c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_52001b3452d66b5f3014ebcc27a789c5 = $(`<div id="html_52001b3452d66b5f3014ebcc27a789c5" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Travel and Hospitality<br>     <i>Filed:</i> 2026-04-23<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Caliber announces Hyatt Studios hotel development in Steamboat Springs, CO, expected to open Q3/Q4 2027.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1627282/000162728226000025/ex_991xhyattstudiosdevelop.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_b9b73f3958414fd6d4f9dd1a6f2a071c.setContent(html_52001b3452d66b5f3014ebcc27a789c5);
+            
+        
+
+        marker_e7e73b64c339b59325f433edc9787d60.bindPopup(popup_b9b73f3958414fd6d4f9dd1a6f2a071c)
+        ;
+
+        
+    
+    
+            marker_e7e73b64c339b59325f433edc9787d60.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7e73b64c339b59325f433edc9787d60.setIcon(icon_131ac636c1fa7bf4939531eddfcd4f9f);
+            
+    
+            var marker_d6e474d2e5af5810834acbdeb67a481f = L.marker(
+                [36.1622767, -86.7742984],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_09741f846f8e535e44717ae0c37b5e06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7798f2acaf8ff7f16b01f4b59ec6e34c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9b1ecbed7b53f7e9867529eed841c6ef = $(`<div id="html_9b1ecbed7b53f7e9867529eed841c6ef" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Travel and Hospitality<br>     <i>Filed:</i> 2026-05-01<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> SafeSpace Global officially opened Tennessee AI Center of Excellence facility in Nashville for AI-powered physical safety technology research and development.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1584693/000149315226020882/form8-k.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_7798f2acaf8ff7f16b01f4b59ec6e34c.setContent(html_9b1ecbed7b53f7e9867529eed841c6ef);
+            
+        
+
+        marker_d6e474d2e5af5810834acbdeb67a481f.bindPopup(popup_7798f2acaf8ff7f16b01f4b59ec6e34c)
+        ;
+
+        
+    
+    
+            marker_d6e474d2e5af5810834acbdeb67a481f.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6e474d2e5af5810834acbdeb67a481f.setIcon(icon_09741f846f8e535e44717ae0c37b5e06);
+            
+    
+            var marker_8839b4ef6d1342e5c8bea8d1650419c2 = L.marker(
+                [40.6018585, -77.7280899],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_ea316bec13bb0fd3a91fcc23af2825dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_069930a7bf09843f3d1ae834272f37b2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_292f468c078e98b6250795a58a12b3d4 = $(`<div id="html_292f468c078e98b6250795a58a12b3d4" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Travel and Hospitality<br>     <i>Filed:</i> 2026-04-22<br>     <i>Event type:</i> Opening<br>     <i>Summary:</i> Grand opening of Belleville office scheduled for third quarter 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/714712/000110465926046483/juvf-20260422xex99d1.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_069930a7bf09843f3d1ae834272f37b2.setContent(html_292f468c078e98b6250795a58a12b3d4);
+            
+        
+
+        marker_8839b4ef6d1342e5c8bea8d1650419c2.bindPopup(popup_069930a7bf09843f3d1ae834272f37b2)
+        ;
+
+        
+    
+    
+            marker_8839b4ef6d1342e5c8bea8d1650419c2.bindTooltip(
+                `<div>
+                     Unknown — opening
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8839b4ef6d1342e5c8bea8d1650419c2.setIcon(icon_ea316bec13bb0fd3a91fcc23af2825dd);
+            
+    
+            var marker_4bc0d8fe2ead56e826d38e079a1ec5a8 = L.marker(
+                [44.311461, -96.79844],
+                {
+}
+            ).addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+            var icon_927f3fdf64f63aef1051573772759f31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d792d291457aa2fa8a33119f667e293 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a19ceb7df67f676a81447c4f26195833 = $(`<div id="html_a19ceb7df67f676a81447c4f26195833" style="width: 100.0%; height: 100.0%;">     <b>Unknown</b><br>     <i>Ticker:</i> —<br>     <i>Industry:</i> Travel and Hospitality<br>     <i>Filed:</i> 2026-05-05<br>     <i>Event type:</i> Expansion<br>     <i>Summary:</i> Completed manufacturing expansion adding 200,000 square feet, 16 shipping docks, and 8,000-pallet warehouse.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1964738/000196473826000022/q12026-8kerexx991.htm" target="_blank">View SEC filing →</a>     </div>`)[0];
+                popup_9d792d291457aa2fa8a33119f667e293.setContent(html_a19ceb7df67f676a81447c4f26195833);
+            
+        
+
+        marker_4bc0d8fe2ead56e826d38e079a1ec5a8.bindPopup(popup_9d792d291457aa2fa8a33119f667e293)
+        ;
+
+        
+    
+    
+            marker_4bc0d8fe2ead56e826d38e079a1ec5a8.bindTooltip(
+                `<div>
+                     Unknown — expansion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bc0d8fe2ead56e826d38e079a1ec5a8.setIcon(icon_927f3fdf64f63aef1051573772759f31);
+            
+    
+            tile_layer_d36bf15921792c318637aa92c328dd69.addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+                marker_6ebfe75431520bb29eef6c0c1256be9c.setIcon(icon_6ef6f5d41ad3012170b01f0e295b9af1);
+            
+    
+                marker_de0cdd368920446ba95108a26715c872.setIcon(icon_5bee96c5905381b138abb2913f325140);
+            
+    
+                marker_e5f312bd70014769b5d8330724664dfe.setIcon(icon_a83339ce74ab160168bd4e0c4416b5c8);
+            
+    
+                marker_f532c69a0b6ac1f458290443359a7e47.setIcon(icon_5e85346082bb9a136c0916aeeda1a569);
+            
+    
+                marker_3232f3f9bcdacb18bbbe317e538e4187.setIcon(icon_b67dd52161d10bf95c375d1bb3c1c113);
+            
+    
+                marker_85c6473b7bfa0cf15c34212f6ce8f1b7.setIcon(icon_c6cb2fda1ff1d6df0b9dbff51dee8e3a);
+            
+    
+                marker_9888969c94e72946e8e4528363346553.setIcon(icon_3b89aba732ad7a8b7dc05b96bb889a08);
+            
+    
+                marker_e9f906c8723b064b40c71c2c8363c3d0.setIcon(icon_847a7e1c6695b2218e568c8e62f5d250);
+            
+    
+                marker_d18ba2c95f3cc354e47e7343c2e9506c.setIcon(icon_b0a76274f556701967adb86b3037a1f2);
+            
+    
+                marker_167280a9c7d0a2a269914881ccf9559f.setIcon(icon_b9a27a2b95d3515b6bcf99564c9372ac);
+            
+    
+                marker_00699d37b391d5eed0e4286311dfe2ca.setIcon(icon_ed942417ca427f356929a53e8d61d7ad);
+            
+    
+                marker_1e6885ba2fbd9019439ce7a6a6e11bed.setIcon(icon_443d734b094206460a7025c30aa6843f);
+            
+    
+                marker_a4431c6d2aa7f1fd323f63467735398a.setIcon(icon_a6e7cbdeffacbc9f9108534d20744bab);
+            
+    
+                marker_66622057d2aaa84cddbd6c5d76bbb3ba.setIcon(icon_d47de03db7088c2f32bec9cbfb48328f);
+            
+    
+                marker_9aca48b4e9469eb553ebad32845ef21a.setIcon(icon_dd909432b4b5992cd450c28fae88ac9d);
+            
+    
+                marker_5b4fd103a16b4b06c7ea99aec4332ed7.setIcon(icon_f56dfc80bd1f20430075dd134343d053);
+            
+    
+                marker_ae0bee0ea533e41a41634e58db5ee17f.setIcon(icon_80d7c9e5320a44a7d1149d4b35ad2e53);
+            
+    
+                marker_05b37d24646555f0178ae01bf4856fa6.setIcon(icon_390448695b73f45f0b756ff043bc00db);
+            
+    
+                marker_fe245a326e44c2153a352ca875079fa5.setIcon(icon_4bdc394e68eeadf571646fab8b913a36);
+            
+    
+                marker_45600bd7ee952ec15b77290820e4d6cc.setIcon(icon_2c0c427c8bbe602ee77aedce7855c695);
+            
+    
+                marker_fdac7daaf08779e889008bbdd9ef8f78.setIcon(icon_592aa9bac54b7948151979ee5f4ffaf8);
+            
+    
+                marker_50aabba28acef27433b47ed70e99e282.setIcon(icon_fb6fb60218a6e3cdcdf3de949de2ee23);
+            
+    
+                marker_846a4fc0ad9ffcad4b13721283f4c038.setIcon(icon_9582940517ae3f44751b0541d87aa096);
+            
+    
+                marker_60ea8a89ffc7662712fa5d8921c15bd0.setIcon(icon_7b1b9dc7dba02e704d2d439ef45f3eea);
+            
+    
+                marker_adc91416b3c7e092a02239cd0ce0eac9.setIcon(icon_2f5fda282d4cb2a2da55a64f191dc3d7);
+            
+    
+                marker_633ead3cc4ae425e9eddb29b3381218a.setIcon(icon_e213f6ca154ba1558dd0d251a7e2a2c3);
+            
+    
+                marker_16e2fe50efcae4c8eacb28afe9477da0.setIcon(icon_4134be68dce06cd309400ec62e078229);
+            
+    
+                marker_193334225b1f0c2e59460e130353c72d.setIcon(icon_47f2cc5e38d2536a7e51cb51e4508ba9);
+            
+    
+                marker_a9b8a35b65a8a3b00bfae81c31ff04b5.setIcon(icon_bfa87c2bef8c900984a1b4d38e211673);
+            
+    
+                marker_e6c3e4edf998fba791ffda8e9bce0a85.setIcon(icon_97c6b5cf1252c6bf31f5a1d30aeb4966);
+            
+    
+                marker_b895bc70b10a3b2b00fbb65169e63949.setIcon(icon_bcd97cbb1b61a1aa225f3dad6c97bbcb);
+            
+    
+                marker_fe82c677c10299ce7bf984d2771a452e.setIcon(icon_00409619bbb9c30dc9325dec8f63ee67);
+            
+    
+                marker_13b20876566af2bbcba6a249775b3c86.setIcon(icon_6dbd49edadf6a17d2d073048a5611cca);
+            
+    
+                marker_7564e6f786d39e0b31fb6f28b76d9579.setIcon(icon_457f422470e630e94b5d5c2a2f6cddc0);
+            
+    
+                marker_5eba225f10723efe971bbb5b6e03254a.setIcon(icon_d4e86dbd327bb1c6543b3c40ffb18405);
+            
+    
+                marker_65a409f31d693d9c5658011b65ff9f09.setIcon(icon_472e45e8759b2bceea1eb92b9e3a8f93);
+            
+    
+                marker_baf8ad45b1be18fdf868a5d0a630d747.setIcon(icon_0779a34b5a1cfdd9d6fd24cc9c3c3cba);
+            
+    
+                marker_7dfa244dacd02780022c6681b9d75246.setIcon(icon_6c79634b9e7636eadae9552d95a9d13f);
+            
+    
+                marker_e8636bdfe565fee4ef1f72fff24e1bf0.setIcon(icon_0da64b1d8de7666626227837115fba0c);
+            
+    
+                marker_7cb4261abd9249d34df40b7dbf3e0419.setIcon(icon_e45b6eadc6477e174dcaafd617ef8264);
+            
+    
+                marker_4107b0c320d7bb751f7013a903f016d8.setIcon(icon_bbbf29c48845e99b2a7659e431f4b461);
+            
+    
+                marker_4ad9bc2069fdd0d7aec09dcd32e0bca5.setIcon(icon_1841703123672bda6c11970416e46de0);
+            
+    
+                marker_2c8591c48f0a1a50d3791b3ba29e7e88.setIcon(icon_0fe015c307dd3a2354292fa7e53f4d98);
+            
+    
+                marker_e44148602807d79942e0fdd060dc14a1.setIcon(icon_f71b4416ee2ce79e8ff0b98c27b53534);
+            
+    
+                marker_e7e73b64c339b59325f433edc9787d60.setIcon(icon_131ac636c1fa7bf4939531eddfcd4f9f);
+            
+    
+                marker_d6e474d2e5af5810834acbdeb67a481f.setIcon(icon_09741f846f8e535e44717ae0c37b5e06);
+            
+    
+                marker_8839b4ef6d1342e5c8bea8d1650419c2.setIcon(icon_ea316bec13bb0fd3a91fcc23af2825dd);
+            
+    
+                marker_4bc0d8fe2ead56e826d38e079a1ec5a8.setIcon(icon_927f3fdf64f63aef1051573772759f31);
+            
+    
+            tile_layer_d36bf15921792c318637aa92c328dd69.addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+                marker_6ebfe75431520bb29eef6c0c1256be9c.setIcon(icon_6ef6f5d41ad3012170b01f0e295b9af1);
+            
+    
+                marker_de0cdd368920446ba95108a26715c872.setIcon(icon_5bee96c5905381b138abb2913f325140);
+            
+    
+                marker_e5f312bd70014769b5d8330724664dfe.setIcon(icon_a83339ce74ab160168bd4e0c4416b5c8);
+            
+    
+                marker_f532c69a0b6ac1f458290443359a7e47.setIcon(icon_5e85346082bb9a136c0916aeeda1a569);
+            
+    
+                marker_3232f3f9bcdacb18bbbe317e538e4187.setIcon(icon_b67dd52161d10bf95c375d1bb3c1c113);
+            
+    
+                marker_85c6473b7bfa0cf15c34212f6ce8f1b7.setIcon(icon_c6cb2fda1ff1d6df0b9dbff51dee8e3a);
+            
+    
+                marker_9888969c94e72946e8e4528363346553.setIcon(icon_3b89aba732ad7a8b7dc05b96bb889a08);
+            
+    
+                marker_e9f906c8723b064b40c71c2c8363c3d0.setIcon(icon_847a7e1c6695b2218e568c8e62f5d250);
+            
+    
+                marker_d18ba2c95f3cc354e47e7343c2e9506c.setIcon(icon_b0a76274f556701967adb86b3037a1f2);
+            
+    
+                marker_167280a9c7d0a2a269914881ccf9559f.setIcon(icon_b9a27a2b95d3515b6bcf99564c9372ac);
+            
+    
+                marker_00699d37b391d5eed0e4286311dfe2ca.setIcon(icon_ed942417ca427f356929a53e8d61d7ad);
+            
+    
+                marker_1e6885ba2fbd9019439ce7a6a6e11bed.setIcon(icon_443d734b094206460a7025c30aa6843f);
+            
+    
+                marker_a4431c6d2aa7f1fd323f63467735398a.setIcon(icon_a6e7cbdeffacbc9f9108534d20744bab);
+            
+    
+                marker_66622057d2aaa84cddbd6c5d76bbb3ba.setIcon(icon_d47de03db7088c2f32bec9cbfb48328f);
+            
+    
+                marker_9aca48b4e9469eb553ebad32845ef21a.setIcon(icon_dd909432b4b5992cd450c28fae88ac9d);
+            
+    
+                marker_5b4fd103a16b4b06c7ea99aec4332ed7.setIcon(icon_f56dfc80bd1f20430075dd134343d053);
+            
+    
+                marker_ae0bee0ea533e41a41634e58db5ee17f.setIcon(icon_80d7c9e5320a44a7d1149d4b35ad2e53);
+            
+    
+                marker_05b37d24646555f0178ae01bf4856fa6.setIcon(icon_390448695b73f45f0b756ff043bc00db);
+            
+    
+                marker_fe245a326e44c2153a352ca875079fa5.setIcon(icon_4bdc394e68eeadf571646fab8b913a36);
+            
+    
+                marker_45600bd7ee952ec15b77290820e4d6cc.setIcon(icon_2c0c427c8bbe602ee77aedce7855c695);
+            
+    
+                marker_fdac7daaf08779e889008bbdd9ef8f78.setIcon(icon_592aa9bac54b7948151979ee5f4ffaf8);
+            
+    
+                marker_50aabba28acef27433b47ed70e99e282.setIcon(icon_fb6fb60218a6e3cdcdf3de949de2ee23);
+            
+    
+                marker_846a4fc0ad9ffcad4b13721283f4c038.setIcon(icon_9582940517ae3f44751b0541d87aa096);
+            
+    
+                marker_60ea8a89ffc7662712fa5d8921c15bd0.setIcon(icon_7b1b9dc7dba02e704d2d439ef45f3eea);
+            
+    
+                marker_adc91416b3c7e092a02239cd0ce0eac9.setIcon(icon_2f5fda282d4cb2a2da55a64f191dc3d7);
+            
+    
+                marker_633ead3cc4ae425e9eddb29b3381218a.setIcon(icon_e213f6ca154ba1558dd0d251a7e2a2c3);
+            
+    
+                marker_16e2fe50efcae4c8eacb28afe9477da0.setIcon(icon_4134be68dce06cd309400ec62e078229);
+            
+    
+                marker_193334225b1f0c2e59460e130353c72d.setIcon(icon_47f2cc5e38d2536a7e51cb51e4508ba9);
+            
+    
+                marker_a9b8a35b65a8a3b00bfae81c31ff04b5.setIcon(icon_bfa87c2bef8c900984a1b4d38e211673);
+            
+    
+                marker_e6c3e4edf998fba791ffda8e9bce0a85.setIcon(icon_97c6b5cf1252c6bf31f5a1d30aeb4966);
+            
+    
+                marker_b895bc70b10a3b2b00fbb65169e63949.setIcon(icon_bcd97cbb1b61a1aa225f3dad6c97bbcb);
+            
+    
+                marker_fe82c677c10299ce7bf984d2771a452e.setIcon(icon_00409619bbb9c30dc9325dec8f63ee67);
+            
+    
+                marker_13b20876566af2bbcba6a249775b3c86.setIcon(icon_6dbd49edadf6a17d2d073048a5611cca);
+            
+    
+                marker_7564e6f786d39e0b31fb6f28b76d9579.setIcon(icon_457f422470e630e94b5d5c2a2f6cddc0);
+            
+    
+                marker_5eba225f10723efe971bbb5b6e03254a.setIcon(icon_d4e86dbd327bb1c6543b3c40ffb18405);
+            
+    
+                marker_65a409f31d693d9c5658011b65ff9f09.setIcon(icon_472e45e8759b2bceea1eb92b9e3a8f93);
+            
+    
+                marker_baf8ad45b1be18fdf868a5d0a630d747.setIcon(icon_0779a34b5a1cfdd9d6fd24cc9c3c3cba);
+            
+    
+                marker_7dfa244dacd02780022c6681b9d75246.setIcon(icon_6c79634b9e7636eadae9552d95a9d13f);
+            
+    
+                marker_e8636bdfe565fee4ef1f72fff24e1bf0.setIcon(icon_0da64b1d8de7666626227837115fba0c);
+            
+    
+                marker_7cb4261abd9249d34df40b7dbf3e0419.setIcon(icon_e45b6eadc6477e174dcaafd617ef8264);
+            
+    
+                marker_4107b0c320d7bb751f7013a903f016d8.setIcon(icon_bbbf29c48845e99b2a7659e431f4b461);
+            
+    
+                marker_4ad9bc2069fdd0d7aec09dcd32e0bca5.setIcon(icon_1841703123672bda6c11970416e46de0);
+            
+    
+                marker_2c8591c48f0a1a50d3791b3ba29e7e88.setIcon(icon_0fe015c307dd3a2354292fa7e53f4d98);
+            
+    
+                marker_e44148602807d79942e0fdd060dc14a1.setIcon(icon_f71b4416ee2ce79e8ff0b98c27b53534);
+            
+    
+                marker_e7e73b64c339b59325f433edc9787d60.setIcon(icon_131ac636c1fa7bf4939531eddfcd4f9f);
+            
+    
+                marker_d6e474d2e5af5810834acbdeb67a481f.setIcon(icon_09741f846f8e535e44717ae0c37b5e06);
+            
+    
+                marker_8839b4ef6d1342e5c8bea8d1650419c2.setIcon(icon_ea316bec13bb0fd3a91fcc23af2825dd);
+            
+    
+                marker_4bc0d8fe2ead56e826d38e079a1ec5a8.setIcon(icon_927f3fdf64f63aef1051573772759f31);
+            
+    
+            tile_layer_d36bf15921792c318637aa92c328dd69.addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+                marker_6ebfe75431520bb29eef6c0c1256be9c.setIcon(icon_6ef6f5d41ad3012170b01f0e295b9af1);
+            
+    
+                marker_de0cdd368920446ba95108a26715c872.setIcon(icon_5bee96c5905381b138abb2913f325140);
+            
+    
+                marker_e5f312bd70014769b5d8330724664dfe.setIcon(icon_a83339ce74ab160168bd4e0c4416b5c8);
+            
+    
+                marker_f532c69a0b6ac1f458290443359a7e47.setIcon(icon_5e85346082bb9a136c0916aeeda1a569);
+            
+    
+                marker_3232f3f9bcdacb18bbbe317e538e4187.setIcon(icon_b67dd52161d10bf95c375d1bb3c1c113);
+            
+    
+                marker_85c6473b7bfa0cf15c34212f6ce8f1b7.setIcon(icon_c6cb2fda1ff1d6df0b9dbff51dee8e3a);
+            
+    
+                marker_9888969c94e72946e8e4528363346553.setIcon(icon_3b89aba732ad7a8b7dc05b96bb889a08);
+            
+    
+                marker_e9f906c8723b064b40c71c2c8363c3d0.setIcon(icon_847a7e1c6695b2218e568c8e62f5d250);
+            
+    
+                marker_d18ba2c95f3cc354e47e7343c2e9506c.setIcon(icon_b0a76274f556701967adb86b3037a1f2);
+            
+    
+                marker_167280a9c7d0a2a269914881ccf9559f.setIcon(icon_b9a27a2b95d3515b6bcf99564c9372ac);
+            
+    
+                marker_00699d37b391d5eed0e4286311dfe2ca.setIcon(icon_ed942417ca427f356929a53e8d61d7ad);
+            
+    
+                marker_1e6885ba2fbd9019439ce7a6a6e11bed.setIcon(icon_443d734b094206460a7025c30aa6843f);
+            
+    
+                marker_a4431c6d2aa7f1fd323f63467735398a.setIcon(icon_a6e7cbdeffacbc9f9108534d20744bab);
+            
+    
+                marker_66622057d2aaa84cddbd6c5d76bbb3ba.setIcon(icon_d47de03db7088c2f32bec9cbfb48328f);
+            
+    
+                marker_9aca48b4e9469eb553ebad32845ef21a.setIcon(icon_dd909432b4b5992cd450c28fae88ac9d);
+            
+    
+                marker_5b4fd103a16b4b06c7ea99aec4332ed7.setIcon(icon_f56dfc80bd1f20430075dd134343d053);
+            
+    
+                marker_ae0bee0ea533e41a41634e58db5ee17f.setIcon(icon_80d7c9e5320a44a7d1149d4b35ad2e53);
+            
+    
+                marker_05b37d24646555f0178ae01bf4856fa6.setIcon(icon_390448695b73f45f0b756ff043bc00db);
+            
+    
+                marker_fe245a326e44c2153a352ca875079fa5.setIcon(icon_4bdc394e68eeadf571646fab8b913a36);
+            
+    
+                marker_45600bd7ee952ec15b77290820e4d6cc.setIcon(icon_2c0c427c8bbe602ee77aedce7855c695);
+            
+    
+                marker_fdac7daaf08779e889008bbdd9ef8f78.setIcon(icon_592aa9bac54b7948151979ee5f4ffaf8);
+            
+    
+                marker_50aabba28acef27433b47ed70e99e282.setIcon(icon_fb6fb60218a6e3cdcdf3de949de2ee23);
+            
+    
+                marker_846a4fc0ad9ffcad4b13721283f4c038.setIcon(icon_9582940517ae3f44751b0541d87aa096);
+            
+    
+                marker_60ea8a89ffc7662712fa5d8921c15bd0.setIcon(icon_7b1b9dc7dba02e704d2d439ef45f3eea);
+            
+    
+                marker_adc91416b3c7e092a02239cd0ce0eac9.setIcon(icon_2f5fda282d4cb2a2da55a64f191dc3d7);
+            
+    
+                marker_633ead3cc4ae425e9eddb29b3381218a.setIcon(icon_e213f6ca154ba1558dd0d251a7e2a2c3);
+            
+    
+                marker_16e2fe50efcae4c8eacb28afe9477da0.setIcon(icon_4134be68dce06cd309400ec62e078229);
+            
+    
+                marker_193334225b1f0c2e59460e130353c72d.setIcon(icon_47f2cc5e38d2536a7e51cb51e4508ba9);
+            
+    
+                marker_a9b8a35b65a8a3b00bfae81c31ff04b5.setIcon(icon_bfa87c2bef8c900984a1b4d38e211673);
+            
+    
+                marker_e6c3e4edf998fba791ffda8e9bce0a85.setIcon(icon_97c6b5cf1252c6bf31f5a1d30aeb4966);
+            
+    
+                marker_b895bc70b10a3b2b00fbb65169e63949.setIcon(icon_bcd97cbb1b61a1aa225f3dad6c97bbcb);
+            
+    
+                marker_fe82c677c10299ce7bf984d2771a452e.setIcon(icon_00409619bbb9c30dc9325dec8f63ee67);
+            
+    
+                marker_13b20876566af2bbcba6a249775b3c86.setIcon(icon_6dbd49edadf6a17d2d073048a5611cca);
+            
+    
+                marker_7564e6f786d39e0b31fb6f28b76d9579.setIcon(icon_457f422470e630e94b5d5c2a2f6cddc0);
+            
+    
+                marker_5eba225f10723efe971bbb5b6e03254a.setIcon(icon_d4e86dbd327bb1c6543b3c40ffb18405);
+            
+    
+                marker_65a409f31d693d9c5658011b65ff9f09.setIcon(icon_472e45e8759b2bceea1eb92b9e3a8f93);
+            
+    
+                marker_baf8ad45b1be18fdf868a5d0a630d747.setIcon(icon_0779a34b5a1cfdd9d6fd24cc9c3c3cba);
+            
+    
+                marker_7dfa244dacd02780022c6681b9d75246.setIcon(icon_6c79634b9e7636eadae9552d95a9d13f);
+            
+    
+                marker_e8636bdfe565fee4ef1f72fff24e1bf0.setIcon(icon_0da64b1d8de7666626227837115fba0c);
+            
+    
+                marker_7cb4261abd9249d34df40b7dbf3e0419.setIcon(icon_e45b6eadc6477e174dcaafd617ef8264);
+            
+    
+                marker_4107b0c320d7bb751f7013a903f016d8.setIcon(icon_bbbf29c48845e99b2a7659e431f4b461);
+            
+    
+                marker_4ad9bc2069fdd0d7aec09dcd32e0bca5.setIcon(icon_1841703123672bda6c11970416e46de0);
+            
+    
+                marker_2c8591c48f0a1a50d3791b3ba29e7e88.setIcon(icon_0fe015c307dd3a2354292fa7e53f4d98);
+            
+    
+                marker_e44148602807d79942e0fdd060dc14a1.setIcon(icon_f71b4416ee2ce79e8ff0b98c27b53534);
+            
+    
+                marker_e7e73b64c339b59325f433edc9787d60.setIcon(icon_131ac636c1fa7bf4939531eddfcd4f9f);
+            
+    
+                marker_d6e474d2e5af5810834acbdeb67a481f.setIcon(icon_09741f846f8e535e44717ae0c37b5e06);
+            
+    
+                marker_8839b4ef6d1342e5c8bea8d1650419c2.setIcon(icon_ea316bec13bb0fd3a91fcc23af2825dd);
+            
+    
+                marker_4bc0d8fe2ead56e826d38e079a1ec5a8.setIcon(icon_927f3fdf64f63aef1051573772759f31);
+            
+    
+            tile_layer_d36bf15921792c318637aa92c328dd69.addTo(map_044ea03015cc70a2cd1a37bf51f04858);
+        
+    
+                marker_6ebfe75431520bb29eef6c0c1256be9c.setIcon(icon_6ef6f5d41ad3012170b01f0e295b9af1);
+            
+    
+                marker_de0cdd368920446ba95108a26715c872.setIcon(icon_5bee96c5905381b138abb2913f325140);
+            
+    
+                marker_e5f312bd70014769b5d8330724664dfe.setIcon(icon_a83339ce74ab160168bd4e0c4416b5c8);
+            
+    
+                marker_f532c69a0b6ac1f458290443359a7e47.setIcon(icon_5e85346082bb9a136c0916aeeda1a569);
+            
+    
+                marker_3232f3f9bcdacb18bbbe317e538e4187.setIcon(icon_b67dd52161d10bf95c375d1bb3c1c113);
+            
+    
+                marker_85c6473b7bfa0cf15c34212f6ce8f1b7.setIcon(icon_c6cb2fda1ff1d6df0b9dbff51dee8e3a);
+            
+    
+                marker_9888969c94e72946e8e4528363346553.setIcon(icon_3b89aba732ad7a8b7dc05b96bb889a08);
+            
+    
+                marker_e9f906c8723b064b40c71c2c8363c3d0.setIcon(icon_847a7e1c6695b2218e568c8e62f5d250);
+            
+    
+                marker_d18ba2c95f3cc354e47e7343c2e9506c.setIcon(icon_b0a76274f556701967adb86b3037a1f2);
+            
+    
+                marker_167280a9c7d0a2a269914881ccf9559f.setIcon(icon_b9a27a2b95d3515b6bcf99564c9372ac);
+            
+    
+                marker_00699d37b391d5eed0e4286311dfe2ca.setIcon(icon_ed942417ca427f356929a53e8d61d7ad);
+            
+    
+                marker_1e6885ba2fbd9019439ce7a6a6e11bed.setIcon(icon_443d734b094206460a7025c30aa6843f);
+            
+    
+                marker_a4431c6d2aa7f1fd323f63467735398a.setIcon(icon_a6e7cbdeffacbc9f9108534d20744bab);
+            
+    
+                marker_66622057d2aaa84cddbd6c5d76bbb3ba.setIcon(icon_d47de03db7088c2f32bec9cbfb48328f);
+            
+    
+                marker_9aca48b4e9469eb553ebad32845ef21a.setIcon(icon_dd909432b4b5992cd450c28fae88ac9d);
+            
+    
+                marker_5b4fd103a16b4b06c7ea99aec4332ed7.setIcon(icon_f56dfc80bd1f20430075dd134343d053);
+            
+    
+                marker_ae0bee0ea533e41a41634e58db5ee17f.setIcon(icon_80d7c9e5320a44a7d1149d4b35ad2e53);
+            
+    
+                marker_05b37d24646555f0178ae01bf4856fa6.setIcon(icon_390448695b73f45f0b756ff043bc00db);
+            
+    
+                marker_fe245a326e44c2153a352ca875079fa5.setIcon(icon_4bdc394e68eeadf571646fab8b913a36);
+            
+    
+                marker_45600bd7ee952ec15b77290820e4d6cc.setIcon(icon_2c0c427c8bbe602ee77aedce7855c695);
+            
+    
+                marker_fdac7daaf08779e889008bbdd9ef8f78.setIcon(icon_592aa9bac54b7948151979ee5f4ffaf8);
+            
+    
+                marker_50aabba28acef27433b47ed70e99e282.setIcon(icon_fb6fb60218a6e3cdcdf3de949de2ee23);
+            
+    
+                marker_846a4fc0ad9ffcad4b13721283f4c038.setIcon(icon_9582940517ae3f44751b0541d87aa096);
+            
+    
+                marker_60ea8a89ffc7662712fa5d8921c15bd0.setIcon(icon_7b1b9dc7dba02e704d2d439ef45f3eea);
+            
+    
+                marker_adc91416b3c7e092a02239cd0ce0eac9.setIcon(icon_2f5fda282d4cb2a2da55a64f191dc3d7);
+            
+    
+                marker_633ead3cc4ae425e9eddb29b3381218a.setIcon(icon_e213f6ca154ba1558dd0d251a7e2a2c3);
+            
+    
+                marker_16e2fe50efcae4c8eacb28afe9477da0.setIcon(icon_4134be68dce06cd309400ec62e078229);
+            
+    
+                marker_193334225b1f0c2e59460e130353c72d.setIcon(icon_47f2cc5e38d2536a7e51cb51e4508ba9);
+            
+    
+                marker_a9b8a35b65a8a3b00bfae81c31ff04b5.setIcon(icon_bfa87c2bef8c900984a1b4d38e211673);
+            
+    
+                marker_e6c3e4edf998fba791ffda8e9bce0a85.setIcon(icon_97c6b5cf1252c6bf31f5a1d30aeb4966);
+            
+    
+                marker_b895bc70b10a3b2b00fbb65169e63949.setIcon(icon_bcd97cbb1b61a1aa225f3dad6c97bbcb);
+            
+    
+                marker_fe82c677c10299ce7bf984d2771a452e.setIcon(icon_00409619bbb9c30dc9325dec8f63ee67);
+            
+    
+                marker_13b20876566af2bbcba6a249775b3c86.setIcon(icon_6dbd49edadf6a17d2d073048a5611cca);
+            
+    
+                marker_7564e6f786d39e0b31fb6f28b76d9579.setIcon(icon_457f422470e630e94b5d5c2a2f6cddc0);
+            
+    
+                marker_5eba225f10723efe971bbb5b6e03254a.setIcon(icon_d4e86dbd327bb1c6543b3c40ffb18405);
+            
+    
+                marker_65a409f31d693d9c5658011b65ff9f09.setIcon(icon_472e45e8759b2bceea1eb92b9e3a8f93);
+            
+    
+                marker_baf8ad45b1be18fdf868a5d0a630d747.setIcon(icon_0779a34b5a1cfdd9d6fd24cc9c3c3cba);
+            
+    
+                marker_7dfa244dacd02780022c6681b9d75246.setIcon(icon_6c79634b9e7636eadae9552d95a9d13f);
+            
+    
+                marker_e8636bdfe565fee4ef1f72fff24e1bf0.setIcon(icon_0da64b1d8de7666626227837115fba0c);
+            
+    
+                marker_7cb4261abd9249d34df40b7dbf3e0419.setIcon(icon_e45b6eadc6477e174dcaafd617ef8264);
+            
+    
+                marker_4107b0c320d7bb751f7013a903f016d8.setIcon(icon_bbbf29c48845e99b2a7659e431f4b461);
+            
+    
+                marker_4ad9bc2069fdd0d7aec09dcd32e0bca5.setIcon(icon_1841703123672bda6c11970416e46de0);
+            
+    
+                marker_2c8591c48f0a1a50d3791b3ba29e7e88.setIcon(icon_0fe015c307dd3a2354292fa7e53f4d98);
+            
+    
+                marker_e44148602807d79942e0fdd060dc14a1.setIcon(icon_f71b4416ee2ce79e8ff0b98c27b53534);
+            
+    
+                marker_e7e73b64c339b59325f433edc9787d60.setIcon(icon_131ac636c1fa7bf4939531eddfcd4f9f);
+            
+    
+                marker_d6e474d2e5af5810834acbdeb67a481f.setIcon(icon_09741f846f8e535e44717ae0c37b5e06);
+            
+    
+                marker_8839b4ef6d1342e5c8bea8d1650419c2.setIcon(icon_ea316bec13bb0fd3a91fcc23af2825dd);
+            
+    
+                marker_4bc0d8fe2ead56e826d38e079a1ec5a8.setIcon(icon_927f3fdf64f63aef1051573772759f31);
+            
+</script>
+</html>
