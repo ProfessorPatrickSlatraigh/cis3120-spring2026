@@ -30,6 +30,14 @@ FINANCIAL_SERVICES_TICKERS = [
     "MET", "PRU",
     # Payments
     "V", "MA", "AXP",
+    # Retail Coverage
+    "COF",
+    # Undercounted
+    "MS",
+    #Smaller banks
+    "FMCB", "UNTY", "NBTB", "AMTB", "AROW", "NKSH", "CBKM", "ACNB",
+    #More banks from EDGAR search
+    "RNST","CCBG","WBHC","SSB","SMBC","ECBK","WTFC","HBAN","RF"
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
@@ -43,6 +51,10 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations center"',
     '"data center"',
     '"new location"',
+    '"securities desk"',
+    '"advisory center"',
+    '"branch relocation"',
+    '"new office"'
 ]
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -51,11 +63,11 @@ FINANCIAL_SERVICES_PHRASES = [
 
 TRAVEL_HOSPITALITY_TICKERS = [
     # Hotels
-    "MAR", "HLT", "H", "CHH", "WH",
+    "MAR", "HLT", "H", "CHH", "WH", "IHG",
     # Cruise
     "CCL", "RCL", "NCLH",
     # Airlines
-    "DAL", "UAL", "AAL", "LUV",
+    "DAL", "UAL", "AAL", "LUV", "JBLU",
     # Online travel
     "BKNG", "EXPE",
 ]
@@ -71,4 +83,6 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+    '"new service"'
+    '"new destination"'
 ]
