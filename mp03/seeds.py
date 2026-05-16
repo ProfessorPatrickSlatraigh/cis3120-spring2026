@@ -32,6 +32,7 @@ FINANCIAL_SERVICES_TICKERS = [
     "V", "MA", "AXP",
 ]
 
+
 FINANCIAL_SERVICES_PHRASES = [
     '"new branch"',
     '"branch opening"',
