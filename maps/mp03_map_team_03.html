@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fcd134ffcc5c091ce83c8dffea2d9daa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fcd134ffcc5c091ce83c8dffea2d9daa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fcd134ffcc5c091ce83c8dffea2d9daa = L.map(
+                "map_fcd134ffcc5c091ce83c8dffea2d9daa",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bdfd3aafd519c31e99f5e7fe744dd7cc = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bdfd3aafd519c31e99f5e7fe744dd7cc.addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var marker_a94e9d5b9b8e840b6248feed2c4259a9 = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_5a94d471783ecd3accb8bfdaef6b2374 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bb16a830901f9b6c8aa23cb99dbb92b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_cbdea4625d453c300f4bf4bce31d4930 = $(`<div id="html_cbdea4625d453c300f4bf4bce31d4930" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)']<br>     <b>Ticker:</b> UNTY<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-04-22<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Unity Bank opened a new full-service branch in Madison, New Jersey in 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042726000031/unty-20260422xex99d1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_0bb16a830901f9b6c8aa23cb99dbb92b.setContent(html_cbdea4625d453c300f4bf4bce31d4930);
+            
+        
+
+        marker_a94e9d5b9b8e840b6248feed2c4259a9.bindPopup(popup_0bb16a830901f9b6c8aa23cb99dbb92b)
+        ;
+
+        
+    
+    
+                marker_a94e9d5b9b8e840b6248feed2c4259a9.setIcon(icon_5a94d471783ecd3accb8bfdaef6b2374);
+            
+    
+            var marker_1402ad8c0b00ddb5331a328a319ff3ac = L.marker(
+                [37.3868826, -120.723532],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_59dfd3aad4265d38a6c1cfbb8b2d5907 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90f0a00238fda484cbd312505b78c91b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c93c7ef34ee34616754e6095440d3d0b = $(`<div id="html_c93c7ef34ee34616754e6095440d3d0b" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['FARMERS & MERCHANTS BANCORP  (FMCB)  (CIK 0001085913)']<br>     <b>Ticker:</b> FMCB<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-04-23<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> First Merchants Bank opening new location at 503 Main St. in Livingston in Q3-2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1085913/000114036126016185/ef20071199_ex99-1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_90f0a00238fda484cbd312505b78c91b.setContent(html_c93c7ef34ee34616754e6095440d3d0b);
+            
+        
+
+        marker_1402ad8c0b00ddb5331a328a319ff3ac.bindPopup(popup_90f0a00238fda484cbd312505b78c91b)
+        ;
+
+        
+    
+    
+                marker_1402ad8c0b00ddb5331a328a319ff3ac.setIcon(icon_59dfd3aad4265d38a6c1cfbb8b2d5907);
+            
+    
+            var marker_1fe9f2048ce1647ca363f6d017fba6af = L.marker(
+                [32.7762719, -96.7968559],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_15a53db7d09535c8bed9759ebda079aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_582246c14e8e2e8ac435ac02e74656e0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2a472254f4c8285c6b0d518423a1dad9 = $(`<div id="html_2a472254f4c8285c6b0d518423a1dad9" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Fermi Inc.  (FRMI)  (CIK 0002071778)']<br>     <b>Ticker:</b> FRMI<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-04-20<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Fermi Inc. establishes new corporate headquarters in Dallas and office presence in Amarillo, Texas.<br>     <a href="https://www.sec.gov/Archives/edgar/data/2071778/000121390026045351/ea028692501ex99-1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_582246c14e8e2e8ac435ac02e74656e0.setContent(html_2a472254f4c8285c6b0d518423a1dad9);
+            
+        
+
+        marker_1fe9f2048ce1647ca363f6d017fba6af.bindPopup(popup_582246c14e8e2e8ac435ac02e74656e0)
+        ;
+
+        
+    
+    
+                marker_1fe9f2048ce1647ca363f6d017fba6af.setIcon(icon_15a53db7d09535c8bed9759ebda079aa);
+            
+    
+            var marker_fbf8ef2d176fbe9dc5f6e1413b83b6c1 = L.marker(
+                [40.6526006, -73.9497211],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_eef22ebeb90e19839536dfaf14821e4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bdce3dd2a736e96fd65f7e7b4235ec1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b7fb4b209c1f36dd79bdba6d5d1aef49 = $(`<div id="html_b7fb4b209c1f36dd79bdba6d5d1aef49" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Empire State Realty Trust, Inc.  (ESRT)  (CIK 0001541401)', 'Empire State Realty OP, L.P.  (CIK 0001553079)']<br>     <b>Ticker:</b> ESRT<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-04-29<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Acquired newly constructed prime retail asset at 41-55 North 6th Street in Williamsburg, Brooklyn for $46 million.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1541401/000154140126000016/esrt3-31x26er.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_2bdce3dd2a736e96fd65f7e7b4235ec1.setContent(html_b7fb4b209c1f36dd79bdba6d5d1aef49);
+            
+        
+
+        marker_fbf8ef2d176fbe9dc5f6e1413b83b6c1.bindPopup(popup_2bdce3dd2a736e96fd65f7e7b4235ec1)
+        ;
+
+        
+    
+    
+                marker_fbf8ef2d176fbe9dc5f6e1413b83b6c1.setIcon(icon_eef22ebeb90e19839536dfaf14821e4d);
+            
+    
+            var marker_81c67e2e799c83e25391e1a562dcccfb = L.marker(
+                [33.7544657, -84.3898151],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_d87a020836ee0108d6356e8df3f5217a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8c2d9de97354048adfac083e2db6ea4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_eee9a994a8c331c5a185cb006d11f674 = $(`<div id="html_eee9a994a8c331c5a185cb006d11f674" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Silvercrest Asset Management Group Inc.  (SAMG)  (CIK 0001549966)']<br>     <b>Ticker:</b> SAMG<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-05-11<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Silvercrest opened Atlanta and Singapore offices during the first quarter of 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1549966/000119312526216756/samg-ex99_1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_d8c2d9de97354048adfac083e2db6ea4.setContent(html_eee9a994a8c331c5a185cb006d11f674);
+            
+        
+
+        marker_81c67e2e799c83e25391e1a562dcccfb.bindPopup(popup_d8c2d9de97354048adfac083e2db6ea4)
+        ;
+
+        
+    
+    
+                marker_81c67e2e799c83e25391e1a562dcccfb.setIcon(icon_d87a020836ee0108d6356e8df3f5217a);
+            
+    
+            var marker_ea9ebe3b40d5440b80b6855abad475fc = L.marker(
+                [38.8769326, -77.0893094],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_95791d4a990f9901018828ffdaf01030 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bfae51dc52471615fd2e32c2cc89c76 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_98214710713ca0b8d979b7e57f93b996 = $(`<div id="html_98214710713ca0b8d979b7e57f93b996" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['JBG SMITH Properties  (JBGS)  (CIK 0001689796)']<br>     <b>Ticker:</b> JBGS<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-05-05<br>     <b>Event Type:</b> expansion<br>     <b>Summary:</b> Completed construction of office amenity hub with 13,000 sq ft meeting facility and restaurants at 2011 Crystal Drive.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1689796/000110465926055644/jbgs-20260505xex99d1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_9bfae51dc52471615fd2e32c2cc89c76.setContent(html_98214710713ca0b8d979b7e57f93b996);
+            
+        
+
+        marker_ea9ebe3b40d5440b80b6855abad475fc.bindPopup(popup_9bfae51dc52471615fd2e32c2cc89c76)
+        ;
+
+        
+    
+    
+                marker_ea9ebe3b40d5440b80b6855abad475fc.setIcon(icon_95791d4a990f9901018828ffdaf01030);
+            
+    
+            var marker_30c533c3ba9009d6f618e150543c13f6 = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_ba88d51fae8684669bfe22d31858d4f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26a2c9d043876df628a7842ddebbd4bc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_685a0151ff9c086f089f60106f79cd0b = $(`<div id="html_685a0151ff9c086f089f60106f79cd0b" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Metropolitan Bank Holding Corp.  (MCB)  (CIK 0001476034)']<br>     <b>Ticker:</b> MCB<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-04-21<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Metropolitan Commercial Bank opened Miami Branch on Tuesday, March 3, 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1476034/000110465926046066/mcb-20260421xex99d2.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_26a2c9d043876df628a7842ddebbd4bc.setContent(html_685a0151ff9c086f089f60106f79cd0b);
+            
+        
+
+        marker_30c533c3ba9009d6f618e150543c13f6.bindPopup(popup_26a2c9d043876df628a7842ddebbd4bc)
+        ;
+
+        
+    
+    
+                marker_30c533c3ba9009d6f618e150543c13f6.setIcon(icon_ba88d51fae8684669bfe22d31858d4f1);
+            
+    
+            var marker_ae4defacc843531ab3bf1e90528ddaac = L.marker(
+                [40.9168692, -72.6624189],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_f19d6d79723ec5dfd1535962a36609b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_965f6eae594ccf412110ddaae1b50e25 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_08a548300d13ae4ea4911854e14ac9c1 = $(`<div id="html_08a548300d13ae4ea4911854e14ac9c1" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)']<br>     <b>Ticker:</b> HNVR<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-04-27<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Full-service branch opening approved in downtown Riverhead, New York, with temporary loan production office operational in March 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1828588/000110465926049414/hnvr-20260427xex99d1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_965f6eae594ccf412110ddaae1b50e25.setContent(html_08a548300d13ae4ea4911854e14ac9c1);
+            
+        
+
+        marker_ae4defacc843531ab3bf1e90528ddaac.bindPopup(popup_965f6eae594ccf412110ddaae1b50e25)
+        ;
+
+        
+    
+    
+                marker_ae4defacc843531ab3bf1e90528ddaac.setIcon(icon_f19d6d79723ec5dfd1535962a36609b1);
+            
+    
+            var marker_60f7b576bfd6f83b8cb68e9c7ce3905b = L.marker(
+                [39.506926, -77.6522171],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_660f419faa3784e0074bf5541caf5525 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ff781a139666e74fe636fca1a74e0db = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_aa8b122f1096d7cf5ec0d55ef5a3c6f1 = $(`<div id="html_aa8b122f1096d7cf5ec0d55ef5a3c6f1" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['FIRST UNITED CORP/MD/  (FUNC)  (CIK 0000763907)']<br>     <b>Ticker:</b> FUNC<br>     <b>Industry:</b> Financial Services<br>     <b>Filing Date:</b> 2026-05-07<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> First United opened a new Boonsboro branch to strengthen presence in the East market.<br>     <a href="https://www.sec.gov/Archives/edgar/data/763907/000110465926056785/tm2613814d1_ex99-1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_4ff781a139666e74fe636fca1a74e0db.setContent(html_aa8b122f1096d7cf5ec0d55ef5a3c6f1);
+            
+        
+
+        marker_60f7b576bfd6f83b8cb68e9c7ce3905b.bindPopup(popup_4ff781a139666e74fe636fca1a74e0db)
+        ;
+
+        
+    
+    
+                marker_60f7b576bfd6f83b8cb68e9c7ce3905b.setIcon(icon_660f419faa3784e0074bf5541caf5525);
+            
+    
+            var marker_00d97e9d7e54d627a21d585af3cd9ea4 = L.marker(
+                [30.2711286, -97.7436995],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_eba68393aaf8350d2d51ac40ca179ca8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5528b78f7c5a147d224cf0504ea800b3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b58d38ac230d492d683625bbd278735e = $(`<div id="html_b58d38ac230d492d683625bbd278735e" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Broadstone Net Lease, Inc.  (BNL)  (CIK 0001424182)']<br>     <b>Ticker:</b> BNL<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-04-29<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Commenced Tesla battery recycling facility build-to-suit development near Gigafactory in Austin, Texas.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1424182/000142418226000034/bnl-20260331xexx991.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_5528b78f7c5a147d224cf0504ea800b3.setContent(html_b58d38ac230d492d683625bbd278735e);
+            
+        
+
+        marker_00d97e9d7e54d627a21d585af3cd9ea4.bindPopup(popup_5528b78f7c5a147d224cf0504ea800b3)
+        ;
+
+        
+    
+    
+                marker_00d97e9d7e54d627a21d585af3cd9ea4.setIcon(icon_eba68393aaf8350d2d51ac40ca179ca8);
+            
+    
+            var marker_91fa057b6407b884242a20d2f6339422 = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_714ad75ea14e4d036561559dda0b1433 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7178488346d42f3a3a3fabe17f7fd474 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_eaa7ec58fd7f82488bc55703ea8c854c = $(`<div id="html_eaa7ec58fd7f82488bc55703ea8c854c" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)']<br>     <b>Ticker:</b> PENN<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-04-23<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Hollywood Columbus new hotel tower opening in June 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_7178488346d42f3a3a3fabe17f7fd474.setContent(html_eaa7ec58fd7f82488bc55703ea8c854c);
+            
+        
+
+        marker_91fa057b6407b884242a20d2f6339422.bindPopup(popup_7178488346d42f3a3a3fabe17f7fd474)
+        ;
+
+        
+    
+    
+                marker_91fa057b6407b884242a20d2f6339422.setIcon(icon_714ad75ea14e4d036561559dda0b1433);
+            
+    
+            var marker_ef07ff1cf6636ec28c697b04be8d64c5 = L.marker(
+                [40.4848003, -106.831735],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_c6a79b2a924d8e7ce66b971fcef0fc9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e03bb5ba6ef567985e0c4ca850f40a0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d83eac0dd8addb28887baa264e1e39a2 = $(`<div id="html_d83eac0dd8addb28887baa264e1e39a2" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['CaliberCos Inc.  (CWD)  (CIK 0001627282)']<br>     <b>Ticker:</b> CWD<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-04-23<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Caliber announces Hyatt Studios hotel opening in Steamboat Springs, CO targeted for Q3/Q4 2027.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1627282/000162728226000025/ex_991xhyattstudiosdevelop.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_7e03bb5ba6ef567985e0c4ca850f40a0.setContent(html_d83eac0dd8addb28887baa264e1e39a2);
+            
+        
+
+        marker_ef07ff1cf6636ec28c697b04be8d64c5.bindPopup(popup_7e03bb5ba6ef567985e0c4ca850f40a0)
+        ;
+
+        
+    
+    
+                marker_ef07ff1cf6636ec28c697b04be8d64c5.setIcon(icon_c6a79b2a924d8e7ce66b971fcef0fc9b);
+            
+    
+            var marker_3e8cd5e749df3118ff2a6f968fe83253 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_f94440f47c841626f723218344bf7cdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01de424c46a23a604bdfcfce1886549d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_080e864734da46d52ade885aa6ba5b2e = $(`<div id="html_080e864734da46d52ade885aa6ba5b2e" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Perspective Therapeutics, Inc.  (CATX)  (CIK 0000728387)']<br>     <b>Ticker:</b> CATX<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-05-11<br>     <b>Event Type:</b> expansion<br>     <b>Summary:</b> Perspective Therapeutics' Chicago-area manufacturing site expected to complete construction in 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/728387/000119312526216777/catx-ex99_1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_01de424c46a23a604bdfcfce1886549d.setContent(html_080e864734da46d52ade885aa6ba5b2e);
+            
+        
+
+        marker_3e8cd5e749df3118ff2a6f968fe83253.bindPopup(popup_01de424c46a23a604bdfcfce1886549d)
+        ;
+
+        
+    
+    
+                marker_3e8cd5e749df3118ff2a6f968fe83253.setIcon(icon_f94440f47c841626f723218344bf7cdf);
+            
+    
+            var marker_107b7747652dc2cfa674a0b9c7332e74 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_4dd102b41a1b9f2f4b31db1a588a25b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cc797b1d794dc329ab31825b2f0bf74 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_dd46ab4ff1fd2f9fba50283296e4a65e = $(`<div id="html_dd46ab4ff1fd2f9fba50283296e4a65e" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['U S PHYSICAL THERAPY INC /NV  (USPH)  (CIK 0000885978)']<br>     <b>Ticker:</b> USPH<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-05-11<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Company opened seven de novo clinics in the quarter and began NYU hospital system transition with initial clinic rollout.<br>     <a href="https://www.sec.gov/Archives/edgar/data/885978/000088597826000024/ex99-1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_1cc797b1d794dc329ab31825b2f0bf74.setContent(html_dd46ab4ff1fd2f9fba50283296e4a65e);
+            
+        
+
+        marker_107b7747652dc2cfa674a0b9c7332e74.bindPopup(popup_1cc797b1d794dc329ab31825b2f0bf74)
+        ;
+
+        
+    
+    
+                marker_107b7747652dc2cfa674a0b9c7332e74.setIcon(icon_4dd102b41a1b9f2f4b31db1a588a25b9);
+            
+    
+            var marker_572a7892c19918d74ac6fcac2bb5479b = L.marker(
+                [41.9529237, -71.4663863],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_04756483ab28bc48a60743b344e43b64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_645d5970b7d05c075a64283bbf39d0ba = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_77c1a8a0bde98954146ed5cdd535f4ce = $(`<div id="html_77c1a8a0bde98954146ed5cdd535f4ce" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Gaming & Leisure Properties, Inc.  (GLPI)  (CIK 0001575965)']<br>     <b>Ticker:</b> GLPI<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-04-24<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Bally's Lincoln casino in Rhode Island acquired; Acorn Ridge casino in California opened in February 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1575965/000157596526000050/glpi-2026331ex991.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_645d5970b7d05c075a64283bbf39d0ba.setContent(html_77c1a8a0bde98954146ed5cdd535f4ce);
+            
+        
+
+        marker_572a7892c19918d74ac6fcac2bb5479b.bindPopup(popup_645d5970b7d05c075a64283bbf39d0ba)
+        ;
+
+        
+    
+    
+                marker_572a7892c19918d74ac6fcac2bb5479b.setIcon(icon_04756483ab28bc48a60743b344e43b64);
+            
+    
+            var marker_8a0fbd9001925e8d86e92ae473d87af7 = L.marker(
+                [41.4042616, -80.3910015],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_915e2668f8ee2b530382a21a32cf1604 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b02192f484d7dd255b5142eafa76ca7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7947a8bd284296a2ff9fc8be6bd323b5 = $(`<div id="html_7947a8bd284296a2ff9fc8be6bd323b5" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['Essential Utilities, Inc.  (WTRG)  (CIK 0000078128)']<br>     <b>Ticker:</b> WTRG<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-05-07<br>     <b>Event Type:</b> opening<br>     <b>Summary:</b> Essential Utilities closed $18 million acquisition of Greenville Municipal Water Authority serving 2,900 customers in Pennsylvania.<br>     <a href="https://www.sec.gov/Archives/edgar/data/78128/000155278126000307/e26241_ex99-1.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_2b02192f484d7dd255b5142eafa76ca7.setContent(html_7947a8bd284296a2ff9fc8be6bd323b5);
+            
+        
+
+        marker_8a0fbd9001925e8d86e92ae473d87af7.bindPopup(popup_2b02192f484d7dd255b5142eafa76ca7)
+        ;
+
+        
+    
+    
+                marker_8a0fbd9001925e8d86e92ae473d87af7.setIcon(icon_915e2668f8ee2b530382a21a32cf1604);
+            
+    
+            var marker_3b30cc337408738658a8e40fe9268447 = L.marker(
+                [32.7762719, -96.7968559],
+                {
+}
+            ).addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+            var icon_e95c41e4c30db159a676b37f9f09e64b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8756dab3cd30b18e6802bffbd8877419 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_01098d329a4e5dddec059e5179d88e1f = $(`<div id="html_01098d329a4e5dddec059e5179d88e1f" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> ['ASHFORD HOSPITALITY TRUST INC  (AHT, AHT-PD, AHT-PF, AHT-PG, AHT-PH, AHT-PI)  (CIK 0001232582)']<br>     <b>Ticker:</b> AHT, AHT-PD, AHT-PF, AHT-PG, AHT-PH, AHT-PI<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing Date:</b> 2026-05-12<br>     <b>Event Type:</b> closing<br>     <b>Summary:</b> Ashford Hospitality Trust sold Embassy Suites by Hilton Dallas Near the Galleria hotel for $17 million.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1232582/000123258226000109/aht-20260506.htm" target="_blank">View Filing</a>     </div>     </div>`)[0];
+                popup_8756dab3cd30b18e6802bffbd8877419.setContent(html_01098d329a4e5dddec059e5179d88e1f);
+            
+        
+
+        marker_3b30cc337408738658a8e40fe9268447.bindPopup(popup_8756dab3cd30b18e6802bffbd8877419)
+        ;
+
+        
+    
+    
+                marker_3b30cc337408738658a8e40fe9268447.setIcon(icon_e95c41e4c30db159a676b37f9f09e64b);
+            
+    
+            tile_layer_bdfd3aafd519c31e99f5e7fe744dd7cc.addTo(map_fcd134ffcc5c091ce83c8dffea2d9daa);
+        
+    
+                marker_a94e9d5b9b8e840b6248feed2c4259a9.setIcon(icon_5a94d471783ecd3accb8bfdaef6b2374);
+            
+    
+                marker_1402ad8c0b00ddb5331a328a319ff3ac.setIcon(icon_59dfd3aad4265d38a6c1cfbb8b2d5907);
+            
+    
+                marker_1fe9f2048ce1647ca363f6d017fba6af.setIcon(icon_15a53db7d09535c8bed9759ebda079aa);
+            
+    
+                marker_fbf8ef2d176fbe9dc5f6e1413b83b6c1.setIcon(icon_eef22ebeb90e19839536dfaf14821e4d);
+            
+    
+                marker_81c67e2e799c83e25391e1a562dcccfb.setIcon(icon_d87a020836ee0108d6356e8df3f5217a);
+            
+    
+                marker_ea9ebe3b40d5440b80b6855abad475fc.setIcon(icon_95791d4a990f9901018828ffdaf01030);
+            
+    
+                marker_30c533c3ba9009d6f618e150543c13f6.setIcon(icon_ba88d51fae8684669bfe22d31858d4f1);
+            
+    
+                marker_ae4defacc843531ab3bf1e90528ddaac.setIcon(icon_f19d6d79723ec5dfd1535962a36609b1);
+            
+    
+                marker_60f7b576bfd6f83b8cb68e9c7ce3905b.setIcon(icon_660f419faa3784e0074bf5541caf5525);
+            
+    
+                marker_00d97e9d7e54d627a21d585af3cd9ea4.setIcon(icon_eba68393aaf8350d2d51ac40ca179ca8);
+            
+    
+                marker_91fa057b6407b884242a20d2f6339422.setIcon(icon_714ad75ea14e4d036561559dda0b1433);
+            
+    
+                marker_ef07ff1cf6636ec28c697b04be8d64c5.setIcon(icon_c6a79b2a924d8e7ce66b971fcef0fc9b);
+            
+    
+                marker_3e8cd5e749df3118ff2a6f968fe83253.setIcon(icon_f94440f47c841626f723218344bf7cdf);
+            
+    
+                marker_107b7747652dc2cfa674a0b9c7332e74.setIcon(icon_4dd102b41a1b9f2f4b31db1a588a25b9);
+            
+    
+                marker_572a7892c19918d74ac6fcac2bb5479b.setIcon(icon_04756483ab28bc48a60743b344e43b64);
+            
+    
+                marker_8a0fbd9001925e8d86e92ae473d87af7.setIcon(icon_915e2668f8ee2b530382a21a32cf1604);
+            
+    
+                marker_3b30cc337408738658a8e40fe9268447.setIcon(icon_e95c41e4c30db159a676b37f9f09e64b);
+            
+</script>
+</html>
