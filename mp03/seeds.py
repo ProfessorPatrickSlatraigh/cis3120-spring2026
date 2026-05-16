@@ -57,7 +57,7 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations hub"',       # added: variant of operations center
     '"wealth management office"', # added: catches private banking openings
     '"client center"',            # added: catches advisory center announcements
-]
+    ]
 
 # ──────────────────────────────────────────────────────────────────────────
 #  Travel and Hospitality (default seed: 14 companies across sub-segments)
