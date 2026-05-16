@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c67cffa1d97d2c03e8ee25bf17e8c213 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 40px; left: 40px; z-index: 1000;
+     background-color: white; padding: 14px 18px; border-radius: 8px;
+     border: 1px solid #ccc; font-family: Arial, sans-serif; font-size: 13px;
+     box-shadow: 2px 2px 6px rgba(0,0,0,0.2);">
+  <b style="font-size:14px;">Legend</b><br><br>
+  <b>Industry (marker color)</b><br>
+  <span style="color:#00008B;">&#9679;</span> Financial Services<br>
+  <span style="color:#006400;">&#9679;</span> Travel &amp; Hospitality<br>
+  <br>
+  <b>Event type (icon)</b><br>
+  &#8962; Opening &nbsp;&nbsp; &#10007; Closing<br>
+  &#8644; Relocation &nbsp;&nbsp; &#8615; Expansion<br>
+  ? Other
+</div>
+    
+            <div class="folium-map" id="map_c67cffa1d97d2c03e8ee25bf17e8c213" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c67cffa1d97d2c03e8ee25bf17e8c213 = L.map(
+                "map_c67cffa1d97d2c03e8ee25bf17e8c213",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_adf31c4ab56971e3573c697552e4358c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_adf31c4ab56971e3573c697552e4358c.addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var marker_e05132b6d7b95120329d2e752e2cc8bf = L.marker(
+                [42.4184296, -71.1061639],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_5cb34e8ddb46a9be9cf3760bcdb4ec8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7b5e17668e3b265f06efd0bdab966cf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f9d63cfff396c869734306c93aad9bcd = $(`<div id="html_f9d63cfff396c869734306c93aad9bcd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2026-01-09</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>Everett Co-operative Bank to open new branch office at 501 High Street, Medford, Massachusetts in Q3 2026.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/1914605/000143774926000982/ecbk20260106_8k.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_d7b5e17668e3b265f06efd0bdab966cf.setContent(html_f9d63cfff396c869734306c93aad9bcd);
+            
+        
+
+        marker_e05132b6d7b95120329d2e752e2cc8bf.bindPopup(popup_d7b5e17668e3b265f06efd0bdab966cf)
+        ;
+
+        
+    
+    
+            marker_e05132b6d7b95120329d2e752e2cc8bf.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e05132b6d7b95120329d2e752e2cc8bf.setIcon(icon_5cb34e8ddb46a9be9cf3760bcdb4ec8b);
+            
+    
+            var marker_820abe72bc0e7dcfb6a810ae03e0f0fb = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_36292fe23f0ea4cf7fe66897f21df1b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ae2f7dd462b8e69b8cf35fe4c4464bb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_61e83ec98828528d973afaa07d201699 = $(`<div id="html_61e83ec98828528d973afaa07d201699" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2026-04-14</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>National Bankshares opened new branch facilities in Roanoke to expand into markets with dynamic economies.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526154248/nksh-ex99_1.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_0ae2f7dd462b8e69b8cf35fe4c4464bb.setContent(html_61e83ec98828528d973afaa07d201699);
+            
+        
+
+        marker_820abe72bc0e7dcfb6a810ae03e0f0fb.bindPopup(popup_0ae2f7dd462b8e69b8cf35fe4c4464bb)
+        ;
+
+        
+    
+    
+            marker_820abe72bc0e7dcfb6a810ae03e0f0fb.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_820abe72bc0e7dcfb6a810ae03e0f0fb.setIcon(icon_36292fe23f0ea4cf7fe66897f21df1b3);
+            
+    
+            var marker_e629465940adec29319a5c91fdfefe7e = L.marker(
+                [42.4184296, -71.1061639],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_42781648376aa650ae4b044263a701eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1af470a4a86388587fa8a0d5ca166af5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ed8ebaf9385359529c6e211de4e8ad40 = $(`<div id="html_ed8ebaf9385359529c6e211de4e8ad40" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2026-01-09</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>Everett Co-operative Bank plans to open full-service branch office in Medford, Massachusetts in Q3 2026.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/1914605/000143774926000982/ex_904720.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_1af470a4a86388587fa8a0d5ca166af5.setContent(html_ed8ebaf9385359529c6e211de4e8ad40);
+            
+        
+
+        marker_e629465940adec29319a5c91fdfefe7e.bindPopup(popup_1af470a4a86388587fa8a0d5ca166af5)
+        ;
+
+        
+    
+    
+            marker_e629465940adec29319a5c91fdfefe7e.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e629465940adec29319a5c91fdfefe7e.setIcon(icon_42781648376aa650ae4b044263a701eb);
+            
+    
+            var marker_a643db40218508d97e25ff9da19761d3 = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_0ed3607a26548ef0ae8266a262acaf07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c3b26e0e19f5afd495c09b504e08b28 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_deaa3a26977e706ffca9250cf604fce0 = $(`<div id="html_deaa3a26977e706ffca9250cf604fce0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2026-04-22</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>Unity Bank opened a new full-service branch in Madison, New Jersey in 2025.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042726000031/unty-20260422xex99d1.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_7c3b26e0e19f5afd495c09b504e08b28.setContent(html_deaa3a26977e706ffca9250cf604fce0);
+            
+        
+
+        marker_a643db40218508d97e25ff9da19761d3.bindPopup(popup_7c3b26e0e19f5afd495c09b504e08b28)
+        ;
+
+        
+    
+    
+            marker_a643db40218508d97e25ff9da19761d3.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a643db40218508d97e25ff9da19761d3.setIcon(icon_0ed3607a26548ef0ae8266a262acaf07);
+            
+    
+            var marker_1d98d7804b584cb94902459e13983bc9 = L.marker(
+                [37.9020731, -122.0618702],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_e41c5d068ff35f0b114ba266d879ada5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07eb5970f23459fb01fc016edbcd14ea = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b4e9de089f1d4ebd792e473b6d47342e = $(`<div id="html_b4e9de089f1d4ebd792e473b6d47342e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2026-04-23</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>First Merchants Bank opening new downtown Walnut Creek location at 1823 N. Main St. in Q3-2026.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/1085913/000114036126016185/ef20071199_ex99-1.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_07eb5970f23459fb01fc016edbcd14ea.setContent(html_b4e9de089f1d4ebd792e473b6d47342e);
+            
+        
+
+        marker_1d98d7804b584cb94902459e13983bc9.bindPopup(popup_07eb5970f23459fb01fc016edbcd14ea)
+        ;
+
+        
+    
+    
+            marker_1d98d7804b584cb94902459e13983bc9.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d98d7804b584cb94902459e13983bc9.setIcon(icon_e41c5d068ff35f0b114ba266d879ada5);
+            
+    
+            var marker_e4f4664d1ee3235056b2ab9c7ab93e11 = L.marker(
+                [42.4184296, -71.1061639],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_99b515a79651e2fe87c9e7d9fc2ac40f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de8148046b3f5d578837319ecd7e768b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a7d68b59ce97757d858076a70659bd8c = $(`<div id="html_a7d68b59ce97757d858076a70659bd8c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2026-02-05</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>ECB Bancorp announced opening of a new branch in Medford, Massachusetts in 2026.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/1914605/000143774926003106/ex_889532.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_de8148046b3f5d578837319ecd7e768b.setContent(html_a7d68b59ce97757d858076a70659bd8c);
+            
+        
+
+        marker_e4f4664d1ee3235056b2ab9c7ab93e11.bindPopup(popup_de8148046b3f5d578837319ecd7e768b)
+        ;
+
+        
+    
+    
+            marker_e4f4664d1ee3235056b2ab9c7ab93e11.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4f4664d1ee3235056b2ab9c7ab93e11.setIcon(icon_99b515a79651e2fe87c9e7d9fc2ac40f);
+            
+    
+            var marker_cf466e6411ebd5b7074ae102d3b37fcf = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_e74112ab455cb5b0f0db8a1f9cac24ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdff8af5075ca99a44e86e258436ab41 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ff64e61743e37aff509c4df74e598445 = $(`<div id="html_ff64e61743e37aff509c4df74e598445" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2026-01-22</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>New branch facilities opened in Roanoke and Lynchburg to support expansion in dynamic markets.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526019510/nksh-ex99_1.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_bdff8af5075ca99a44e86e258436ab41.setContent(html_ff64e61743e37aff509c4df74e598445);
+            
+        
+
+        marker_cf466e6411ebd5b7074ae102d3b37fcf.bindPopup(popup_bdff8af5075ca99a44e86e258436ab41)
+        ;
+
+        
+    
+    
+            marker_cf466e6411ebd5b7074ae102d3b37fcf.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf466e6411ebd5b7074ae102d3b37fcf.setIcon(icon_e74112ab455cb5b0f0db8a1f9cac24ef);
+            
+    
+            var marker_1e442b08340e832e942f3b269b7182dd = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_6f00acfd0a1e198e6db8ba1fd15d76f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05677c2158a3cc5b622a434b739e0b60 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0429031c18a0cfb9b5975319e8413e89 = $(`<div id="html_0429031c18a0cfb9b5975319e8413e89" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2025-10-14</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>Unity Bank opened its 22nd branch in Madison, New Jersey, strengthening presence in Morris County.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042725000071/unty-20251014xex99d1.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_05677c2158a3cc5b622a434b739e0b60.setContent(html_0429031c18a0cfb9b5975319e8413e89);
+            
+        
+
+        marker_1e442b08340e832e942f3b269b7182dd.bindPopup(popup_05677c2158a3cc5b622a434b739e0b60)
+        ;
+
+        
+    
+    
+            marker_1e442b08340e832e942f3b269b7182dd.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e442b08340e832e942f3b269b7182dd.setIcon(icon_6f00acfd0a1e198e6db8ba1fd15d76f2);
+            
+    
+            var marker_540f6e0d3ad5bc42dc7acac8d01440bd = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_158d5d003bf5fd9425ed7aa992793854 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8874245e39db4c10e46b8a250fb3d04c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_337bd68f608aac3842141c357150a506 = $(`<div id="html_337bd68f608aac3842141c357150a506" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2025-07-15</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>Unity Bank announced plans to open a new branch in Madison, New Jersey, expected Fall 2025, increasing total branches to 22.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042725000056/unty-20250715xex99d1.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_8874245e39db4c10e46b8a250fb3d04c.setContent(html_337bd68f608aac3842141c357150a506);
+            
+        
+
+        marker_540f6e0d3ad5bc42dc7acac8d01440bd.bindPopup(popup_8874245e39db4c10e46b8a250fb3d04c)
+        ;
+
+        
+    
+    
+            marker_540f6e0d3ad5bc42dc7acac8d01440bd.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_540f6e0d3ad5bc42dc7acac8d01440bd.setIcon(icon_158d5d003bf5fd9425ed7aa992793854);
+            
+    
+            var marker_ea02c44a2860c146d99512b4b2ed47cc = L.marker(
+                [25.7929198, -80.1353006],
+                {
+}
+            ).addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+            var icon_ad44be39f7a77edf4e85fe5b1764532e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_869b370bf607176becbd325db69dc07f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4c0a093870b5a74d61ba6bb2dd23ef15 = $(`<div id="html_4c0a093870b5a74d61ba6bb2dd23ef15" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; font-size: 13px; width: 300px;">       <b style="font-size:14px;">Unknown Company</b><br>       <span style="color:#555;">Ticker: N/A</span><br>       <span style="color:#555;">Industry: Financial Services</span><br>       <span style="color:#555;">Filing date: 2025-11-10</span><br>       <span style="color:#555;">Event type: <b>Opening</b></span><br>       <hr style="margin:6px 0;">       <i>Amerant Bank opening new banking center in Miami Beach at Bay Harbor Islands.</i><br>       <a href="https://www.sec.gov/Archives/edgar/data/1734342/000173434225000072/amntirdeck-nov2025final.htm" target="_blank" style="color:#1a73e8;">View SEC filing ↗</a>     </div>     </div>`)[0];
+                popup_869b370bf607176becbd325db69dc07f.setContent(html_4c0a093870b5a74d61ba6bb2dd23ef15);
+            
+        
+
+        marker_ea02c44a2860c146d99512b4b2ed47cc.bindPopup(popup_869b370bf607176becbd325db69dc07f)
+        ;
+
+        
+    
+    
+            marker_ea02c44a2860c146d99512b4b2ed47cc.bindTooltip(
+                `<div>
+                     Unknown Company — Opening (Financial Services)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea02c44a2860c146d99512b4b2ed47cc.setIcon(icon_ad44be39f7a77edf4e85fe5b1764532e);
+            
+    
+            tile_layer_adf31c4ab56971e3573c697552e4358c.addTo(map_c67cffa1d97d2c03e8ee25bf17e8c213);
+        
+    
+                marker_e05132b6d7b95120329d2e752e2cc8bf.setIcon(icon_5cb34e8ddb46a9be9cf3760bcdb4ec8b);
+            
+    
+                marker_820abe72bc0e7dcfb6a810ae03e0f0fb.setIcon(icon_36292fe23f0ea4cf7fe66897f21df1b3);
+            
+    
+                marker_e629465940adec29319a5c91fdfefe7e.setIcon(icon_42781648376aa650ae4b044263a701eb);
+            
+    
+                marker_a643db40218508d97e25ff9da19761d3.setIcon(icon_0ed3607a26548ef0ae8266a262acaf07);
+            
+    
+                marker_1d98d7804b584cb94902459e13983bc9.setIcon(icon_e41c5d068ff35f0b114ba266d879ada5);
+            
+    
+                marker_e4f4664d1ee3235056b2ab9c7ab93e11.setIcon(icon_99b515a79651e2fe87c9e7d9fc2ac40f);
+            
+    
+                marker_cf466e6411ebd5b7074ae102d3b37fcf.setIcon(icon_e74112ab455cb5b0f0db8a1f9cac24ef);
+            
+    
+                marker_1e442b08340e832e942f3b269b7182dd.setIcon(icon_6f00acfd0a1e198e6db8ba1fd15d76f2);
+            
+    
+                marker_540f6e0d3ad5bc42dc7acac8d01440bd.setIcon(icon_158d5d003bf5fd9425ed7aa992793854);
+            
+    
+                marker_ea02c44a2860c146d99512b4b2ed47cc.setIcon(icon_ad44be39f7a77edf4e85fe5b1764532e);
+            
+</script>
+</html>
