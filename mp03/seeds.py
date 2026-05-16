@@ -30,8 +30,6 @@ FINANCIAL_SERVICES_TICKERS = [
     "MET", "PRU",
     # Payments
     "V", "MA", "AXP",
-    # Capital markets and brokerage
-    "GS", "MS", "SCHW",
 ]
 
 
@@ -46,8 +44,6 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations center"',
     '"data center"',
     '"new location"',
-    '"financial center"',
-    '"wealth management office"',
 ]
 
 # ──────────────────────────────────────────────────────────────────────────
