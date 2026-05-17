@@ -30,19 +30,42 @@ FINANCIAL_SERVICES_TICKERS = [
     "MET", "PRU",
     # Payments
     "V", "MA", "AXP",
+    # Consumer finance
+    "COF","DFS",
+    # Wealth management
+    "SCHW", "EVR",
+    # Capital markets banks
+    "GS", "MS",
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
     '"new branch"',
+    '"new office"',
     '"branch opening"',
     '"branch closure"',
     '"branch closing"',
     '"branch consolidation"',
     '"regional office"',
+    '"office opening"',
+    '"new headquarters"',
+    '"headquarters relocation"',
+    '"office expansion"',
+    '"branch relocation"',
+    '"office relocation"',
     '"office closure"',
     '"operations center"',
     '"data center"',
     '"new location"',
+    '"JPMorgan" "branch"',
+    '"Bank of America" "branch"',
+    '"Wells Fargo" "branch"',
+    '"Citi Bank" "branch"',
+    '"Blackstone" "branch"',
+    '"Blackrock" "branch"',
+    '"Visa" "branch"',
+    '"Charles Schwab" "branch"',
+    '"Goldman Sachs" "branch"',
+     '"Morgan Stanley" "branch"',
 ]
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -55,9 +78,13 @@ TRAVEL_HOSPITALITY_TICKERS = [
     # Cruise
     "CCL", "RCL", "NCLH",
     # Airlines
-    "DAL", "UAL", "AAL", "LUV",
+    "DAL", "UAL", "AAL", "LUV","JBLU"
     # Online travel
-    "BKNG", "EXPE",
+    "BKNG", "EXPE", "ABNB", "UBER",
+    #Resorts and Casinos
+    "WYNN","CZR","BYD","MGM"
+    #Hotel REITS
+    "PEB","PK","APLE","HST","BHR",
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
@@ -68,7 +95,23 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"property opening"',
     '"brand conversion"',
     '"new route"',
+    '"route expansion"'
+    '"new service"',
+    '"flight route"',
     '"new gateway"',
     '"new terminal"',
-    '"grand opening"',
+    '"grand opening"'
+    '"destination opening"',
+    '"intinerary expanded"',
+    '"now open"',
+    '"completed the sale"',
+    '"new aquisition"',
+    '"completed the aquisition"',
+    '"sold its"',
+    '"sale of the hotel"',
+    '"officially opened"',
+    '"soft opening"',
+  
+
+
 ]
