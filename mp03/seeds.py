@@ -3,11 +3,10 @@ Seeded data for Mini-Project MP03 — Press Release to Plot: Industry Comparison
 """
 
 FINANCIAL_SERVICES_TICKERS = [
-    "JPM", "BAC", "WFC", "C",
-    "PNC", "USB", "TFC",
-    "BLK", "BX",
-    "MET", "PRU",
-    "V", "MA", "AXP",
+    # Regional banks that file location 8-Ks
+    "NKSH", "LKFN", "ACNB", "AROW", "FMCB",
+    "NBTB", "UNTY", "CBKM", "AMTB", "ECBK",
+    "TSBK", "RM", "SMBC",
 ]
 
 FINANCIAL_SERVICES_PHRASES = [
