@@ -27,7 +27,7 @@ TRAVEL_HOSPITALITY_TICKERS = [
     "CCL", "RCL", "NCLH",
     "DAL", "UAL", "AAL", "LUV",
     "BKNG", "EXPE",
-    "MGM", "WYNN", "ABNB",
+    "BALY", "CZR", "PENN", "GLPI", "FUN",
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
