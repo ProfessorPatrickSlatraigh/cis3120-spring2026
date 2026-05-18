@@ -41,9 +41,7 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+    '"new resort"',
     '"new casino"',
     '"casino opening"',
-    '"new resort"',
-    '"new destination"',
-    '"new flight"',
 ]
