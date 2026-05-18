@@ -27,7 +27,7 @@ TRAVEL_HOSPITALITY_TICKERS = [
     "CCL", "RCL", "NCLH",
     "DAL", "UAL", "AAL", "LUV",
     "BKNG", "EXPE",
-    "BALY", "CZR", "PENN", "GLPI", "FUN",
+    "MGM", "WYNN", "ABNB",
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
@@ -41,9 +41,10 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+    '"new resort"',
     '"new casino"',
     '"casino opening"',
-    '"new resort"',
     '"new destination"',
     '"new flight"',
+    '"route expansion"',
 ]
