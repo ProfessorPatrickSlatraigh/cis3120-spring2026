@@ -1,0 +1,11 @@
+  Our map contains only five location events across Finance Industry and Travel & Hospitality Industry within the US. 
+Financial Services have companies such as Farmers & Merchants Bancorp in Livingston CA, National Bankshares in Roanoke VA and Unity Bancorp in Madison NJ. 
+These types of company are all branch openings in smaller markets. Travel and Hospitality have Strawberry Fields REIT and Venu Holding Corp that are both in Oklahoma.
+Our data result shows only openings in small-to-mid-sized markets. This is likely due to we may have over-weighted "opening" phrase and overlook "consolidattion" or "closure" phrases in our search phrases.
+Travel and Hospitality, as expected, shows non-traditional company types: a healthcare REIT acquisition (skilled nursing facility) and an entertainment venue (amphitheater). Neither is a hotel, cruise port, or airline route—the seeded defaults assumed. Both are in Oklahoma, suggesting either a genuine regional concentration.
+The absence of closure events reveals the insight about Industry Economics. It means our pipeline might have missed them. 
+The three openings we did capture---California, Virginia, New Jersey are in markets that aren't major financial centers. The population in Farmers & Merchants is approximately 14,000 people which suggests community banking still expands into rural and exurban markets where digital adoption is slower and weighted local relationships more important.
+This is a different economic insight than the assignment's expectation on a capital company.
+For Travel and Hospitality, our two events reveal this industry is broader than hotels and airlines. Strawberry Fields REIT operates in healthcare related and governed by Medicare reimbursement rates rather than leisure demand. Venu Holding builds amphitheaters. Both are not the leisure-focused expansion the assignment originally assumed. 
+This suggests the Travel and Hospitality industry has moved capital into secondary markets (rural Oklahoma) where land is cheap and local governments offer incentives.
+The limitations of API constraint and SEC availability that we mentioned above make our map suggestive rather than conclusive. Our sample has only 5 events in total, with only 2 in Travel and Hospitality. The event-count target was 8 per industry. We fell short and relied on the 360-day ceiling.
