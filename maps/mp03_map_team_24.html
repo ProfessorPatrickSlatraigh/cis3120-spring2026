@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cecb5afd3220ef431d06d82354dcb544 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cecb5afd3220ef431d06d82354dcb544" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cecb5afd3220ef431d06d82354dcb544 = L.map(
+                "map_cecb5afd3220ef431d06d82354dcb544",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_421010535216a977bbd22519611c6394 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_421010535216a977bbd22519611c6394.addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+            var marker_401c7ba06a0f181cf9bd18000184fd89 = L.marker(
+                [36.1674263, -115.1484131],
+                {
+}
+            ).addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+            var icon_92a9b38eea87b65ffa6887ab935c7958 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd1513600711c70408ed043712e2d40f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13b291e03ff88019a72c6f5556cf62ac = $(`<div id="html_13b291e03ff88019a72c6f5556cf62ac" style="width: 100.0%; height: 100.0%;">         <b>AMERICAN EXPRESS CO  (AXP)  (CIK 0000004962)</b> (AXP)<br>         <i>Industry:</i> Financial Services<br>         <i>Date:</i> 2026-04-23<br>         <i>Event Type:</i> opening<br>         <i>Summary:</i> American Express opened new Centurion Lounge locations in Las Vegas and New Delhi.<br>         <a href="https://www.sec.gov/Archives/edgar/data/4962/000000496226000188/q126exhibit991.htm" target="_blank">SEC Filing</a>         </div>`)[0];
+                popup_fd1513600711c70408ed043712e2d40f.setContent(html_13b291e03ff88019a72c6f5556cf62ac);
+            
+        
+
+        marker_401c7ba06a0f181cf9bd18000184fd89.bindPopup(popup_fd1513600711c70408ed043712e2d40f)
+        ;
+
+        
+    
+    
+                marker_401c7ba06a0f181cf9bd18000184fd89.setIcon(icon_92a9b38eea87b65ffa6887ab935c7958);
+            
+    
+            var marker_fa97c7471136f54678bd535fca2758ca = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+            var icon_6c71bff0c4c61545b28f0208a6c6abb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c83905c945a0cc69338ce5a9332eba2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8eb46c36fb8111aae22f8b7a8fadcfa = $(`<div id="html_e8eb46c36fb8111aae22f8b7a8fadcfa" style="width: 100.0%; height: 100.0%;">         <b>Hyatt Hotels Corp  (H)  (CIK 0001468174)</b> (H)<br>         <i>Industry:</i> Travel and Hospitality<br>         <i>Date:</i> 2025-11-06<br>         <i>Event Type:</i> opening<br>         <i>Summary:</i> Hyatt Regency Times Square opened in Manhattan, the first Hyatt Regency property in Manhattan and 30th property in New York City.<br>         <a href="https://www.sec.gov/Archives/edgar/data/1468174/000146817425000108/q32025earningsrelease.htm" target="_blank">SEC Filing</a>         </div>`)[0];
+                popup_c83905c945a0cc69338ce5a9332eba2b.setContent(html_e8eb46c36fb8111aae22f8b7a8fadcfa);
+            
+        
+
+        marker_fa97c7471136f54678bd535fca2758ca.bindPopup(popup_c83905c945a0cc69338ce5a9332eba2b)
+        ;
+
+        
+    
+    
+                marker_fa97c7471136f54678bd535fca2758ca.setIcon(icon_6c71bff0c4c61545b28f0208a6c6abb5);
+            
+    
+            var marker_686cdc3c1bdd32f1b90ef603b7b72258 = L.marker(
+                [29.2278796, -94.8936301],
+                {
+}
+            ).addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+            var icon_8d6d77e66d60cb410e2d56b2d5842e3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12aee81b6abd97b225f082b4cf1ddf4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a19280dd13f1589b83debaa9ab57c7b = $(`<div id="html_3a19280dd13f1589b83debaa9ab57c7b" style="width: 100.0%; height: 100.0%;">         <b>Hyatt Hotels Corp  (H)  (CIK 0001468174)</b> (H)<br>         <i>Industry:</i> Travel and Hospitality<br>         <i>Date:</i> 2025-08-07<br>         <i>Event Type:</i> opening<br>         <i>Summary:</i> Alua Soul Sunny Beach hotel opened in Q2 2025.<br>         <a href="https://www.sec.gov/Archives/edgar/data/1468174/000146817425000087/finalq22025supplementald.htm" target="_blank">SEC Filing</a>         </div>`)[0];
+                popup_12aee81b6abd97b225f082b4cf1ddf4d.setContent(html_3a19280dd13f1589b83debaa9ab57c7b);
+            
+        
+
+        marker_686cdc3c1bdd32f1b90ef603b7b72258.bindPopup(popup_12aee81b6abd97b225f082b4cf1ddf4d)
+        ;
+
+        
+    
+    
+                marker_686cdc3c1bdd32f1b90ef603b7b72258.setIcon(icon_8d6d77e66d60cb410e2d56b2d5842e3e);
+            
+    
+            var marker_52d9128f60e4d652e980f70bfec4d01c = L.marker(
+                [40.6526006, -73.9497211],
+                {
+}
+            ).addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+            var icon_8a50134e1aee079b6f290f23d5e6fd9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55ad2f5062d06636bbe382be30866d29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06397f7295bbc72ceb6b60737bc809d9 = $(`<div id="html_06397f7295bbc72ceb6b60737bc809d9" style="width: 100.0%; height: 100.0%;">         <b>Hyatt Hotels Corp  (H)  (CIK 0001468174)</b> (H)<br>         <i>Industry:</i> Travel and Hospitality<br>         <i>Date:</i> 2026-04-30<br>         <i>Event Type:</i> opening<br>         <i>Summary:</i> Hyatt opened The Livingston, its first branded hotel in Brooklyn, New York, expanding urban presence.<br>         <a href="https://www.sec.gov/Archives/edgar/data/1468174/000146817426000013/q12026earningsrelease.htm" target="_blank">SEC Filing</a>         </div>`)[0];
+                popup_55ad2f5062d06636bbe382be30866d29.setContent(html_06397f7295bbc72ceb6b60737bc809d9);
+            
+        
+
+        marker_52d9128f60e4d652e980f70bfec4d01c.bindPopup(popup_55ad2f5062d06636bbe382be30866d29)
+        ;
+
+        
+    
+    
+                marker_52d9128f60e4d652e980f70bfec4d01c.setIcon(icon_8a50134e1aee079b6f290f23d5e6fd9f);
+            
+    
+            var marker_991ac37c400f123d7ee22920b9555034 = L.marker(
+                [34.729847, -86.5859011],
+                {
+}
+            ).addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+            var icon_36f233e7d4c2c0f13d7cbfc26f30ebc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e021513c96f4e4c98f53eb9a0c1b905 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7fcde39bda1fa8b1ebde873d1884053 = $(`<div id="html_d7fcde39bda1fa8b1ebde873d1884053" style="width: 100.0%; height: 100.0%;">         <b>Hyatt Hotels Corp  (H)  (CIK 0001468174)</b> (H)<br>         <i>Industry:</i> Travel and Hospitality<br>         <i>Date:</i> 2026-02-12<br>         <i>Event Type:</i> opening<br>         <i>Summary:</i> Hyatt Studios Huntsville opened, expanding the Hyatt Studios extended-stay brand in the United States.<br>         <a href="https://www.sec.gov/Archives/edgar/data/1468174/000146817426000004/q42025earningsrelease.htm" target="_blank">SEC Filing</a>         </div>`)[0];
+                popup_9e021513c96f4e4c98f53eb9a0c1b905.setContent(html_d7fcde39bda1fa8b1ebde873d1884053);
+            
+        
+
+        marker_991ac37c400f123d7ee22920b9555034.bindPopup(popup_9e021513c96f4e4c98f53eb9a0c1b905)
+        ;
+
+        
+    
+    
+                marker_991ac37c400f123d7ee22920b9555034.setIcon(icon_36f233e7d4c2c0f13d7cbfc26f30ebc4);
+            
+    
+            var marker_b201b891d2afff30013f16c743a50d24 = L.marker(
+                [29.6521035, -95.1374753],
+                {
+}
+            ).addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+            var icon_ea5f41ed16b0ae8bad28574058fa2430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f35c4f3b3900e3cf1e0d8290a5911ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_563a65ec88eb0858528514b124ec6283 = $(`<div id="html_563a65ec88eb0858528514b124ec6283" style="width: 100.0%; height: 100.0%;">         <b>ROYAL CARIBBEAN CRUISES LTD  (RCL)  (CIK 0000884887)</b> (RCL)<br>         <i>Industry:</i> Travel and Hospitality<br>         <i>Date:</i> 2025-10-28<br>         <i>Event Type:</i> opening<br>         <i>Summary:</i> Royal Beach Club Santorini opening in summer 2026 as exclusive cruise destination.<br>         <a href="https://www.sec.gov/Archives/edgar/data/884887/000088488725000146/a2025q3earningsrelease8-k.htm" target="_blank">SEC Filing</a>         </div>`)[0];
+                popup_6f35c4f3b3900e3cf1e0d8290a5911ca.setContent(html_563a65ec88eb0858528514b124ec6283);
+            
+        
+
+        marker_b201b891d2afff30013f16c743a50d24.bindPopup(popup_6f35c4f3b3900e3cf1e0d8290a5911ca)
+        ;
+
+        
+    
+    
+                marker_b201b891d2afff30013f16c743a50d24.setIcon(icon_ea5f41ed16b0ae8bad28574058fa2430);
+            
+    
+            tile_layer_421010535216a977bbd22519611c6394.addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+                marker_401c7ba06a0f181cf9bd18000184fd89.setIcon(icon_92a9b38eea87b65ffa6887ab935c7958);
+            
+    
+                marker_fa97c7471136f54678bd535fca2758ca.setIcon(icon_6c71bff0c4c61545b28f0208a6c6abb5);
+            
+    
+                marker_686cdc3c1bdd32f1b90ef603b7b72258.setIcon(icon_8d6d77e66d60cb410e2d56b2d5842e3e);
+            
+    
+                marker_52d9128f60e4d652e980f70bfec4d01c.setIcon(icon_8a50134e1aee079b6f290f23d5e6fd9f);
+            
+    
+                marker_991ac37c400f123d7ee22920b9555034.setIcon(icon_36f233e7d4c2c0f13d7cbfc26f30ebc4);
+            
+    
+                marker_b201b891d2afff30013f16c743a50d24.setIcon(icon_ea5f41ed16b0ae8bad28574058fa2430);
+            
+    
+            tile_layer_421010535216a977bbd22519611c6394.addTo(map_cecb5afd3220ef431d06d82354dcb544);
+        
+    
+                marker_401c7ba06a0f181cf9bd18000184fd89.setIcon(icon_92a9b38eea87b65ffa6887ab935c7958);
+            
+    
+                marker_fa97c7471136f54678bd535fca2758ca.setIcon(icon_6c71bff0c4c61545b28f0208a6c6abb5);
+            
+    
+                marker_686cdc3c1bdd32f1b90ef603b7b72258.setIcon(icon_8d6d77e66d60cb410e2d56b2d5842e3e);
+            
+    
+                marker_52d9128f60e4d652e980f70bfec4d01c.setIcon(icon_8a50134e1aee079b6f290f23d5e6fd9f);
+            
+    
+                marker_991ac37c400f123d7ee22920b9555034.setIcon(icon_36f233e7d4c2c0f13d7cbfc26f30ebc4);
+            
+    
+                marker_b201b891d2afff30013f16c743a50d24.setIcon(icon_ea5f41ed16b0ae8bad28574058fa2430);
+            
+</script>
+</html>

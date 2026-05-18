@@ -30,7 +30,13 @@ FINANCIAL_SERVICES_TICKERS = [
     "MET", "PRU",
     # Payments
     "V", "MA", "AXP",
-]
+    # Capital markets / investment banking (added: seed undercounted this segment)
+    "MS", "GS",
+    # Custody / servicing (added: STT and BK file ops-center relocation 8-Ks frequently)
+    "STT", "BK",
+    # Brokerage / consumer finance (added: broadens coverage beyond retail banking)
+    "SCHW", "PYPL", "COF",
+    ]
 
 FINANCIAL_SERVICES_PHRASES = [
     '"new branch"',
@@ -43,7 +49,15 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations center"',
     '"data center"',
     '"new location"',
-]
+    '"new office"',           # added: catches capital-markets office openings
+    '"office relocation"',    # added: catches consolidation moves
+    '"regional headquarters"',# added: catches sub-regional HQ announcements
+    '"headquarters relocation"', # added: catches HQ moves
+    '"service center"',       # added: catches retail service hubs
+    '"operations hub"',       # added: variant of operations center
+    '"wealth management office"', # added: catches private banking openings
+    '"client center"',            # added: catches advisory center announcements
+    ]
 
 # ──────────────────────────────────────────────────────────────────────────
 #  Travel and Hospitality (default seed: 14 companies across sub-segments)
