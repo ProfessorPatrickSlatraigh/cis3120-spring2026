@@ -1,0 +1,4 @@
+industry,event_type,city,state,summary,latitude,longitude,filing_url,input_tokens,output_tokens
+Financial Services,opening,Charleston,SC,"King Street Branch opening scheduled for December 2025 in Charleston, South Carolina.",32.7884363,-79.9399309,https://www.sec.gov/Archives/edgar/data/49196/000004919625000071/hbanbarclayspresentation.htm,399,71
+Financial Services,expansion,Savannah,GA,Cadence Bank signed merger agreement with First Chatham Bank to expand presence in Savannah and coastal Georgia.,32.0790074,-81.0921335,https://www.sec.gov/Archives/edgar/data/49196/000114036125043724/ny20057909x3_ex99-15.htm,2190,80
+Financial Services,expansion,Colorado,,PNC's pending FirstBank acquisition will triple Colorado branches to 120 and expand Arizona presence to 70+ branches.,38.7251776,-105.607716,https://www.sec.gov/Archives/edgar/data/713676/000071367625000126/q32025financialsupplement.htm,3152,78
