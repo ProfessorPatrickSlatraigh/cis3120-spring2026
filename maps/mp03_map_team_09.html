@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_df51c6669ab6c989d8c0e21b6613eaa4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_df51c6669ab6c989d8c0e21b6613eaa4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_df51c6669ab6c989d8c0e21b6613eaa4 = L.map(
+                "map_df51c6669ab6c989d8c0e21b6613eaa4",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d79b17bb2ded76807da90863e85b5a82 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d79b17bb2ded76807da90863e85b5a82.addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var marker_287839644156d2d92528594c60cd7889 = L.marker(
+                [32.7884363, -79.9399309],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_e397877db1da0763118d9c6c010d650a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f2d7c4902e9692ae55547877d966f81 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_51deb6e8a62a6b8217306c2fe2200d51 = $(`<div id="html_51deb6e8a62a6b8217306c2fe2200d51" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Financial Services<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Charleston, SC<br>     <b>Summary:</b> King Street Branch opening scheduled for December 2025 in Charleston, South Carolina.<br>     <a href="https://www.sec.gov/Archives/edgar/data/49196/000004919625000071/hbanbarclayspresentation.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_3f2d7c4902e9692ae55547877d966f81.setContent(html_51deb6e8a62a6b8217306c2fe2200d51);
+            
+        
+
+        marker_287839644156d2d92528594c60cd7889.bindPopup(popup_3f2d7c4902e9692ae55547877d966f81)
+        ;
+
+        
+    
+    
+                marker_287839644156d2d92528594c60cd7889.setIcon(icon_e397877db1da0763118d9c6c010d650a);
+            
+    
+            var marker_c74876628c3d1f31bc71727dd5e5098c = L.marker(
+                [32.0790074, -81.0921335],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_affa13fdb99eeff8dc036381c7831594 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b53d71a9cafa0404eec438fdc0aa6c06 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1836e1206ab2fe17e6cbeb2c1f0e4ba0 = $(`<div id="html_1836e1206ab2fe17e6cbeb2c1f0e4ba0" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Financial Services<br>     <b>Event type:</b> expansion<br>     <b>Location:</b> Savannah, GA<br>     <b>Summary:</b> Cadence Bank signed merger agreement with First Chatham Bank to expand presence in Savannah and coastal Georgia.<br>     <a href="https://www.sec.gov/Archives/edgar/data/49196/000114036125043724/ny20057909x3_ex99-15.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_b53d71a9cafa0404eec438fdc0aa6c06.setContent(html_1836e1206ab2fe17e6cbeb2c1f0e4ba0);
+            
+        
+
+        marker_c74876628c3d1f31bc71727dd5e5098c.bindPopup(popup_b53d71a9cafa0404eec438fdc0aa6c06)
+        ;
+
+        
+    
+    
+                marker_c74876628c3d1f31bc71727dd5e5098c.setIcon(icon_affa13fdb99eeff8dc036381c7831594);
+            
+    
+            var marker_06c642a513c62f5eb56c6ccdbf57c61c = L.marker(
+                [38.7251776, -105.607716],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_ad249f75895f166bd81ffe30eb063bfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32c549f4675a57a7eb2cf4d4a1ec891e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8e2c3e89fea55fa6a06981186405e660 = $(`<div id="html_8e2c3e89fea55fa6a06981186405e660" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Financial Services<br>     <b>Event type:</b> expansion<br>     <b>Location:</b> Colorado, nan<br>     <b>Summary:</b> PNC&#x27;s pending FirstBank acquisition will triple Colorado branches to 120 and expand Arizona presence to 70+ branches.<br>     <a href="https://www.sec.gov/Archives/edgar/data/713676/000071367625000126/q32025financialsupplement.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_32c549f4675a57a7eb2cf4d4a1ec891e.setContent(html_8e2c3e89fea55fa6a06981186405e660);
+            
+        
+
+        marker_06c642a513c62f5eb56c6ccdbf57c61c.bindPopup(popup_32c549f4675a57a7eb2cf4d4a1ec891e)
+        ;
+
+        
+    
+    
+                marker_06c642a513c62f5eb56c6ccdbf57c61c.setIcon(icon_ad249f75895f166bd81ffe30eb063bfa);
+            
+    
+            var marker_0742e36b66e0d6c3a9d73d587fdad6b3 = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_b8fdaadbd4a5d12f666fbdb8c90e6a63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b191f8b92acc7785142f195e7c738e2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4d03de0e1ca653f92675dd75a14b9726 = $(`<div id="html_4d03de0e1ca653f92675dd75a14b9726" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Columbus, OH<br>     <b>Summary:</b> Hollywood Columbus new hotel tower opening announced for June 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_6b191f8b92acc7785142f195e7c738e2.setContent(html_4d03de0e1ca653f92675dd75a14b9726);
+            
+        
+
+        marker_0742e36b66e0d6c3a9d73d587fdad6b3.bindPopup(popup_6b191f8b92acc7785142f195e7c738e2)
+        ;
+
+        
+    
+    
+                marker_0742e36b66e0d6c3a9d73d587fdad6b3.setIcon(icon_b8fdaadbd4a5d12f666fbdb8c90e6a63);
+            
+    
+            var marker_dd700386c33ee92464a5fdde311bd1c1 = L.marker(
+                [41.5263603, -88.0840212],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_b24864a5d74b26e2f7083ad9f1a7604c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc5f2f2b9a24f31639d1d4f184139dc2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_80d5eeea3f85e7ae7e5c72d17c082f79 = $(`<div id="html_80d5eeea3f85e7ae7e5c72d17c082f79" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Joliet, IL<br>     <b>Summary:</b> Hollywood Casino Joliet opening delivering strong results from new and reactivated customers.<br>     <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173826000006/pennex991-q42025.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_fc5f2f2b9a24f31639d1d4f184139dc2.setContent(html_80d5eeea3f85e7ae7e5c72d17c082f79);
+            
+        
+
+        marker_dd700386c33ee92464a5fdde311bd1c1.bindPopup(popup_fc5f2f2b9a24f31639d1d4f184139dc2)
+        ;
+
+        
+    
+    
+                marker_dd700386c33ee92464a5fdde311bd1c1.setIcon(icon_b24864a5d74b26e2f7083ad9f1a7604c);
+            
+    
+            var marker_046f79a9d7afc78a890e982f2a9971ed = L.marker(
+                [25.7929198, -80.1353006],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_b457dcc970f26b14de0cd3b2e6b22d15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3b27b51bb8d5a58c29775e1a5983543 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_91e5f2d00b9f520c91f1233e5289186d = $(`<div id="html_91e5f2d00b9f520c91f1233e5289186d" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Miami Beach, FL<br>     <b>Summary:</b> Andaz Miami Beach hotel opened after renovation, with strong guest response and accelerating bookings.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1295810/000155837025010406/sho-20250806xex99d1.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_a3b27b51bb8d5a58c29775e1a5983543.setContent(html_91e5f2d00b9f520c91f1233e5289186d);
+            
+        
+
+        marker_046f79a9d7afc78a890e982f2a9971ed.bindPopup(popup_a3b27b51bb8d5a58c29775e1a5983543)
+        ;
+
+        
+    
+    
+                marker_046f79a9d7afc78a890e982f2a9971ed.setIcon(icon_b457dcc970f26b14de0cd3b2e6b22d15);
+            
+    
+            var marker_09144850db97bc8d7480b934b42fac17 = L.marker(
+                [41.5263603, -88.0840212],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_2aeac553855418f70255a4c2908c3ffa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cfc7c3b98f7ab40841915e76c2baa5d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7ef20e20fdf7065ea3687a40f640adf8 = $(`<div id="html_7ef20e20fdf7065ea3687a40f640adf8" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> relocation<br>     <b>Location:</b> Joliet, IL<br>     <b>Summary:</b> GLPI funded $130 million for Hollywood Casino Joliet relocation at 7.75% cap rate.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1575965/000157596525000049/glpi-2025930ex991.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_2cfc7c3b98f7ab40841915e76c2baa5d.setContent(html_7ef20e20fdf7065ea3687a40f640adf8);
+            
+        
+
+        marker_09144850db97bc8d7480b934b42fac17.bindPopup(popup_2cfc7c3b98f7ab40841915e76c2baa5d)
+        ;
+
+        
+    
+    
+                marker_09144850db97bc8d7480b934b42fac17.setIcon(icon_2aeac553855418f70255a4c2908c3ffa);
+            
+    
+            var marker_bb69ad3ee481b343e516bb22b568ef2a = L.marker(
+                [30.4494155, -91.1869659],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_1536f906c51771d459308d273a3a9222 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a837136f4c5d162044f7808b04fb4cb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7a05203e4d0939e3f6a5f9bc1dcb7715 = $(`<div id="html_7a05203e4d0939e3f6a5f9bc1dcb7715" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Baton Rouge, LA<br>     <b>Summary:</b> Bally&#x27;s Baton Rouge land-based casino completed conversion and held grand opening in December 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1575965/000157596526000035/glpi-20251231ex991.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_6a837136f4c5d162044f7808b04fb4cb.setContent(html_7a05203e4d0939e3f6a5f9bc1dcb7715);
+            
+        
+
+        marker_bb69ad3ee481b343e516bb22b568ef2a.bindPopup(popup_6a837136f4c5d162044f7808b04fb4cb)
+        ;
+
+        
+    
+    
+                marker_bb69ad3ee481b343e516bb22b568ef2a.setIcon(icon_1536f906c51771d459308d273a3a9222);
+            
+    
+            var marker_1813d05a26bcc6a4a56cef6bf30cebbb = L.marker(
+                [25.7929198, -80.1353006],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_a470f6ced75e93b98ea450b75734bf19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5453551ea0bdc5b2c1144ce897830822 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_dfbce60a54d75e94fbfa9ad069335306 = $(`<div id="html_dfbce60a54d75e94fbfa9ad069335306" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Miami Beach, FL<br>     <b>Summary:</b> Sunstone opened Andaz Miami Beach luxury resort in May 2025 following complete property renovation.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1295810/000110465926020996/sho-20260227xex99d1.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_5453551ea0bdc5b2c1144ce897830822.setContent(html_dfbce60a54d75e94fbfa9ad069335306);
+            
+        
+
+        marker_1813d05a26bcc6a4a56cef6bf30cebbb.bindPopup(popup_5453551ea0bdc5b2c1144ce897830822)
+        ;
+
+        
+    
+    
+                marker_1813d05a26bcc6a4a56cef6bf30cebbb.setIcon(icon_a470f6ced75e93b98ea450b75734bf19);
+            
+    
+            var marker_7505df320abfc41f2033878e9be05f11 = L.marker(
+                [35.3624915, -86.2099766],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_569f9d5d6d00a16c432241cc19bf076c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdc8757be318639e44b0dd9cf779083d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_99f6b178ab40977528dd6d6d704e226a = $(`<div id="html_99f6b178ab40977528dd6d6d704e226a" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Tullahoma, TN<br>     <b>Summary:</b> Hilton opened its first LivSmart Studios by Hilton in Tullahoma, Tennessee in July 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1585689/000158568925000144/q22025earningsrelease.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_fdc8757be318639e44b0dd9cf779083d.setContent(html_99f6b178ab40977528dd6d6d704e226a);
+            
+        
+
+        marker_7505df320abfc41f2033878e9be05f11.bindPopup(popup_fdc8757be318639e44b0dd9cf779083d)
+        ;
+
+        
+    
+    
+                marker_7505df320abfc41f2033878e9be05f11.setIcon(icon_569f9d5d6d00a16c432241cc19bf076c);
+            
+    
+            var marker_68a070f6982cbd650d55b09c24f52867 = L.marker(
+                [26.3149892, -98.1836654],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_d6b15f4b9ee52227d997041b14c7cd5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_012f9fcf850b9a808798d35cbd661be5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d42ce40ebd762ecd41b0d186fef20006 = $(`<div id="html_d42ce40ebd762ecd41b0d186fef20006" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> opening<br>     <b>Location:</b> La Cantera, TX<br>     <b>Summary:</b> Hilton reached its 9,000th property milestone with the opening of Signia by Hilton La Cantera Resort and Spa in October 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1585689/000158568925000158/q32025earningsrelease.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_012f9fcf850b9a808798d35cbd661be5.setContent(html_d42ce40ebd762ecd41b0d186fef20006);
+            
+        
+
+        marker_68a070f6982cbd650d55b09c24f52867.bindPopup(popup_012f9fcf850b9a808798d35cbd661be5)
+        ;
+
+        
+    
+    
+                marker_68a070f6982cbd650d55b09c24f52867.setIcon(icon_d6b15f4b9ee52227d997041b14c7cd5a);
+            
+    
+            var marker_0809f281a2fc3b74d02dad2dd0f895c2 = L.marker(
+                [42.3602273, -87.8318164],
+                {
+}
+            ).addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+            var icon_b8fafe5512f0aa88e1aaf6204a2cfb94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f76d56f8736259d4d48452ed9348c2b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_cefc80ba6c54b66c4f0590f8db21f9cc = $(`<div id="html_cefc80ba6c54b66c4f0590f8db21f9cc" style="width: 100.0%; height: 100.0%;">     <b>Industry:</b> Travel and Hospitality<br>     <b>Event type:</b> expansion<br>     <b>Location:</b> Waukegan, IL<br>     <b>Summary:</b> Full House Resorts announced construction of permanent American Place Casino in Waukegan, Illinois, with significantly expanded square footage and amenities.<br>     <a href="https://www.sec.gov/Archives/edgar/data/891482/000089148226000023/fll-20260507xex99d1.htm" target="_blank">SEC filing</a>     </div>`)[0];
+                popup_7f76d56f8736259d4d48452ed9348c2b.setContent(html_cefc80ba6c54b66c4f0590f8db21f9cc);
+            
+        
+
+        marker_0809f281a2fc3b74d02dad2dd0f895c2.bindPopup(popup_7f76d56f8736259d4d48452ed9348c2b)
+        ;
+
+        
+    
+    
+                marker_0809f281a2fc3b74d02dad2dd0f895c2.setIcon(icon_b8fafe5512f0aa88e1aaf6204a2cfb94);
+            
+    
+            tile_layer_d79b17bb2ded76807da90863e85b5a82.addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+                marker_287839644156d2d92528594c60cd7889.setIcon(icon_e397877db1da0763118d9c6c010d650a);
+            
+    
+                marker_c74876628c3d1f31bc71727dd5e5098c.setIcon(icon_affa13fdb99eeff8dc036381c7831594);
+            
+    
+                marker_06c642a513c62f5eb56c6ccdbf57c61c.setIcon(icon_ad249f75895f166bd81ffe30eb063bfa);
+            
+    
+                marker_0742e36b66e0d6c3a9d73d587fdad6b3.setIcon(icon_b8fdaadbd4a5d12f666fbdb8c90e6a63);
+            
+    
+                marker_dd700386c33ee92464a5fdde311bd1c1.setIcon(icon_b24864a5d74b26e2f7083ad9f1a7604c);
+            
+    
+                marker_046f79a9d7afc78a890e982f2a9971ed.setIcon(icon_b457dcc970f26b14de0cd3b2e6b22d15);
+            
+    
+                marker_09144850db97bc8d7480b934b42fac17.setIcon(icon_2aeac553855418f70255a4c2908c3ffa);
+            
+    
+                marker_bb69ad3ee481b343e516bb22b568ef2a.setIcon(icon_1536f906c51771d459308d273a3a9222);
+            
+    
+                marker_1813d05a26bcc6a4a56cef6bf30cebbb.setIcon(icon_a470f6ced75e93b98ea450b75734bf19);
+            
+    
+                marker_7505df320abfc41f2033878e9be05f11.setIcon(icon_569f9d5d6d00a16c432241cc19bf076c);
+            
+    
+                marker_68a070f6982cbd650d55b09c24f52867.setIcon(icon_d6b15f4b9ee52227d997041b14c7cd5a);
+            
+    
+                marker_0809f281a2fc3b74d02dad2dd0f895c2.setIcon(icon_b8fafe5512f0aa88e1aaf6204a2cfb94);
+            
+    
+            tile_layer_d79b17bb2ded76807da90863e85b5a82.addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+                marker_287839644156d2d92528594c60cd7889.setIcon(icon_e397877db1da0763118d9c6c010d650a);
+            
+    
+                marker_c74876628c3d1f31bc71727dd5e5098c.setIcon(icon_affa13fdb99eeff8dc036381c7831594);
+            
+    
+                marker_06c642a513c62f5eb56c6ccdbf57c61c.setIcon(icon_ad249f75895f166bd81ffe30eb063bfa);
+            
+    
+                marker_0742e36b66e0d6c3a9d73d587fdad6b3.setIcon(icon_b8fdaadbd4a5d12f666fbdb8c90e6a63);
+            
+    
+                marker_dd700386c33ee92464a5fdde311bd1c1.setIcon(icon_b24864a5d74b26e2f7083ad9f1a7604c);
+            
+    
+                marker_046f79a9d7afc78a890e982f2a9971ed.setIcon(icon_b457dcc970f26b14de0cd3b2e6b22d15);
+            
+    
+                marker_09144850db97bc8d7480b934b42fac17.setIcon(icon_2aeac553855418f70255a4c2908c3ffa);
+            
+    
+                marker_bb69ad3ee481b343e516bb22b568ef2a.setIcon(icon_1536f906c51771d459308d273a3a9222);
+            
+    
+                marker_1813d05a26bcc6a4a56cef6bf30cebbb.setIcon(icon_a470f6ced75e93b98ea450b75734bf19);
+            
+    
+                marker_7505df320abfc41f2033878e9be05f11.setIcon(icon_569f9d5d6d00a16c432241cc19bf076c);
+            
+    
+                marker_68a070f6982cbd650d55b09c24f52867.setIcon(icon_d6b15f4b9ee52227d997041b14c7cd5a);
+            
+    
+                marker_0809f281a2fc3b74d02dad2dd0f895c2.setIcon(icon_b8fafe5512f0aa88e1aaf6204a2cfb94);
+            
+    
+            tile_layer_d79b17bb2ded76807da90863e85b5a82.addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+                marker_287839644156d2d92528594c60cd7889.setIcon(icon_e397877db1da0763118d9c6c010d650a);
+            
+    
+                marker_c74876628c3d1f31bc71727dd5e5098c.setIcon(icon_affa13fdb99eeff8dc036381c7831594);
+            
+    
+                marker_06c642a513c62f5eb56c6ccdbf57c61c.setIcon(icon_ad249f75895f166bd81ffe30eb063bfa);
+            
+    
+                marker_0742e36b66e0d6c3a9d73d587fdad6b3.setIcon(icon_b8fdaadbd4a5d12f666fbdb8c90e6a63);
+            
+    
+                marker_dd700386c33ee92464a5fdde311bd1c1.setIcon(icon_b24864a5d74b26e2f7083ad9f1a7604c);
+            
+    
+                marker_046f79a9d7afc78a890e982f2a9971ed.setIcon(icon_b457dcc970f26b14de0cd3b2e6b22d15);
+            
+    
+                marker_09144850db97bc8d7480b934b42fac17.setIcon(icon_2aeac553855418f70255a4c2908c3ffa);
+            
+    
+                marker_bb69ad3ee481b343e516bb22b568ef2a.setIcon(icon_1536f906c51771d459308d273a3a9222);
+            
+    
+                marker_1813d05a26bcc6a4a56cef6bf30cebbb.setIcon(icon_a470f6ced75e93b98ea450b75734bf19);
+            
+    
+                marker_7505df320abfc41f2033878e9be05f11.setIcon(icon_569f9d5d6d00a16c432241cc19bf076c);
+            
+    
+                marker_68a070f6982cbd650d55b09c24f52867.setIcon(icon_d6b15f4b9ee52227d997041b14c7cd5a);
+            
+    
+                marker_0809f281a2fc3b74d02dad2dd0f895c2.setIcon(icon_b8fafe5512f0aa88e1aaf6204a2cfb94);
+            
+    
+            tile_layer_d79b17bb2ded76807da90863e85b5a82.addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+                marker_287839644156d2d92528594c60cd7889.setIcon(icon_e397877db1da0763118d9c6c010d650a);
+            
+    
+                marker_c74876628c3d1f31bc71727dd5e5098c.setIcon(icon_affa13fdb99eeff8dc036381c7831594);
+            
+    
+                marker_06c642a513c62f5eb56c6ccdbf57c61c.setIcon(icon_ad249f75895f166bd81ffe30eb063bfa);
+            
+    
+                marker_0742e36b66e0d6c3a9d73d587fdad6b3.setIcon(icon_b8fdaadbd4a5d12f666fbdb8c90e6a63);
+            
+    
+                marker_dd700386c33ee92464a5fdde311bd1c1.setIcon(icon_b24864a5d74b26e2f7083ad9f1a7604c);
+            
+    
+                marker_046f79a9d7afc78a890e982f2a9971ed.setIcon(icon_b457dcc970f26b14de0cd3b2e6b22d15);
+            
+    
+                marker_09144850db97bc8d7480b934b42fac17.setIcon(icon_2aeac553855418f70255a4c2908c3ffa);
+            
+    
+                marker_bb69ad3ee481b343e516bb22b568ef2a.setIcon(icon_1536f906c51771d459308d273a3a9222);
+            
+    
+                marker_1813d05a26bcc6a4a56cef6bf30cebbb.setIcon(icon_a470f6ced75e93b98ea450b75734bf19);
+            
+    
+                marker_7505df320abfc41f2033878e9be05f11.setIcon(icon_569f9d5d6d00a16c432241cc19bf076c);
+            
+    
+                marker_68a070f6982cbd650d55b09c24f52867.setIcon(icon_d6b15f4b9ee52227d997041b14c7cd5a);
+            
+    
+                marker_0809f281a2fc3b74d02dad2dd0f895c2.setIcon(icon_b8fafe5512f0aa88e1aaf6204a2cfb94);
+            
+    
+            tile_layer_d79b17bb2ded76807da90863e85b5a82.addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+                marker_287839644156d2d92528594c60cd7889.setIcon(icon_e397877db1da0763118d9c6c010d650a);
+            
+    
+                marker_c74876628c3d1f31bc71727dd5e5098c.setIcon(icon_affa13fdb99eeff8dc036381c7831594);
+            
+    
+                marker_06c642a513c62f5eb56c6ccdbf57c61c.setIcon(icon_ad249f75895f166bd81ffe30eb063bfa);
+            
+    
+                marker_0742e36b66e0d6c3a9d73d587fdad6b3.setIcon(icon_b8fdaadbd4a5d12f666fbdb8c90e6a63);
+            
+    
+                marker_dd700386c33ee92464a5fdde311bd1c1.setIcon(icon_b24864a5d74b26e2f7083ad9f1a7604c);
+            
+    
+                marker_046f79a9d7afc78a890e982f2a9971ed.setIcon(icon_b457dcc970f26b14de0cd3b2e6b22d15);
+            
+    
+                marker_09144850db97bc8d7480b934b42fac17.setIcon(icon_2aeac553855418f70255a4c2908c3ffa);
+            
+    
+                marker_bb69ad3ee481b343e516bb22b568ef2a.setIcon(icon_1536f906c51771d459308d273a3a9222);
+            
+    
+                marker_1813d05a26bcc6a4a56cef6bf30cebbb.setIcon(icon_a470f6ced75e93b98ea450b75734bf19);
+            
+    
+                marker_7505df320abfc41f2033878e9be05f11.setIcon(icon_569f9d5d6d00a16c432241cc19bf076c);
+            
+    
+                marker_68a070f6982cbd650d55b09c24f52867.setIcon(icon_d6b15f4b9ee52227d997041b14c7cd5a);
+            
+    
+                marker_0809f281a2fc3b74d02dad2dd0f895c2.setIcon(icon_b8fafe5512f0aa88e1aaf6204a2cfb94);
+            
+    
+            tile_layer_d79b17bb2ded76807da90863e85b5a82.addTo(map_df51c6669ab6c989d8c0e21b6613eaa4);
+        
+    
+                marker_287839644156d2d92528594c60cd7889.setIcon(icon_e397877db1da0763118d9c6c010d650a);
+            
+    
+                marker_c74876628c3d1f31bc71727dd5e5098c.setIcon(icon_affa13fdb99eeff8dc036381c7831594);
+            
+    
+                marker_06c642a513c62f5eb56c6ccdbf57c61c.setIcon(icon_ad249f75895f166bd81ffe30eb063bfa);
+            
+    
+                marker_0742e36b66e0d6c3a9d73d587fdad6b3.setIcon(icon_b8fdaadbd4a5d12f666fbdb8c90e6a63);
+            
+    
+                marker_dd700386c33ee92464a5fdde311bd1c1.setIcon(icon_b24864a5d74b26e2f7083ad9f1a7604c);
+            
+    
+                marker_046f79a9d7afc78a890e982f2a9971ed.setIcon(icon_b457dcc970f26b14de0cd3b2e6b22d15);
+            
+    
+                marker_09144850db97bc8d7480b934b42fac17.setIcon(icon_2aeac553855418f70255a4c2908c3ffa);
+            
+    
+                marker_bb69ad3ee481b343e516bb22b568ef2a.setIcon(icon_1536f906c51771d459308d273a3a9222);
+            
+    
+                marker_1813d05a26bcc6a4a56cef6bf30cebbb.setIcon(icon_a470f6ced75e93b98ea450b75734bf19);
+            
+    
+                marker_7505df320abfc41f2033878e9be05f11.setIcon(icon_569f9d5d6d00a16c432241cc19bf076c);
+            
+    
+                marker_68a070f6982cbd650d55b09c24f52867.setIcon(icon_d6b15f4b9ee52227d997041b14c7cd5a);
+            
+    
+                marker_0809f281a2fc3b74d02dad2dd0f895c2.setIcon(icon_b8fafe5512f0aa88e1aaf6204a2cfb94);
+            
+</script>
+</html>
