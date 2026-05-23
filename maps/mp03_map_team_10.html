@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4bed54ba5e41a6e4ec8cb188a2218a95 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4bed54ba5e41a6e4ec8cb188a2218a95" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4bed54ba5e41a6e4ec8cb188a2218a95 = L.map(
+                "map_4bed54ba5e41a6e4ec8cb188a2218a95",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a2682a162f799227c58ac0b092e8e552 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a2682a162f799227c58ac0b092e8e552.addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var marker_9f51b51ece4ec46fbd556d4ae9169edc = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_a7733dd262400d779d331978861d9bf5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6224458aa24cef2e99a1eaac42a260dc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8fc480ba636d8e567fbb279392bf840c = $(`<div id="html_8fc480ba636d8e567fbb279392bf840c" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534)<br>     <b>Ticker:</b> NKSH<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2026-05-18<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Roanoke, VA<br>     <b>Summary:</b> New branch facility opened in Roanoke to support expansion in dynamic market.<br>     <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526228213/nksh-ex99_1.htm">SEC filing</a>     </div>`)[0];
+                popup_6224458aa24cef2e99a1eaac42a260dc.setContent(html_8fc480ba636d8e567fbb279392bf840c);
+            
+        
+
+        marker_9f51b51ece4ec46fbd556d4ae9169edc.bindPopup(popup_6224458aa24cef2e99a1eaac42a260dc)
+        ;
+
+        
+    
+    
+                marker_9f51b51ece4ec46fbd556d4ae9169edc.setIcon(icon_a7733dd262400d779d331978861d9bf5);
+            
+    
+            var marker_ba4dcbb80a5b2112dd22c5f61fe8927f = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_f803ba0a4125508673af011bd5730a00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f965f1eae317a19cf5bebbd026a184e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d9eed42aa83e045bd7bf1f4cb89b10e1 = $(`<div id="html_d9eed42aa83e045bd7bf1f4cb89b10e1" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534)<br>     <b>Ticker:</b> NKSH<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2026-04-14<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Roanoke, VA<br>     <b>Summary:</b> New branch facilities in Roanoke and Lynchburg opened to support expansion in dynamic markets.<br>     <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526154248/nksh-ex99_1.htm">SEC filing</a>     </div>`)[0];
+                popup_3f965f1eae317a19cf5bebbd026a184e.setContent(html_d9eed42aa83e045bd7bf1f4cb89b10e1);
+            
+        
+
+        marker_ba4dcbb80a5b2112dd22c5f61fe8927f.bindPopup(popup_3f965f1eae317a19cf5bebbd026a184e)
+        ;
+
+        
+    
+    
+                marker_ba4dcbb80a5b2112dd22c5f61fe8927f.setIcon(icon_f803ba0a4125508673af011bd5730a00);
+            
+    
+            var marker_30af7b0aefed60de6ba60e6f3384dfdc = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_7095581dd27c2bc4c402b05606b8fe42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86e433442e37b958acdc26bd668dab4e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fb9c66caf72c8e3de370f7701df02d2b = $(`<div id="html_fb9c66caf72c8e3de370f7701df02d2b" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)<br>     <b>Ticker:</b> UNTY<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2026-04-22<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Madison, NJ<br>     <b>Summary:</b> Unity Bank opened a new full-service branch in Madison, New Jersey during 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042726000031/unty-20260422xex99d1.htm">SEC filing</a>     </div>`)[0];
+                popup_86e433442e37b958acdc26bd668dab4e.setContent(html_fb9c66caf72c8e3de370f7701df02d2b);
+            
+        
+
+        marker_30af7b0aefed60de6ba60e6f3384dfdc.bindPopup(popup_86e433442e37b958acdc26bd668dab4e)
+        ;
+
+        
+    
+    
+                marker_30af7b0aefed60de6ba60e6f3384dfdc.setIcon(icon_7095581dd27c2bc4c402b05606b8fe42);
+            
+    
+            var marker_117022f54ec86dacc6b075cd7b5ae890 = L.marker(
+                [37.3868826, -120.723532],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_e0f19369b7991231692f438c91299c97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33a9351ebd640c7eea206b1e82866a41 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_69a76f6e94f455e5092a75630bf0f201 = $(`<div id="html_69a76f6e94f455e5092a75630bf0f201" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> FARMERS & MERCHANTS BANCORP  (FMCB)  (CIK 0001085913)<br>     <b>Ticker:</b> FMCB<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2026-04-23<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Livingston, CA<br>     <b>Summary:</b> First Merchants Bank opening new location in Livingston, CA in Q3-2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1085913/000114036126016185/ef20071199_ex99-1.htm">SEC filing</a>     </div>`)[0];
+                popup_33a9351ebd640c7eea206b1e82866a41.setContent(html_69a76f6e94f455e5092a75630bf0f201);
+            
+        
+
+        marker_117022f54ec86dacc6b075cd7b5ae890.bindPopup(popup_33a9351ebd640c7eea206b1e82866a41)
+        ;
+
+        
+    
+    
+                marker_117022f54ec86dacc6b075cd7b5ae890.setIcon(icon_e0f19369b7991231692f438c91299c97);
+            
+    
+            var marker_09cb9f506313c07ab18cb0225541ae6f = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_28dec5d21cfb3da0fd7dbc8c2e978b35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfabf9215009be16628ce90577f5bd4a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6397665a4aeea22b4f496e46180a10b8 = $(`<div id="html_6397665a4aeea22b4f496e46180a10b8" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)<br>     <b>Ticker:</b> UNTY<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2025-10-14<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Madison, NJ<br>     <b>Summary:</b> Unity Bank opened its 22nd branch in Madison, New Jersey, strengthening presence in Morris County.<br>     <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042725000071/unty-20251014xex99d1.htm">SEC filing</a>     </div>`)[0];
+                popup_dfabf9215009be16628ce90577f5bd4a.setContent(html_6397665a4aeea22b4f496e46180a10b8);
+            
+        
+
+        marker_09cb9f506313c07ab18cb0225541ae6f.bindPopup(popup_dfabf9215009be16628ce90577f5bd4a)
+        ;
+
+        
+    
+    
+                marker_09cb9f506313c07ab18cb0225541ae6f.setIcon(icon_28dec5d21cfb3da0fd7dbc8c2e978b35);
+            
+    
+            var marker_7213872227396dac01dcf55f69d7e12a = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_7b1b4518e1cc676f54c0c967c21f2f40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40e4bfd458bfd80932dfa7ed80fd5883 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_398d4732d14c44976203f4bcd8232acf = $(`<div id="html_398d4732d14c44976203f4bcd8232acf" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)<br>     <b>Ticker:</b> UNTY<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2025-07-15<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Madison, NJ<br>     <b>Summary:</b> Unity Bank announced intention to open a new branch in Madison, New Jersey, expected Fall 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042725000056/unty-20250715xex99d1.htm">SEC filing</a>     </div>`)[0];
+                popup_40e4bfd458bfd80932dfa7ed80fd5883.setContent(html_398d4732d14c44976203f4bcd8232acf);
+            
+        
+
+        marker_7213872227396dac01dcf55f69d7e12a.bindPopup(popup_40e4bfd458bfd80932dfa7ed80fd5883)
+        ;
+
+        
+    
+    
+                marker_7213872227396dac01dcf55f69d7e12a.setIcon(icon_7b1b4518e1cc676f54c0c967c21f2f40);
+            
+    
+            var marker_1747385d0b15e8fe2d32a039003c95e0 = L.marker(
+                [39.506926, -77.6522171],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_f598b584c948b87072a120e07cb0e780 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ac02e00a98e02a282aeab1fffdada75 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4f25bd3b442b28281456c2dfd102b744 = $(`<div id="html_4f25bd3b442b28281456c2dfd102b744" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> FIRST UNITED CORP/MD/  (FUNC)  (CIK 0000763907)<br>     <b>Ticker:</b> FUNC<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2026-05-07<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Boonsboro, None<br>     <b>Summary:</b> First United opened Boonsboro branch to strengthen East market presence and serve nearby communities.<br>     <a href="https://www.sec.gov/Archives/edgar/data/763907/000110465926056785/tm2613814d1_ex99-1.htm">SEC filing</a>     </div>`)[0];
+                popup_7ac02e00a98e02a282aeab1fffdada75.setContent(html_4f25bd3b442b28281456c2dfd102b744);
+            
+        
+
+        marker_1747385d0b15e8fe2d32a039003c95e0.bindPopup(popup_7ac02e00a98e02a282aeab1fffdada75)
+        ;
+
+        
+    
+    
+                marker_1747385d0b15e8fe2d32a039003c95e0.setIcon(icon_f598b584c948b87072a120e07cb0e780);
+            
+    
+            var marker_4947da10b7d538488faef674e90c3a57 = L.marker(
+                [47.6144219, -122.192337],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_e17f0bb7d1bddd6f692d2eccc08ccecc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af4adee19bc63e777eeb7881d24d982c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_91a5c3499edae8bff155d5485facbf4e = $(`<div id="html_91a5c3499edae8bff155d5485facbf4e" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> First Northwest Bancorp  (FNWB)  (CIK 0001556727)<br>     <b>Ticker:</b> FNWB<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2026-01-29<br>     <b>Event type:</b> closing<br>     <b>Location:</b> Bellevue, WA<br>     <b>Summary:</b> First Fed Bank permanently closing Bellevue branch at 1100 Bellevue Way Northeast on April 30, 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1556727/000143774926002355/ex_896209.htm">SEC filing</a>     </div>`)[0];
+                popup_af4adee19bc63e777eeb7881d24d982c.setContent(html_91a5c3499edae8bff155d5485facbf4e);
+            
+        
+
+        marker_4947da10b7d538488faef674e90c3a57.bindPopup(popup_af4adee19bc63e777eeb7881d24d982c)
+        ;
+
+        
+    
+    
+                marker_4947da10b7d538488faef674e90c3a57.setIcon(icon_e17f0bb7d1bddd6f692d2eccc08ccecc);
+            
+    
+            var marker_43db99e52dc63a1e7ff3bdeb54e4d130 = L.marker(
+                [25.7929198, -80.1353006],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_dd4b995b4854ca2bd7f611b17cedfe02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1c530f05080399d164d629a6755f42f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bc55c647ed051113723b110605f8c367 = $(`<div id="html_bc55c647ed051113723b110605f8c367" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> Amerant Bancorp Inc.  (AMTB)  (CIK 0001734342)<br>     <b>Ticker:</b> AMTB<br>     <b>Industry:</b> Financial Services<br>     <b>Filing date:</b> 2025-11-10<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Miami Beach, FL<br>     <b>Summary:</b> Amerant Bank opening new banking center in Miami Beach (Bay Harbor Islands).<br>     <a href="https://www.sec.gov/Archives/edgar/data/1734342/000173434225000072/amntirdeck-nov2025final.htm">SEC filing</a>     </div>`)[0];
+                popup_f1c530f05080399d164d629a6755f42f.setContent(html_bc55c647ed051113723b110605f8c367);
+            
+        
+
+        marker_43db99e52dc63a1e7ff3bdeb54e4d130.bindPopup(popup_f1c530f05080399d164d629a6755f42f)
+        ;
+
+        
+    
+    
+                marker_43db99e52dc63a1e7ff3bdeb54e4d130.setIcon(icon_dd4b995b4854ca2bd7f611b17cedfe02);
+            
+    
+            var marker_4843a8565103dfdeb4ebf9bbb7d2e6af = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_e6f4f8f138418b3cd58b2afc5376ba20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79f6573ed2981008c4feaaba2272ab12 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_26b1daff388723c86f6030e382a26d18 = $(`<div id="html_26b1daff388723c86f6030e382a26d18" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)<br>     <b>Ticker:</b> PENN<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-04-23<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Columbus, OH<br>     <b>Summary:</b> Hollywood Columbus new hotel tower opening in June 2026.<br>     <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173826000011/pennex991-q12026.htm">SEC filing</a>     </div>`)[0];
+                popup_79f6573ed2981008c4feaaba2272ab12.setContent(html_26b1daff388723c86f6030e382a26d18);
+            
+        
+
+        marker_4843a8565103dfdeb4ebf9bbb7d2e6af.bindPopup(popup_79f6573ed2981008c4feaaba2272ab12)
+        ;
+
+        
+    
+    
+                marker_4843a8565103dfdeb4ebf9bbb7d2e6af.setIcon(icon_e6f4f8f138418b3cd58b2afc5376ba20);
+            
+    
+            var marker_738e0d032d460338efcd3b4d8a04139c = L.marker(
+                [41.5263603, -88.0840212],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_589609382da49735be5d3edab9b64c48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff13f715aee265f71cb54282f79597e0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2619b6ac9f1aad6dbb6d3d3803d708fd = $(`<div id="html_2619b6ac9f1aad6dbb6d3d3803d708fd" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)<br>     <b>Ticker:</b> PENN<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-02-26<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Joliet, IL<br>     <b>Summary:</b> Hollywood Casino Joliet opened and is delivering strong results from new and reactivated customers.<br>     <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173826000006/pennex991-q42025.htm">SEC filing</a>     </div>`)[0];
+                popup_ff13f715aee265f71cb54282f79597e0.setContent(html_2619b6ac9f1aad6dbb6d3d3803d708fd);
+            
+        
+
+        marker_738e0d032d460338efcd3b4d8a04139c.bindPopup(popup_ff13f715aee265f71cb54282f79597e0)
+        ;
+
+        
+    
+    
+                marker_738e0d032d460338efcd3b4d8a04139c.setIcon(icon_589609382da49735be5d3edab9b64c48);
+            
+    
+            var marker_2a624f6ca4ccd3d082fcfa6e1b0ed3c9 = L.marker(
+                [41.5263603, -88.0840212],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_33a11db13262f59f3cbf4125105dbca4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2592fccb7ada749415409aa049b15a3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5f75c7387c53898d374635b3e2b08707 = $(`<div id="html_5f75c7387c53898d374635b3e2b08707" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> PENN Entertainment, Inc.  (PENN)  (CIK 0000921738)<br>     <b>Ticker:</b> PENN<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2025-11-06<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Joliet, IL<br>     <b>Summary:</b> New Hollywood Casino in Joliet opening, driving gaming and non-gaming volumes.<br>     <a href="https://www.sec.gov/Archives/edgar/data/921738/000092173825000040/pennex991-q32025.htm">SEC filing</a>     </div>`)[0];
+                popup_b2592fccb7ada749415409aa049b15a3.setContent(html_5f75c7387c53898d374635b3e2b08707);
+            
+        
+
+        marker_2a624f6ca4ccd3d082fcfa6e1b0ed3c9.bindPopup(popup_b2592fccb7ada749415409aa049b15a3)
+        ;
+
+        
+    
+    
+                marker_2a624f6ca4ccd3d082fcfa6e1b0ed3c9.setIcon(icon_33a11db13262f59f3cbf4125105dbca4);
+            
+    
+            var marker_0f2c2c80a1eda6b95e2a717e71b83399 = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_81e265bd3bff1a755055d50a6844b6bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2302174a8027787148f2b4e1e1a370fe = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a13a8773e29bd73cdbf385eb94ed2a46 = $(`<div id="html_a13a8773e29bd73cdbf385eb94ed2a46" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> Park Hotels & Resorts Inc.  (PK)  (CIK 0001617406)<br>     <b>Ticker:</b> PK<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2025-06-02<br>     <b>Event type:</b> expansion<br>     <b>Location:</b> Miami, FL<br>     <b>Summary:</b> Royal Palm South Beach Miami began $103M transformative renovation in May 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1617406/000161740625000040/nareitdeckjune2025final.htm">SEC filing</a>     </div>`)[0];
+                popup_2302174a8027787148f2b4e1e1a370fe.setContent(html_a13a8773e29bd73cdbf385eb94ed2a46);
+            
+        
+
+        marker_0f2c2c80a1eda6b95e2a717e71b83399.bindPopup(popup_2302174a8027787148f2b4e1e1a370fe)
+        ;
+
+        
+    
+    
+                marker_0f2c2c80a1eda6b95e2a717e71b83399.setIcon(icon_81e265bd3bff1a755055d50a6844b6bb);
+            
+    
+            var marker_3b9342b8b8388cfaf5c7d8b35891427d = L.marker(
+                [33.4484367, -112.074141],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_27c61aa8ad8b5e369137962bc3e23cce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfaa8317e579d1d425eb4ee6b41eadde = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_507105d7a26d891a65fac79d96ecdd32 = $(`<div id="html_507105d7a26d891a65fac79d96ecdd32" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> Ryman Hospitality Properties, Inc.  (RHP)  (CIK 0001040829)<br>     <b>Ticker:</b> RHP<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2025-08-05<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Phoenix, AZ<br>     <b>Summary:</b> Completed acquisition of 950-room JW Marriott Phoenix Desert Ridge Resort & Spa on June 10, 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1040829/000155837025010196/tmb-20250804xex99d1.htm">SEC filing</a>     </div>`)[0];
+                popup_dfaa8317e579d1d425eb4ee6b41eadde.setContent(html_507105d7a26d891a65fac79d96ecdd32);
+            
+        
+
+        marker_3b9342b8b8388cfaf5c7d8b35891427d.bindPopup(popup_dfaa8317e579d1d425eb4ee6b41eadde)
+        ;
+
+        
+    
+    
+                marker_3b9342b8b8388cfaf5c7d8b35891427d.setIcon(icon_27c61aa8ad8b5e369137962bc3e23cce);
+            
+    
+            var marker_acfe23636bc30e43ddfd2d6461385700 = L.marker(
+                [34.8688613, -111.7614394],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_a87bc4bc5f990ea5b31ccf9f0bb77373 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "expand",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52140a186c134240a4d4444453c8a907 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0c87dce1d4a21a95ad00ae69a67e7417 = $(`<div id="html_0c87dce1d4a21a95ad00ae69a67e7417" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> DiamondRock Hospitality Co  (DRH)  (CIK 0001298946)<br>     <b>Ticker:</b> DRH<br>     <b>Industry:</b> Travel and Hospitality<br>     <b>Filing date:</b> 2026-02-26<br>     <b>Event type:</b> expansion<br>     <b>Location:</b> Sedona, AZ<br>     <b>Summary:</b> DiamondRock completed $25 million Sedona repositioning project, integrating former Orchards Inn as The Cliffs at L'Auberge with adjacent L'Auberge de Sedona.<br>     <a href="https://www.sec.gov/Archives/edgar/data/1298946/000129894626000010/exhibit9914q2025.htm">SEC filing</a>     </div>`)[0];
+                popup_52140a186c134240a4d4444453c8a907.setContent(html_0c87dce1d4a21a95ad00ae69a67e7417);
+            
+        
+
+        marker_acfe23636bc30e43ddfd2d6461385700.bindPopup(popup_52140a186c134240a4d4444453c8a907)
+        ;
+
+        
+    
+    
+                marker_acfe23636bc30e43ddfd2d6461385700.setIcon(icon_a87bc4bc5f990ea5b31ccf9f0bb77373);
+            
+    
+            var marker_57a1009d6da96c3ac50a0fb6fbe6c546 = L.marker(
+                [38.4773235, -76.7848553],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_640ecad3c5428d19307dc42e06bea99f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c6cd43e832ad6070287af92920fa392 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ec21f89833a2fbee856e35b8622a00ec = $(`<div id="html_ec21f89833a2fbee856e35b8622a00ec" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> WEIS MARKETS INC  (WMK)  (CIK 0000105418)<br>     <b>Ticker:</b> WMK<br>     <b>Industry:</b> Retail<br>     <b>Filing date:</b> 2025-08-06<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Charlotte Hall, MD<br>     <b>Summary:</b> Weis Markets opening new store in Charlotte Hall, Maryland later in summer 2025.<br>     <a href="https://www.sec.gov/Archives/edgar/data/105418/000010541825000036/wmk-20250806xex99d1.htm">SEC filing</a>     </div>`)[0];
+                popup_5c6cd43e832ad6070287af92920fa392.setContent(html_ec21f89833a2fbee856e35b8622a00ec);
+            
+        
+
+        marker_57a1009d6da96c3ac50a0fb6fbe6c546.bindPopup(popup_5c6cd43e832ad6070287af92920fa392)
+        ;
+
+        
+    
+    
+                marker_57a1009d6da96c3ac50a0fb6fbe6c546.setIcon(icon_640ecad3c5428d19307dc42e06bea99f);
+            
+    
+            var marker_80b56ebe0f0ed84fbdef7f15559642ef = L.marker(
+                [38.9742502, -94.6851702],
+                {
+}
+            ).addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+            var icon_e55d6612c109f88e76e80260a642c58b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c25bdbd472884f233de43b3c5c649fa0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_877f7127c992a061d2607dd5419d9206 = $(`<div id="html_877f7127c992a061d2607dd5419d9206" style="width: 100.0%; height: 100.0%;">     <b>Company:</b> BUCKLE INC  (BKE)  (CIK 0000885245)<br>     <b>Ticker:</b> BKE<br>     <b>Industry:</b> Retail<br>     <b>Filing date:</b> 2026-04-09<br>     <b>Event type:</b> opening<br>     <b>Location:</b> Overland Park, KS<br>     <b>Summary:</b> The Buckle opened one new retail store in Overland Park, Kansas during fiscal March.<br>     <a href="https://www.sec.gov/Archives/edgar/data/885245/000088524526000014/bke202604098-kex.htm">SEC filing</a>     </div>`)[0];
+                popup_c25bdbd472884f233de43b3c5c649fa0.setContent(html_877f7127c992a061d2607dd5419d9206);
+            
+        
+
+        marker_80b56ebe0f0ed84fbdef7f15559642ef.bindPopup(popup_c25bdbd472884f233de43b3c5c649fa0)
+        ;
+
+        
+    
+    
+                marker_80b56ebe0f0ed84fbdef7f15559642ef.setIcon(icon_e55d6612c109f88e76e80260a642c58b);
+            
+    
+            tile_layer_a2682a162f799227c58ac0b092e8e552.addTo(map_4bed54ba5e41a6e4ec8cb188a2218a95);
+        
+    
+                marker_9f51b51ece4ec46fbd556d4ae9169edc.setIcon(icon_a7733dd262400d779d331978861d9bf5);
+            
+    
+                marker_ba4dcbb80a5b2112dd22c5f61fe8927f.setIcon(icon_f803ba0a4125508673af011bd5730a00);
+            
+    
+                marker_30af7b0aefed60de6ba60e6f3384dfdc.setIcon(icon_7095581dd27c2bc4c402b05606b8fe42);
+            
+    
+                marker_117022f54ec86dacc6b075cd7b5ae890.setIcon(icon_e0f19369b7991231692f438c91299c97);
+            
+    
+                marker_09cb9f506313c07ab18cb0225541ae6f.setIcon(icon_28dec5d21cfb3da0fd7dbc8c2e978b35);
+            
+    
+                marker_7213872227396dac01dcf55f69d7e12a.setIcon(icon_7b1b4518e1cc676f54c0c967c21f2f40);
+            
+    
+                marker_1747385d0b15e8fe2d32a039003c95e0.setIcon(icon_f598b584c948b87072a120e07cb0e780);
+            
+    
+                marker_4947da10b7d538488faef674e90c3a57.setIcon(icon_e17f0bb7d1bddd6f692d2eccc08ccecc);
+            
+    
+                marker_43db99e52dc63a1e7ff3bdeb54e4d130.setIcon(icon_dd4b995b4854ca2bd7f611b17cedfe02);
+            
+    
+                marker_4843a8565103dfdeb4ebf9bbb7d2e6af.setIcon(icon_e6f4f8f138418b3cd58b2afc5376ba20);
+            
+    
+                marker_738e0d032d460338efcd3b4d8a04139c.setIcon(icon_589609382da49735be5d3edab9b64c48);
+            
+    
+                marker_2a624f6ca4ccd3d082fcfa6e1b0ed3c9.setIcon(icon_33a11db13262f59f3cbf4125105dbca4);
+            
+    
+                marker_0f2c2c80a1eda6b95e2a717e71b83399.setIcon(icon_81e265bd3bff1a755055d50a6844b6bb);
+            
+    
+                marker_3b9342b8b8388cfaf5c7d8b35891427d.setIcon(icon_27c61aa8ad8b5e369137962bc3e23cce);
+            
+    
+                marker_acfe23636bc30e43ddfd2d6461385700.setIcon(icon_a87bc4bc5f990ea5b31ccf9f0bb77373);
+            
+    
+                marker_57a1009d6da96c3ac50a0fb6fbe6c546.setIcon(icon_640ecad3c5428d19307dc42e06bea99f);
+            
+    
+                marker_80b56ebe0f0ed84fbdef7f15559642ef.setIcon(icon_e55d6612c109f88e76e80260a642c58b);
+            
+</script>
+</html>
